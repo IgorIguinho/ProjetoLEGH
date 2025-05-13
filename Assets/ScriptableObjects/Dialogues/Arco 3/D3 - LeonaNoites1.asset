@@ -149,8 +149,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   isNextScene: 1
   nextScene: WorldATO3 3
-  learnAction: 0
-  attackScriptable: {fileID: 0}
+  learnAction: 1
+  attackScriptable: {fileID: 11400000, guid: b244de6de8917bb41b7f3d9fdce692ba, type: 2}
   havePuzzle: 0
   puzzleDialogueScriptable: {fileID: 0}
   numberActivePuzzle: 0

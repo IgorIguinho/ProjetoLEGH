@@ -13,6 +13,8 @@ public class PassInfos : MonoBehaviour
     public bool startDialogue;
     public Vector3 playerRespawn;
     public int numberMachineOpen;
+    public bool learningAction;
+    public AttackScriptable actionToLearning;
 
     public List<bool> puzzlesComplets;
 

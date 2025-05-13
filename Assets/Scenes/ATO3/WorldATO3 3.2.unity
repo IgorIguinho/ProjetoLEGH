@@ -3785,6 +3785,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: b2e6b7014145fad4d9beaa09f83195e8, type: 2}
   respawnPlayer: {fileID: 224568244}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 1636480490}
   textComentText: {fileID: 262964253}
@@ -5049,6 +5051,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: b2e6b7014145fad4d9beaa09f83195e8, type: 2}
   respawnPlayer: {fileID: 1143857370}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 1147814995}
   textComentText: {fileID: 1252571178}
@@ -9353,6 +9357,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: b2e6b7014145fad4d9beaa09f83195e8, type: 2}
   respawnPlayer: {fileID: 674746299}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 1770535210}
   textComentText: {fileID: 708352299}
@@ -9663,9 +9669,10 @@ MonoBehaviour:
   - {fileID: 1237977469}
   - {fileID: 1164807639}
   atualMachine: 0
-  arrowToMachine: {fileID: 0}
+  arrowToMachine: {fileID: 1840883261}
   numberMachineOpen: 0
   startMiniGame: 0
+  actionToLearn: {fileID: 11400000, guid: b6d37a9a0a871f64db570383613e7a12, type: 2}
   rotationSpeed: 5
 --- !u!4 &895096909
 Transform:
@@ -10452,6 +10459,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: 83c424e5e787c5b4081d6643e2514629, type: 2}
   respawnPlayer: {fileID: 1055819729}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 97887475}
   textComentText: {fileID: 1261312591}
@@ -14400,6 +14409,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: b2e6b7014145fad4d9beaa09f83195e8, type: 2}
   respawnPlayer: {fileID: 1519777448}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 1722320954}
   textComentText: {fileID: 598643103}

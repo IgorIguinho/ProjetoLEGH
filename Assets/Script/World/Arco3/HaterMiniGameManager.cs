@@ -14,6 +14,7 @@ public class HaterMiniGameManager : MonoBehaviour
     public GameObject arrowToMachine;
     public int numberMachineOpen;
     public bool startMiniGame;
+    public AttackScriptable actionToLearn;
     GameObject player;
 
     public float rotationSpeed;
@@ -46,7 +47,13 @@ public class HaterMiniGameManager : MonoBehaviour
         ArrowFollowMachine();
         enableWarningObject();
         numberMachineOpen = PassInfos.Instance.numberMachineOpen;
+        atualMachine = numberMachineOpen + 1;
 
+        if (atualMachine == machineHaters.Count +1 )
+        {
+            StartCoroutine(LearningActionWarning.Instance.LearnAction(actionToLearn));
+            atualMachine++;
+        }
 
     }
 
@@ -75,12 +82,18 @@ public class HaterMiniGameManager : MonoBehaviour
         GameObject machineForOpen = machineHaters[numberMachineOpen];
         
 
-        if (atualMachine == numberMachineOpen)
-        {
+        
+        
             machineForOpen.GetComponentInChildren<HaterMiniGameAproxime>().enabled = true;
            machineForOpen.GetComponentInChildren<HaterMiniGameAproxime>().canvaObject.SetActive(true);
-            atualMachine++;
+
+        for (int i = 0; i < numberMachineOpen; i++)
+        {
+            machineHaters[i].GetComponent<ChangeSkinMinigame>().CompleteVsiual();
         }
-        
+
     }
+
+
+    
 }

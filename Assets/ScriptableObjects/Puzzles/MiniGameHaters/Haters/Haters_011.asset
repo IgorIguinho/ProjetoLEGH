@@ -16,5 +16,5 @@ MonoBehaviour:
   nickName: '@uniao_fc1330'
   textComents: "Esse jogador que contrataram \xE9 horroroso, tinha que ser argentino
     mesmo..."
-  imageAccount: {fileID: 0}
+  imageAccount: {fileID: -911197696, guid: d3910ce12c41cfc4a973612d1bd0e0a5, type: 3}
   isHater: 1

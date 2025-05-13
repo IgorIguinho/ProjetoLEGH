@@ -5809,6 +5809,7 @@ MonoBehaviour:
   stamina: 0
   staminaMax: 18
   audioSource: {fileID: 120997640}
+  soundTrack: {fileID: 1874691422}
   turnsForTimingAction: 0
   maxTurnsForAction: 0
   turnsForTimingActionEnemy: 0

@@ -378,22 +378,27 @@ public class BattleManager : MonoBehaviour
 
 
         if (valueBar <= valueWinPlayer)
-            {
-            
+        {
+
             if (enemyAtributes.haveDialogueNext == true)
             {
                 PassInfos.Instance.DialogueScriptable = enemyAtributes.nextDialogue;
-                PassInfos.Instance.startDialogue =true;
+                PassInfos.Instance.startDialogue = true;
             }
-            
+
+            if (enemyAtributes.haveLearAction == true)
+            {
+                PassInfos.Instance.learningAction = true;
+                PassInfos.Instance.actionToLearning = enemyAtributes.actionToLearn;
+            }
             TransitionSceneManager.Instance.Transition(enemyAtributes.nextScene);
 
-            }
-            else
-            {
-                state = BattleState.ENEMYTURN;
-                StartCoroutine(EnemyAttack(Random.Range(0, enemyAction.Count)));
-            }
+        }
+        else
+        {
+            state = BattleState.ENEMYTURN;
+            StartCoroutine(EnemyAttack(Random.Range(0, enemyAction.Count)));
+        }
 
         
 

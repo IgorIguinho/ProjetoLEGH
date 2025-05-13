@@ -2004,7 +2004,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -579.8, y: 391.7}
+  m_AnchoredPosition: {x: -579.8, y: 307.7}
   m_SizeDelta: {x: 52.1154, y: 36.9151}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &674167823
@@ -2856,8 +2856,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -7}
-  m_SizeDelta: {x: 588.9, y: 50}
+  m_AnchoredPosition: {x: 0, y: -13.817}
+  m_SizeDelta: {x: 588.9, y: 72.367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1114043341
 MonoBehaviour:
@@ -2879,7 +2879,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bloquear
+  m_text: Elaborar Argumento
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c14f0f9d486e74043bd973f7c9214e1b, type: 2}
   m_sharedMaterial: {fileID: -7764879650283634641, guid: c14f0f9d486e74043bd973f7c9214e1b, type: 2}
@@ -2906,8 +2906,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.1
-  m_fontSizeBase: 62.1
+  m_fontSize: 56.9
+  m_fontSizeBase: 56.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3475,6 +3475,8 @@ MonoBehaviour:
   startDialogue: 0
   playerRespawn: {x: 0, y: 0, z: 0}
   numberMachineOpen: 0
+  learningAction: 0
+  actionToLearning: {fileID: 0}
   puzzlesComplets: 000000
   actionPlayer:
   - {fileID: 11400000, guid: bcda3e4064821314790405de8258170b, type: 2}
@@ -4574,7 +4576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 106, y: 6}
+  m_AnchoredPosition: {x: 106, y: -78}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1547435296

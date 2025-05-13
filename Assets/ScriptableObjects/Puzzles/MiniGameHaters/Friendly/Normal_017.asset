@@ -17,5 +17,5 @@ MonoBehaviour:
   textComents: "Tem uma mo\xE7a que come\xE7ou hoje na empresa que eu trabalho, ela
     \xE9 muito linda e muito inteligente, j\xE1 entrou batendo as metas no primeiro
     m\xEAs! Pena que ela parece ser muita areia pro meu caminh\xE3ozinho..."
-  imageAccount: {fileID: 0}
+  imageAccount: {fileID: -487496441, guid: d3910ce12c41cfc4a973612d1bd0e0a5, type: 3}
   isHater: 0

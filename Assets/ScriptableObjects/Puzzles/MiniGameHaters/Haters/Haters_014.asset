@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Haters_014
   m_EditorClassIdentifier: 
   nameObject: 
-  nickName: "@cheirodecaf\xE9ep\xF3lvora"
+  nickName: "@cheirodecaf\xE9"
   textComents: "Ficar chorando sobre racismo online n\xE3o muda nada, quer mudan\xE7a?
     Vai estudar e trabalhar que nem todo mundo"
-  imageAccount: {fileID: 0}
+  imageAccount: {fileID: -596190802, guid: 17c956bde917a4d46a6986bddc5baf3d, type: 3}
   isHater: 1

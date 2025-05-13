@@ -12,14 +12,18 @@ public class EnemysScriptable : ScriptableObject
   public List<AttackScriptable> invunerable;
     [Space(4)]
     public AudioClip musicBattle;
-  public Sprite spriteBattle;
-  public AttackScriptable actionBlockEnemy;
+    public Sprite spriteBattle;
+    public AttackScriptable actionBlockEnemy;
     public AnimationClip animationBattle;
 
     [Header("Pós batalha/Vitoria")]
     public bool haveDialogueNext;
     public DialogueScriptable nextDialogue;
     public string nextScene;
+    public bool haveLearAction;
+    public AttackScriptable actionToLearn;
+
+
 
     [Header("Pós batalha/Derrota")]
     public DialogueScriptable dialogueDerrota;

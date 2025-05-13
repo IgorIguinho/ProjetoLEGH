@@ -27,6 +27,8 @@ public class HaterMiniGame : MonoBehaviour
     public bool isLastMinigame;
     public DialogueScriptable dialogueLose;
     public Transform respawnPlayer;
+    public bool learnAction;
+    public AttackScriptable actionToLearn;
 
     [Header("Variaveis de UI")]
     public int numberOfCommentsShow;
@@ -131,8 +133,9 @@ public class HaterMiniGame : MonoBehaviour
             parentGameObject.GetComponentInChildren<HaterMiniGameAproxime>().enabled = false;
             parentGameObject.GetComponentInChildren<HaterMiniGameAproxime>().canvaObject.SetActive(false);
             parentGameObject.GetComponent<ChangeSkinMinigame>().CompleteVsiual();
-            this.gameObject.SetActive(false);
+           
 
+            this.gameObject.SetActive(false);
         }
         else if (corrects < 3 )
         {

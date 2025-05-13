@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41dd6b3c7d9a57d43a6adeb35713907f, type: 3}
-  m_Name: AINDA SEM NOME
+  m_Name: "N\xE3o Ligar"
   m_EditorClassIdentifier: 
-  nameTitle: ????
-  descr: Lorem ipus
-  combatDescr: Teste teste teste teste teste - 10 de energia
+  nameTitle: "N\xE3o ligar"
+  useCombat: "N\xE3o ligar"
+  combatDescr: "Ato se preparar, pensar e n\xE3o ligar pra a\xE7\xE3o do inimigo,
+    por ter feito esse ato a proxima a\xE7\xE3o do inimigo ira dar metade do dano
+    a barra."
   fraseAction:
-  - 
+  - "N\xE3o ligo"
   dmg: 0
   costStm: 5
   learned: 1

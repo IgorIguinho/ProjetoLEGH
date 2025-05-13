@@ -6933,9 +6933,10 @@ MonoBehaviour:
   - {fileID: 1675298921}
   - {fileID: 1085703546}
   atualMachine: 0
-  arrowToMachine: {fileID: 0}
+  arrowToMachine: {fileID: 1840883261}
   numberMachineOpen: 0
   startMiniGame: 0
+  actionToLearn: {fileID: 0}
   rotationSpeed: 5
 --- !u!4 &542442854
 Transform:

@@ -32,5 +32,7 @@ MonoBehaviour:
   haveDialogueNext: 1
   nextDialogue: {fileID: 11400000, guid: c2caddae74d41c24dbd782734cd9ab93, type: 2}
   nextScene: WorldATO2 7
+  haveLearAction: 1
+  actionToLearn: {fileID: 11400000, guid: 52e159a63c3c293478e9411ac411083a, type: 2}
   dialogueDerrota: {fileID: 11400000, guid: f68a7a6bb96c58e4fa3a7c58651e8095, type: 2}
   sceneDerrota: ComunidadePAQ

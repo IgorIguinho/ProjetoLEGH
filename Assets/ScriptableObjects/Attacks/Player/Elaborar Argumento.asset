@@ -20,7 +20,7 @@ MonoBehaviour:
   - preparou um argumento
   dmg: 0
   costStm: -5
-  learned: 1
+  learned: 0
   audioClip: {fileID: 0}
   typeAction: BuffOrDebuffAction
   buffPlayer: 1

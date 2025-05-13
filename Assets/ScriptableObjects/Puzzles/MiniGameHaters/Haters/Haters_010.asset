@@ -16,5 +16,5 @@ MonoBehaviour:
   nickName: '@cordeiradosenhor7'
   textComents: "Essa semana apareceu uma casa de macumba aqui perto de casa, esse
     mundo t\xE1 perdido mesmo, vou mandar derrubar esse neg\xF3cio."
-  imageAccount: {fileID: 0}
+  imageAccount: {fileID: -1517996522, guid: d3910ce12c41cfc4a973612d1bd0e0a5, type: 3}
   isHater: 1
