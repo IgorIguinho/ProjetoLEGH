@@ -36,7 +36,7 @@ MonoBehaviour:
   - Player
   - NPC
   - Player
-  - 
+  - Player
   - NPC
   - Player
   - NPC
@@ -78,14 +78,15 @@ MonoBehaviour:
   - {r: 0.29411766, g: 0.74509805, b: 0.8901961, a: 1}
   - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
   - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  haveCutscene: 0
-  cutScene: []
-  numberCutScene: 
+  haveCutscene: 1
+  cutScene:
+  - {fileID: 11400000, guid: 3cddb4f556f58a949a2dc70e4f16fd2f, type: 2}
+  numberCutScene: 05000000
   battleScene: 
   isBattle: 0
   enemy: {fileID: 0}
-  isNextScene: 0
-  nextScene: 
+  isNextScene: 1
+  nextScene: WorldATO4 2
   learnAction: 0
   attackScriptable: {fileID: 0}
   havePuzzle: 0

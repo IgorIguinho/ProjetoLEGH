@@ -14,7 +14,7 @@ public class PlayerMov : MonoBehaviour
     private Vector2 moveDirection;
     Animator animatior;
     public GameObject soundWalk;
-    private GameObject directorCutscene;
+    private PlayableDirector directorCutscene;
     public bool canMove = false;
 
     Rigidbody2D rb;
@@ -25,14 +25,14 @@ public class PlayerMov : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         moveSpeed = entityStats.baseSpeed;
         animatior = gameObject.GetComponent<Animator>();
-        directorCutscene = GameObject.FindGameObjectWithTag("DirectorCutscene");
+        directorCutscene = GameObject.FindGameObjectWithTag("DirectorCutscene").GetComponent<PlayableDirector>();
        
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (DialogueManager.Instance.isDialogue || DialogueManager.Instance.isPuzzle ||canMove ) 
+        if (DialogueManager.Instance.isDialogue || DialogueManager.Instance.isPuzzle || directorCutscene.state == PlayState.Playing) 
         { 
             animatior.Play("IdleBaixo");
             soundWalk.GetComponent<AudioSource>().Stop();

@@ -62,7 +62,7 @@ public class DialogueManager : MonoBehaviour
     public List<string> dialogueList;
     public List<string> thisIsList;
     public bool isDialogue = false;
-    int numberOfDialogue = 0;
+    [SerializeField]private int numberOfDialogue = 0;
 
     [Header("dialogue Puzzle Revolução")]
     public int numberDialogueNpc;
@@ -293,7 +293,6 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-
     private void IncorretAnswerButton()
     {
         isPuzzle = false;
@@ -303,6 +302,78 @@ public class DialogueManager : MonoBehaviour
         dialogueReloadInfos(puzzleScriptables.answerIncorretDialogue[0]);
         puzzleGroup.SetActive(false);
     }
+
+    public void NextDialogueForSignal()
+    {
+        if (canNextDialogue == true)
+        {
+
+            
+            
+            if (havePuzzle && numberActivePuzzle == numberOfDialogue)
+            {
+
+                puzzleGroup.SetActive(true);
+                isPuzzle = true;
+                isDialogue = false;
+            }
+            else 
+            {
+
+                numberOfDialogue++;
+                textGeral.text = "";
+                if (numberListCutscene < cutScene.Count)
+                {
+                    canRunCutscene = true;
+                }
+
+                canNextDialogue = false;
+                startCoroutine = true;
+            }
+
+
+        }
+        else if ( canNextDialogue == false)
+        {
+            textGeral.text = dialogueList[numberOfDialogue];
+
+            StopAllCoroutines();
+            isCoroutineRun = false;
+            canNextDialogue = true;
+        }
+
+        if (numberOfDialogue == dialogueList.Count)
+        {
+
+            if (isBattle)
+            {
+                numberListCutscene = 0;
+                PassInfos.Instance.enemyToPass = enemysScriptable;
+
+                TransitionSceneManager.Instance.Transition(battleScene);
+            }
+            else if (isNextScene)
+            {
+                numberListCutscene = 0;
+                isDialogue = false;
+                TransitionSceneManager.Instance.Transition(nextScene);
+            }
+            else
+            {
+                numberListCutscene = 0;
+                isDialogue = false;
+                if (learnAction)
+                {
+                    StartCoroutine(LearningActionWarning.Instance.LearnAction(attackScriptable));
+                }
+            }
+
+        }
+
+
+
+    }
+
     IEnumerator machineText()
     {
         isCoroutineRun = true;
