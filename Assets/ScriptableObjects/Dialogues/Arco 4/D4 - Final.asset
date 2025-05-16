@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72838054fec1684a904ccabd9dae52c, type: 3}
+  m_Name: D4 - Final
+  m_EditorClassIdentifier: 
+  text:
+  - Vc conseguiu???
+  - "Sim, a pol\xEDcia ir\xE1 dar uma li\xE7\xE3o nele"
+  - "QUE LEGAL!!! Agora tudo voltar\xE1 ao normal\u2026 As pessoas ir\xE3o esquecer
+    das fotos, voc\xEA poder\xE1 ser quem voc\xEA era antes"
+  - "N\xE3o... Eu n\xE3o sou mais quem eu era."
+  - "Muitas coisas aconteceram. conheci pessoas novas, tive que lidar com sentimentos
+    estranhos. At\xE9 mesmo senti sufoco..."
+  - "Mas talvez isso n\xE3o seja algo ruim."
+  - O que vem agora?
+  - "A parte em que a gente constroi o nosso pr\xF3prio caminho."
+  thisIs:
+  - Player
+  - Player
+  - NPC
+  - Player
+  - Player
+  - Player
+  - NPC
+  - Player
+  imagePlayer:
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  imageNPC:
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  textColor:
+  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  haveCutscene: 0
+  cutScene: []
+  numberCutScene: 
+  battleScene: 
+  isBattle: 0
+  enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
+  learnAction: 0
+  attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

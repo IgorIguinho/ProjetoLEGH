@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72838054fec1684a904ccabd9dae52c, type: 3}
+  m_Name: D4 - Porta
+  m_EditorClassIdentifier: 
+  text:
+  - Apenas duas pessoas podem acessar este chat. Total de pessoas (1/2)
+  - "J\xE1 tem algu\xE9m l\xE1 dentro. Ser\xE1 que \xE9 ele?"
+  - "Prov\xE1vel, mas nessa sala s\xF3 pode entrar mais uma pessoa"
+  - "Lele, eu j\xE1 disse o quanto eu gosto de vc, sabes disso. Mas o motivo pq gosto
+    tanto \xE9 que vc faz tudo parecer poss\xEDvel. Se voc\xEA conseguiu mudar tantas
+    coisas nesses \xFAltimos tempos, voc\xEA consegue mudar isso!"
+  - E se tudo der errado? E se eu gaguejar ou se ele expor ainda mais sobre mim???
+  - "Acho que n\xE3o estou pronto"
+  - "Voc\xEA n\xE3o vai passar pelo mesmo, porque vc aprendeu a como se defender
+    aqui na internet e agora voc\xEA pode finalmente seguir em frente e punir esse
+    idiota. Ele n\xE3o \xE9 t\xE3o assustador quanto antes n\xE3o \xE9?"
+  - P-Paquito???
+  - "Estive observando sua jornada Lele, te trouxe a esse mundo para que pudesse
+    se defender e entender seus sentimentos. Voc\xEA pode n\xE3o se sentir pronto,
+    mas definitivamente voc\xEA consegue mudar isso. Voc\xEA quer mudar isso?"
+  - Gente, obrigada por tudo... Eu vou entrar e detonar aquele imbecil!
+  - "Desejo sorte, vai l\xE1!!!"
+  thisIs:
+  - Player
+  - Player
+  - Player
+  - NPC
+  - Player
+  - 
+  - NPC
+  - Player
+  - NPC
+  - Player
+  - Player
+  imagePlayer:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  imageNPC:
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
+  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
+  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
+  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  textColor:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.29411766, g: 0.74509805, b: 0.8901961, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.29411766, g: 0.74509805, b: 0.8901961, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
+  haveCutscene: 0
+  cutScene: []
+  numberCutScene: 
+  battleScene: 
+  isBattle: 0
+  enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
+  learnAction: 0
+  attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

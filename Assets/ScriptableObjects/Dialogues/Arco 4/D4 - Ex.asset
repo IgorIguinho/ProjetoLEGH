@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72838054fec1684a904ccabd9dae52c, type: 3}
+  m_Name: D4 - Ex
+  m_EditorClassIdentifier: 
+  text:
+  - "Lele??? \xC9 voc\xEA ?!?!"
+  - Isso mesmo, sou eu!
+  - "Eu te procurei por toda a parte!!! Onde voc\xEA se escondeu, nem na sua casa
+    vc tava"
+  - "Isso n\xE3o \xE9 o que importa, temos uma conversa bem s\xE9ria para tratar
+    agora >:<"
+  - "SIM!!! Voc\xEA precisa urgentemente desmentir a acusa\xE7\xE3o de que eu vazei
+    foto sua!!!"
+  - "Acusa\xE7\xE3o?"
+  - "Isso, aquela sua amiga feia e gorducha denunciou contra mim por causa daquela
+    foto. Voc\xEA precisa desmentir aquela hist\xF3ria, a pol\xEDcia t\xE1 atr\xE1s
+    de mim!!!"
+  - "Eu n\xE3o vou mentir para pol\xEDcia, voc\xEA vazou aquela foto, Luca, voc\xEA
+    me traiu. Isso \xE9 pouco pelo que voc\xEA fez!!!"
+  - "Ei aquela foto foi vazada sem querer, eu enviei pro Pedro e ele acabou vazando\u2026"
+  - "Enfim, voc\xEA tem que dizer SIM para a pol\xEDcia que eu n\xE3o t\xF4 envolvido
+    nisso. Eu tenho uma reputa\xE7\xE3o a zelar, Lele"
+  - "VOC\xCA ENVIOU PRO PEDRO? Seu idiota, voc\xEA \xE9 pior do que eu pensava. Voc\xEA
+    ir\xE1 pagar por esse crime."
+  - "Ah, voc\xEA n\xE3o vai me ajudar, \xE9? E se eu contar para sua mam\xE3e que
+    voc\xEA enviou essas fotos horrorosas, vai fazer o que?"
+  - "Vou te denunciar por coa\xE7\xE3o emocional. Voc\xEA n\xE3o tem para onde fugir.
+    Vc ir\xE1 arcar com suas a\xE7\xF5es!!!"
+  - "Vou lhe mostrar as minhas a\xE7\xF5es"
+  thisIs:
+  - Player
+  - Player
+  - NPC
+  - Player
+  - NPC
+  - Player
+  - NPC
+  - Player
+  - NPC
+  - NPC
+  - Player
+  - NPC
+  - Player
+  - NPC
+  imagePlayer:
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  imageNPC:
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
+  textColor:
+  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
+  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
+  haveCutscene: 0
+  cutScene: []
+  numberCutScene: 
+  battleScene: 
+  isBattle: 0
+  enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
+  learnAction: 0
+  attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

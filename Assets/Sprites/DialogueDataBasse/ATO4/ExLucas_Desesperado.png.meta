@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 05c477c788c2dc54ba717cf4594392d2
+guid: 74a10523ef4914242bea3ea9bef10927
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,106 +121,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Luis ex frente idle_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 34
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f380b5fff6c32554ab2ea01b85e804ca
-      internalID: 776450758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luis ex frente idle_1
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 0
-        width: 34
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca267e316718cf549b3a681649d33cd6
-      internalID: -1003735125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luis ex frente idle_2
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 0
-        width: 34
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e788cdbbd2021e42a602d7a7d8e7989
-      internalID: 272878074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luis ex frente idle_3
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 0
-        width: 34
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52e429c1a9d687c4ea31db360f1bb411
-      internalID: -2051568339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7f81d0ddc00238348b754ee08fcd5261
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Luis ex frente idle_0: 776450758
-      Luis ex frente idle_1: -1003735125
-      Luis ex frente idle_2: 272878074
-      Luis ex frente idle_3: -2051568339
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

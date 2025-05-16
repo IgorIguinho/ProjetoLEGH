@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
 public class PlayerMov : MonoBehaviour
@@ -13,6 +14,8 @@ public class PlayerMov : MonoBehaviour
     private Vector2 moveDirection;
     Animator animatior;
     public GameObject soundWalk;
+    private GameObject directorCutscene;
+    public bool canMove = false;
 
     Rigidbody2D rb;
     // Start is called before the first frame update
@@ -22,13 +25,16 @@ public class PlayerMov : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         moveSpeed = entityStats.baseSpeed;
         animatior = gameObject.GetComponent<Animator>();
+        directorCutscene = GameObject.FindGameObjectWithTag("DirectorCutscene");
        
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (DialogueManager.Instance.isDialogue || DialogueManager.Instance.isPuzzle ) { animatior.Play("IdleBaixo");
+        if (DialogueManager.Instance.isDialogue || DialogueManager.Instance.isPuzzle ||canMove ) 
+        { 
+            animatior.Play("IdleBaixo");
             soundWalk.GetComponent<AudioSource>().Stop();
         }
         else { 
@@ -133,5 +139,10 @@ public class PlayerMov : MonoBehaviour
         {
             SceneManager.LoadScene("Battle");
         }
+    }
+
+    public void BlockMov(bool can)
+    {
+        canMove = can;
     }
 }

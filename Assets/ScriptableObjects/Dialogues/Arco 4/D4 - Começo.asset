@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72838054fec1684a904ccabd9dae52c, type: 3}
+  m_Name: "D4 - Come\xE7o"
+  m_EditorClassIdentifier: 
+  text:
+  - "Aqui parece estar vazio\u2026"
+  - "Talvez tenham percebido que aquela pessoa \xE9 um traste e n\xE3o deveria ser
+    idolatrada."
+  - "As pessoas n\xE3o mudam t\xE3o r\xE1pido\u2026 Deve estar acontecendo outra
+    coisa"
+  - Espero que ele tenha se arrependido
+  - "\u2026"
+  thisIs:
+  - Player
+  - NPC
+  - Player
+  - NPC
+  - Player
+  imagePlayer:
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
+  imageNPC:
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
+  textColor:
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
+  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  haveCutscene: 0
+  cutScene: []
+  numberCutScene: 
+  battleScene: 
+  isBattle: 0
+  enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
+  learnAction: 0
+  attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

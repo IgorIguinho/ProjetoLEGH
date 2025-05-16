@@ -49,7 +49,7 @@ public class HaterMiniGame : MonoBehaviour
         if (isLastMinigame)
         {
             listComments = listCommentsHaters;
-            autoCursor.StartAutomatedCursorSequence();
+            //autoCursor.StartAutomatedCursorSequence();
         }
         else 
         {
