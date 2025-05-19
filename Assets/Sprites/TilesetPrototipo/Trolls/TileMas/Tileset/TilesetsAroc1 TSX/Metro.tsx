@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.11.0" name="Metro" tilewidth="32" tileheight="32" tilecount="5920" columns="32">
+<tileset version="1.10" tiledversion="1.11.2" name="Metro" tilewidth="32" tileheight="32" tilecount="5920" columns="32">
  <image source="../../Art/TilesetArco1/20_Subway_and_Train_Station_32x32 2.png" width="1024" height="5920"/>
  <tile id="15">
   <objectgroup draworder="index" id="2">
@@ -274,6 +274,77 @@
  <tile id="680">
   <objectgroup draworder="index" id="2">
    <object id="1" x="4" y="0" width="26" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2522">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="1" y="0" width="31" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2523">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2551">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2552">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2553">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="1" y="0" width="31" height="32"/>
+   <object id="2" x="1" y="0" width="31" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2554">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2555">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2557">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="29" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2585">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="1" y="0" width="31" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2590">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2617">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="1" y="0" width="31" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2650">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2651">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="2652">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="32"/>
   </objectgroup>
  </tile>
 </tileset>
