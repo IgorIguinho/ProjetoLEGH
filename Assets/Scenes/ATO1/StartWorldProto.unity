@@ -660,6 +660,7 @@ MonoBehaviour:
   dialogueList: []
   thisIsList: []
   isDialogue: 0
+  numberOfDialogue: 0
   numberDialogueNpc: 0
   isBispoDialogue: 0
   isRevulocaoDialogue: 0
@@ -5225,7 +5226,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b6db9c73c22bb9a49a125a73a4429136, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 343e0bf4f47c7284999ad0ac3013f51c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
