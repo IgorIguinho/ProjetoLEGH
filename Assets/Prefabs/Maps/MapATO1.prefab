@@ -3205,7 +3205,7 @@ GameObject:
   - component: {fileID: 3768434426846592270}
   - component: {fileID: 6878302061596038757}
   - component: {fileID: 5388031369977628888}
-  - component: {fileID: 2019258196485777056}
+  - component: {fileID: 7098122174572844201}
   m_Layer: 0
   m_Name: npcs
   m_TagString: Untagged
@@ -4070,7 +4070,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!19719996 &2019258196485777056
+--- !u!19719996 &7098122174572844201
 TilemapCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7466,7 +7466,7 @@ GameObject:
   - component: {fileID: 3970704356153312380}
   - component: {fileID: 7612762377824785629}
   - component: {fileID: 4874742504070989874}
-  - component: {fileID: 4988936900461380712}
+  - component: {fileID: 2994815254494932362}
   m_Layer: 0
   m_Name: TIleMap-Npcs
   m_TagString: Untagged
@@ -8914,7 +8914,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!19719996 &4988936900461380712
+--- !u!19719996 &2994815254494932362
 TilemapCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
