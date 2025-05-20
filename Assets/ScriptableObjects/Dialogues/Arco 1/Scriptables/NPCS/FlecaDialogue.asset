@@ -20,7 +20,7 @@ MonoBehaviour:
   - 'Milho (nhoc nhoc), Milho (nhoc nhoc), Milho (nhoc nhoc), Milho (nhoc nhoc),
     Milho (nhoc nhoc), Milho (nhoc nhoc), Milho (nhoc nhoc), Milho (nhoc nhoc), Milho
     (nhoc nhoc), Milho (nhoc nhoc), Milho (nhoc nhoc), Milho (nhoc nhoc), '
-  - "Gente mais o que \xE9 isso?"
+  - "Gente mas o que \xE9 isso?"
   - "Ah, tbm n sei, mas se a gente der um item que vale dinheiro ele fala algo engra\xE7ado...
     t\xE1 ai faz dias KKKKKKKK"
   - "S\xF3 to aqui pra ver se alguma hora ele sai do personagem KKKKKKKK"
@@ -63,5 +63,10 @@ MonoBehaviour:
   battleScene: 
   isBattle: 0
   enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
   learnAction: 0
   attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

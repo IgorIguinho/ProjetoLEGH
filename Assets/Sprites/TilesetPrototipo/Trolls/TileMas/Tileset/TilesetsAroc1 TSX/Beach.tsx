@@ -3,7 +3,7 @@
  <image source="../../Art/TilesetArco1/21_Beach_32x32.png" width="1024" height="4000"/>
  <tile id="741">
   <objectgroup draworder="index" id="2">
-   <object id="1" x="2" y="6" width="26" height="26"/>
+   <object id="1" x="2" y="23.9375" width="26" height="8.06247"/>
   </objectgroup>
  </tile>
  <tile id="773">

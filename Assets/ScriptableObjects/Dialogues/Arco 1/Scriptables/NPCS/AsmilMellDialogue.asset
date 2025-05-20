@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text:
   - "kk amiga, olha esses homens do seculo 21, essa gera\xE7\xE3o t\xE1 perdida"
-  - "como assim? o que tem os homens do s\xE9culo 21?"
+  - "Como assim? o que tem os homens do s\xE9culo 21?"
   - "Voc\xEA n\xE3o viu? eles querem ser mimados agora, na vdd acho q nem s\xE3o
     homens kkkk"
   - "T\xE3o at\xE9 querendo dividir a conta, teve um que foi dar uma cantada em mim
@@ -78,5 +78,10 @@ MonoBehaviour:
   battleScene: 
   isBattle: 0
   enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
   learnAction: 0
   attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0
