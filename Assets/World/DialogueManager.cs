@@ -34,7 +34,7 @@ public class DialogueManager : MonoBehaviour
     //NPC
     public List<Sprite> imageNPCList;
     public GameObject gameobject;
-
+  
 
 
     //puzzle

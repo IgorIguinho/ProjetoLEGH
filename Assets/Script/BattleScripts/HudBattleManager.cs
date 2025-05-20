@@ -11,31 +11,35 @@ public class HudBattleManager : MonoBehaviour
 
     public static HudBattleManager Instance { get; private set; }
 
-  
-    
-    public GameObject actionStep;
-    public GameObject textStep;
-    public Image imageEnemy;
-    public GameObject loseScreen;
 
-    public Slider battleBar;
-
+    [Header("Text")]
     public TextMeshProUGUI textBalonPlayer;
     public TextMeshProUGUI textBalonEnemy;
+    public TextMeshProUGUI textGeral;
+    public TextMeshProUGUI textStm;
+    public TextMeshProUGUI actionDescripiton;
+    public TextMeshProUGUI energyDescription;
+
+    [Header("GameOjbect")]
+    public GameObject actionStep;
+    public GameObject loseScreen;
     public GameObject balonPlayer;
     public GameObject balonEnemy;
 
-    public Slider energyBar;
-
-    public Text textGeral;
-    public Text textPequeno;
-    public Text textStm;
-    public TextMeshProUGUI actionDescripiton;
-    public TextMeshProUGUI energyDescription;
-    
-
+    [Header("Lists")]
     public List<GameObject> buttons;
     public List<Text> valueStm;
+
+    [Header("Images")]
+    public Image imageEnemy;
+
+    [Header("Slides")]
+    public Slider battleBar;
+    public Image energyBar;
+    public float energyValue;
+    public List<Image> energyImages;
+    
+
     private void Awake()
     {
         // If there is an instance, and it's not me, delete myself.
@@ -53,7 +57,7 @@ public class HudBattleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startTextStep();
+        
      
         textGeral.text = "Bora para a luta??";
         NameForButtons();
@@ -66,7 +70,21 @@ public class HudBattleManager : MonoBehaviour
     {
         battleBar.value = BattleManager.Instance.valueBar;
         textStm.text = BattleManager.Instance.stamina.ToString() + "/" + BattleManager.Instance.staminaMax.ToString();
-        energyBar.value = BattleManager.Instance.stamina;
+      
+        if (BattleManager.Instance.state != BattleState.PLAYERTURN) 
+        {
+            for (int i = 0; i < buttons.Count; i++)
+            {
+                buttons[i].GetComponent<Button>().enabled = false;
+            }
+        }else
+        {
+            for (int i = 0; i < buttons.Count; i++)
+            {
+                buttons[i].GetComponent<Button>().enabled = true;
+            }
+        }
+
     }
 
     
@@ -75,7 +93,7 @@ public class HudBattleManager : MonoBehaviour
     {
         for (int i = 0; i < buttons.Count; i++)
         {
-            buttons[i].GetComponentInChildren<Text>().text = BattleManager.Instance.attacksPlayer[i].nameTitle;
+            buttons[i].GetComponentInChildren<TextMeshProUGUI>().text = BattleManager.Instance.attacksPlayer[i].nameTitle;
 
             int currentIdex = i;
 
@@ -167,18 +185,11 @@ public class HudBattleManager : MonoBehaviour
 
     }
 
-    public void startActionStep()
+    public void AnimationEnergyBar()
     {
-        actionStep.SetActive(true);
-        textStep.SetActive(false);
-        NameForButtons();
-
+        energyValue = BattleManager.Instance.stamina;
+        energyBar.sprite = energyImages[(int)energyValue].sprite;
     }
 
-    public void startTextStep()
-    {
-        textStep.SetActive(true);
-        actionStep.SetActive(false);
-
-    }
+    
 }

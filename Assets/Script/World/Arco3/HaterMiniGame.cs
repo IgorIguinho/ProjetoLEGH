@@ -49,7 +49,7 @@ public class HaterMiniGame : MonoBehaviour
         if (isLastMinigame)
         {
             listComments = listCommentsHaters;
-            //autoCursor.StartAutomatedCursorSequence();
+            autoCursor.StartAutomatedCursorSequence();
         }
         else 
         {
@@ -188,8 +188,7 @@ public static class ListRandomRange
     {
         for (int i = 0; i < list.Count; i++)
         {
-            int r = Random.Range(0, i + 1);
-
+            int r = Random.Range(i, list.Count);
             T temp = list[i];
             list[i] = list[r];
             list[r] = temp;

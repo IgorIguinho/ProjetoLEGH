@@ -3482,7 +3482,7 @@ MonoBehaviour:
   enemyToPass: {fileID: 11400000, guid: 5c536c924e3363d4590a604e20f26355, type: 2}
   DialogueScriptable: {fileID: 0}
   startDialogue: 0
-  playerRespawn: {x: 0, y: 0, z: 0}
+  playerRespawn: {x: 20.33, y: 25.82, z: 0}
   numberMachineOpen: 0
   learningAction: 0
   actionToLearning: {fileID: 0}

@@ -687,6 +687,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: b2e6b7014145fad4d9beaa09f83195e8, type: 2}
   respawnPlayer: {fileID: 1903497826}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 60543102}
   textComentText: {fileID: 1477536376}
@@ -939,6 +941,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: b2e6b7014145fad4d9beaa09f83195e8, type: 2}
   respawnPlayer: {fileID: 836523861}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 1591021299}
   textComentText: {fileID: 1116716048}
@@ -1500,6 +1504,7 @@ MonoBehaviour:
   dialogueList: []
   thisIsList: []
   isDialogue: 0
+  numberOfDialogue: 0
   numberDialogueNpc: 0
   isBispoDialogue: 0
   isRevulocaoDialogue: 0
@@ -1655,6 +1660,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: b2e6b7014145fad4d9beaa09f83195e8, type: 2}
   respawnPlayer: {fileID: 1187228618}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 647602317}
   textComentText: {fileID: 220960858}
@@ -3961,6 +3968,7 @@ MonoBehaviour:
   arrowToMachine: {fileID: 1840883261}
   numberMachineOpen: 4
   startMiniGame: 0
+  actionToLearn: {fileID: 0}
   rotationSpeed: 5
 --- !u!4 &579366477
 Transform:
@@ -5015,6 +5023,8 @@ MonoBehaviour:
   startDialogue: 0
   playerRespawn: {x: 0, y: 0, z: 0}
   numberMachineOpen: 0
+  learningAction: 0
+  actionToLearning: {fileID: 0}
   puzzlesComplets: 000000
   actionPlayer:
   - {fileID: 11400000, guid: bcda3e4064821314790405de8258170b, type: 2}
@@ -7782,6 +7792,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: b2e6b7014145fad4d9beaa09f83195e8, type: 2}
   respawnPlayer: {fileID: 1645782167}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 1980096132}
   textComentText: {fileID: 1630630018}
@@ -11115,6 +11127,8 @@ MonoBehaviour:
   isLastMinigame: 1
   dialogueLose: {fileID: 11400000, guid: fd000eb63cf854447bed51b6ebb0dc30, type: 2}
   respawnPlayer: {fileID: 200160972}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 868227025}
   textComentText: {fileID: 512762915}

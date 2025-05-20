@@ -129,7 +129,6 @@ public class BattleManager : MonoBehaviour
             {
                 audioSource.clip = attacksPlayer[TimingActionObject].audioClip;
                 audioSource.Play();
-                HudBattleManager.Instance.startTextStep();
                 StartCoroutine(PlayerAttack(TimingActionObject));
                 state = BattleState.PLAYERTURN;
                 yield break;
@@ -146,7 +145,6 @@ public class BattleManager : MonoBehaviour
             else //Ações timing acontece
             {
 
-                HudBattleManager.Instance.startTextStep();
                 StartCoroutine(EnemyAttack(TimingActionObjectEnemy));
                 state = BattleState.ENEMYTURN;
                 yield break;
@@ -155,7 +153,7 @@ public class BattleManager : MonoBehaviour
         }
 
         state = BattleState.PLAYERTURN;
-        HudBattleManager.Instance.startActionStep();
+  
         yield break;
        
     }
@@ -501,7 +499,6 @@ public class BattleManager : MonoBehaviour
             {
                 audioSource.clip = attacksPlayer[i].audioClip;
                 audioSource.Play();
-                HudBattleManager.Instance.startTextStep();
                 StartCoroutine(PlayerAttack(i));
             }
         }
