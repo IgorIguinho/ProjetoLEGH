@@ -428,6 +428,7 @@ MonoBehaviour:
   dialogueList: []
   thisIsList: []
   isDialogue: 0
+  numberOfDialogue: 0
   numberDialogueNpc: 0
   isBispoDialogue: 0
   isRevulocaoDialogue: 0
@@ -1329,6 +1330,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649542880}
   m_CullTransparentMesh: 1
+--- !u!1 &788623777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 788623780}
+  - component: {fileID: 788623778}
+  - component: {fileID: 788623779}
+  m_Layer: 0
+  m_Name: SignaNextDialogoStep
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &788623778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788623777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 1cef1a11fdaaaac479b5b4a9fcd4f5d9, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 788623779}
+          m_TargetAssemblyTypeName: SignalScriptNextDialogueStep, Assembly-CSharp
+          m_MethodName: NextStepDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &788623779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788623777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9573cfab5b314444a83bddc83f845a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &788623780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788623777}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.50651264, y: -2.2575188, z: -2.7871635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1277907171}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &852756229 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 117318234824493002, guid: 636a243bac2d8094b8fa2a6ee8356a4d, type: 3}
@@ -1800,6 +1876,8 @@ PlayableDirector:
     value: {fileID: 2145587365}
   - key: {fileID: 1465950443559530494, guid: c7f994a5fbfaa8f45aed79c38fe726e7, type: 2}
     value: {fileID: 1564859487}
+  - key: {fileID: 8108928415290141092, guid: c7f994a5fbfaa8f45aed79c38fe726e7, type: 2}
+    value: {fileID: 788623778}
   m_ExposedReferences:
     m_References:
     - bf91d5d3643230248b9277bfd5ecde76: {fileID: 420716882}
@@ -1815,7 +1893,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 2.7393086}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 788623780}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1280801413

@@ -2999,6 +2999,7 @@ MonoBehaviour:
   dialogueList: []
   thisIsList: []
   isDialogue: 0
+  numberOfDialogue: 0
   numberDialogueNpc: 0
   isBispoDialogue: 0
   isRevulocaoDialogue: 0
@@ -3462,6 +3463,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: 077f33f9feac863449c9cf9dc8c6b028, type: 2}
   respawnPlayer: {fileID: 1834315307}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 1174107594}
   textComentText: {fileID: 892143817}
@@ -6872,6 +6875,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: 077f33f9feac863449c9cf9dc8c6b028, type: 2}
   respawnPlayer: {fileID: 302332032}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 189012323}
   textComentText: {fileID: 511525708}
@@ -7151,6 +7156,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: 83c424e5e787c5b4081d6643e2514629, type: 2}
   respawnPlayer: {fileID: 299249005}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 503734108}
   textComentText: {fileID: 835178000}
@@ -8946,6 +8953,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699333886}
   m_CullTransparentMesh: 1
+--- !u!1 &703579470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 703579473}
+  - component: {fileID: 703579471}
+  - component: {fileID: 703579472}
+  m_Layer: 0
+  m_Name: SignaNextDialogoStep
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &703579471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703579470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 1cef1a11fdaaaac479b5b4a9fcd4f5d9, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 703579472}
+          m_TargetAssemblyTypeName: SignalScriptNextDialogueStep, Assembly-CSharp
+          m_MethodName: NextStepDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &703579472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703579470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9573cfab5b314444a83bddc83f845a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &703579473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703579470}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.50651264, y: -2.2575188, z: -2.7871635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1277907171}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &711223003
 GameObject:
   m_ObjectHideFlags: 0
@@ -14943,7 +15025,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1277907169}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 418f8335809966b468e1fe239903d5f3, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 24ced82942f795e47812c83e1df4dccb, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -14968,19 +15050,19 @@ PlayableDirector:
   - key: {fileID: -987709025646550469, guid: 04dd25583984e864d990cb36e8b5ca41, type: 2}
     value: {fileID: 4264134401718421715}
   - key: {fileID: 6748509425473417592, guid: 04dd25583984e864d990cb36e8b5ca41, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 4264134401718421716}
   - key: {fileID: 80441011662602973, guid: 04dd25583984e864d990cb36e8b5ca41, type: 2}
     value: {fileID: 4264134401718421717}
   - key: {fileID: -5455582204058196094, guid: 04dd25583984e864d990cb36e8b5ca41, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 4264134401718421716}
   - key: {fileID: -1293727685250349867, guid: 04dd25583984e864d990cb36e8b5ca41, type: 2}
     value: {fileID: 0}
   - key: {fileID: 1315867001292931894, guid: 04dd25583984e864d990cb36e8b5ca41, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 2060743346}
   - key: {fileID: -1488613258309218392, guid: 04dd25583984e864d990cb36e8b5ca41, type: 2}
     value: {fileID: 2060743345}
   - key: {fileID: 7732256084077987376, guid: 04dd25583984e864d990cb36e8b5ca41, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 2060743346}
   - key: {fileID: 7710089213691820079, guid: 04dd25583984e864d990cb36e8b5ca41, type: 2}
     value: {fileID: 2060743347}
   - key: {fileID: -3807172058396086273, guid: 418f8335809966b468e1fe239903d5f3, type: 2}
@@ -14989,6 +15071,14 @@ PlayableDirector:
     value: {fileID: 1611377434009609940}
   - key: {fileID: 4828755907450976935, guid: 418f8335809966b468e1fe239903d5f3, type: 2}
     value: {fileID: 1611377434009609941}
+  - key: {fileID: 8963306451745566960, guid: 418f8335809966b468e1fe239903d5f3, type: 2}
+    value: {fileID: 703579471}
+  - key: {fileID: 2149191621963457076, guid: fe9c5421faf19604b906422cc101224b, type: 2}
+    value: {fileID: 703579471}
+  - key: {fileID: -2437403787527004068, guid: 04dd25583984e864d990cb36e8b5ca41, type: 2}
+    value: {fileID: 703579471}
+  - key: {fileID: 4799142839053865069, guid: 24ced82942f795e47812c83e1df4dccb, type: 2}
+    value: {fileID: 703579471}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1277907171
@@ -15003,7 +15093,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 2.7393086}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 703579473}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1286726120
@@ -16137,6 +16228,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: 077f33f9feac863449c9cf9dc8c6b028, type: 2}
   respawnPlayer: {fileID: 1251946903}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 567630849}
   textComentText: {fileID: 27490426}
@@ -16368,6 +16461,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: 077f33f9feac863449c9cf9dc8c6b028, type: 2}
   respawnPlayer: {fileID: 711223004}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 432270958}
   textComentText: {fileID: 1097091433}
@@ -23453,6 +23548,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1976673152982442942, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
   m_PrefabInstance: {fileID: 2060743343}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &2060743346 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5936061417399398178, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
+  m_PrefabInstance: {fileID: 2060743343}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2060743347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24502,6 +24602,11 @@ Transform:
 --- !u!1 &4264134401718421715 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1976673152982442942, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
+  m_PrefabInstance: {fileID: 4264134401718421713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4264134401718421716 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5936061417399398178, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
   m_PrefabInstance: {fileID: 4264134401718421713}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &4264134401718421717

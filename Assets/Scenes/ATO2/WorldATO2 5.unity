@@ -676,6 +676,7 @@ MonoBehaviour:
   dialogueList: []
   thisIsList: []
   isDialogue: 0
+  numberOfDialogue: 0
   numberDialogueNpc: 0
   isBispoDialogue: 0
   isRevulocaoDialogue: 0
@@ -2894,63 +2895,6 @@ Transform:
   - {fileID: 93505249}
   m_Father: {fileID: 1682377054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &855352139
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2623149672408050164, guid: f83808cb1b1ad2d4c907dec86f987ceb, type: 3}
-      propertyPath: m_Name
-      value: ShopPaquito
-      objectReference: {fileID: 0}
-    - target: {fileID: 6457683681819116914, guid: f83808cb1b1ad2d4c907dec86f987ceb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 6457683681819116914, guid: f83808cb1b1ad2d4c907dec86f987ceb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 27.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 6457683681819116914, guid: f83808cb1b1ad2d4c907dec86f987ceb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.07143696
-      objectReference: {fileID: 0}
-    - target: {fileID: 6457683681819116914, guid: f83808cb1b1ad2d4c907dec86f987ceb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6457683681819116914, guid: f83808cb1b1ad2d4c907dec86f987ceb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6457683681819116914, guid: f83808cb1b1ad2d4c907dec86f987ceb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6457683681819116914, guid: f83808cb1b1ad2d4c907dec86f987ceb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6457683681819116914, guid: f83808cb1b1ad2d4c907dec86f987ceb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6457683681819116914, guid: f83808cb1b1ad2d4c907dec86f987ceb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6457683681819116914, guid: f83808cb1b1ad2d4c907dec86f987ceb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f83808cb1b1ad2d4c907dec86f987ceb, type: 3}
 --- !u!1 &890413143
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,7 +3662,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 2.7393086}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1815802133}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1314896318
@@ -5261,6 +5206,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2121500644}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1815802132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1815802133}
+  - component: {fileID: 1815802135}
+  - component: {fileID: 1815802134}
+  m_Layer: 0
+  m_Name: SignaNextDialogoStep
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1815802133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815802132}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.50651264, y: -2.2575188, z: -2.7871635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1277907171}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1815802134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815802132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9573cfab5b314444a83bddc83f845a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1815802135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815802132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 1cef1a11fdaaaac479b5b4a9fcd4f5d9, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1815802134}
+          m_TargetAssemblyTypeName: SignalScriptNextDialogueStep, Assembly-CSharp
+          m_MethodName: NextStepDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1826237416
 GameObject:
   m_ObjectHideFlags: 0
@@ -6404,5 +6424,4 @@ SceneRoots:
   - {fileID: 562911245}
   - {fileID: 101699234}
   - {fileID: 1939287146}
-  - {fileID: 855352139}
   - {fileID: 247376617}

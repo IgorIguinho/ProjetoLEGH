@@ -687,6 +687,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: b2e6b7014145fad4d9beaa09f83195e8, type: 2}
   respawnPlayer: {fileID: 1903497826}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 60543102}
   textComentText: {fileID: 1477536376}
@@ -761,6 +763,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 0}
   respawnPlayer: {fileID: 0}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 1182941940}
   textComentText: {fileID: 461744124}
@@ -833,6 +837,7 @@ MonoBehaviour:
   dialogueList: []
   thisIsList: []
   isDialogue: 0
+  numberOfDialogue: 0
   numberDialogueNpc: 0
   isBispoDialogue: 0
   isRevulocaoDialogue: 0
@@ -1659,6 +1664,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5950020158466121432, guid: 198c38caada9c1c45bcc05d7b1b8f416, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1122559324}
+    - targetCorrespondingSourceObject: {fileID: 5950020158466121432, guid: 198c38caada9c1c45bcc05d7b1b8f416, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1122559325}
   m_SourcePrefab: {fileID: 100100000, guid: 198c38caada9c1c45bcc05d7b1b8f416, type: 3}
 --- !u!4 &341090889 stripped
 Transform:
@@ -2635,6 +2643,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 2c2ce548956b83f448b5c9d9c204ab93, type: 2}
+    - target: {fileID: 5936061417399398178, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2c2ce548956b83f448b5c9d9c204ab93, type: 2}
+    - target: {fileID: 7652298754023332182, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
+      propertyPath: animationName
+      value: HaterBlock
+      objectReference: {fileID: 0}
     - target: {fileID: 8262634111637214218, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2657,6 +2673,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1976673152982442942, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
   m_PrefabInstance: {fileID: 505446155}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &505446158 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5936061417399398178, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
+  m_PrefabInstance: {fileID: 505446155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &505446159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2675,10 +2696,10 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: Play
-          m_Mode: 5
+        - m_Target: {fileID: 505446160}
+          m_TargetAssemblyTypeName: TradeAnimationDialogue, Assembly-CSharp
+          m_MethodName: TradeAnimatioon
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2687,6 +2708,17 @@ MonoBehaviour:
             m_StringArgument: HaterBlock
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &505446160 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7652298754023332182, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
+  m_PrefabInstance: {fileID: 505446155}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505446157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd66ea0f734f675448097df24dff9c69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &543513306
 GameObject:
   m_ObjectHideFlags: 0
@@ -2752,6 +2784,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 0}
   respawnPlayer: {fileID: 0}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 937464373}
   textComentText: {fileID: 504310393}
@@ -2999,6 +3033,7 @@ MonoBehaviour:
   arrowToMachine: {fileID: 1840883261}
   numberMachineOpen: 0
   startMiniGame: 0
+  actionToLearn: {fileID: 0}
   rotationSpeed: 5
 --- !u!4 &579366477
 Transform:
@@ -3852,6 +3887,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 0}
   respawnPlayer: {fileID: 0}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 1944062020}
   textComentText: {fileID: 821685426}
@@ -5052,6 +5089,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   animationName: Rainha_Bloquada
+--- !u!114 &1122559325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122559321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 0}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1122559324}
+          m_TargetAssemblyTypeName: TradeAnimation, Assembly-CSharp
+          m_MethodName: TradeAnimatioon
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1153615083
 GameObject:
   m_ObjectHideFlags: 0
@@ -5920,7 +5987,7 @@ PlayableDirector:
   - key: {fileID: 2418142805332992326, guid: 010cc41acd621ff45909807620c66361, type: 2}
     value: {fileID: 505446159}
   - key: {fileID: 188465579289536962, guid: 010cc41acd621ff45909807620c66361, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 505446158}
   - key: {fileID: 5205600178604275518, guid: 010cc41acd621ff45909807620c66361, type: 2}
     value: {fileID: 1113196785}
   - key: {fileID: -122173373077869473, guid: cbf33a82cd45c72449b0c576876a7048, type: 2}
@@ -5933,6 +6000,12 @@ PlayableDirector:
     value: {fileID: 2253211602410430696}
   - key: {fileID: -4591864587650931226, guid: cbf33a82cd45c72449b0c576876a7048, type: 2}
     value: {fileID: 2124130166}
+  - key: {fileID: -1491920356640677080, guid: cbf33a82cd45c72449b0c576876a7048, type: 2}
+    value: {fileID: 1871035306}
+  - key: {fileID: 8607837989719495928, guid: 010cc41acd621ff45909807620c66361, type: 2}
+    value: {fileID: 1871035306}
+  - key: {fileID: 8875281023255762088, guid: 010cc41acd621ff45909807620c66361, type: 2}
+    value: {fileID: 1122559325}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1277907171
@@ -5947,7 +6020,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 2.7393086}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1871035308}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1314896318
@@ -6787,6 +6861,8 @@ MonoBehaviour:
   isLastMinigame: 0
   dialogueLose: {fileID: 11400000, guid: b2e6b7014145fad4d9beaa09f83195e8, type: 2}
   respawnPlayer: {fileID: 1187228618}
+  learnAction: 0
+  actionToLearn: {fileID: 0}
   numberOfCommentsShow: 0
   nickNameText: {fileID: 1656456305}
   textComentText: {fileID: 230161200}
@@ -8189,6 +8265,81 @@ Transform:
   - {fileID: 1952791910}
   - {fileID: 605323086}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1871035305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1871035308}
+  - component: {fileID: 1871035306}
+  - component: {fileID: 1871035307}
+  m_Layer: 0
+  m_Name: SignaNextDialogoStep
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1871035306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871035305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 1cef1a11fdaaaac479b5b4a9fcd4f5d9, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1871035307}
+          m_TargetAssemblyTypeName: SignalScriptNextDialogueStep, Assembly-CSharp
+          m_MethodName: NextStepDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1871035307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871035305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9573cfab5b314444a83bddc83f845a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1871035308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871035305}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.50651264, y: -2.2575188, z: -2.7871635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1277907171}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1903497825
 GameObject:
