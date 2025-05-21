@@ -76,7 +76,7 @@ public class BattleManager : MonoBehaviour
     {
 
        
-        enemyAtributes = PassInfos.Instance.enemyToPass;     
+        enemyAtributes = PassInfos.Instance.enemyToPass;    // Puxa os atributos do inimigo  
         HudBattleManager.Instance.imageEnemy.GetComponent<Animator>().Play(enemyAtributes.animationBattle.name);   
        
         enemyAction = new List<AttackScriptable>(enemyAtributes.AttackScripts);
@@ -94,7 +94,7 @@ public class BattleManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Tab)) 
+        if (Input.GetKey(KeyCode.Tab))  // Hack para ganhar a batalha
         {
 
             if (enemyAtributes.haveDialogueNext == true)
@@ -105,7 +105,7 @@ public class BattleManager : MonoBehaviour
 
             SceneManager.LoadScene(enemyAtributes.nextScene);
         }
-        else if (Input.GetKey(KeyCode.L))
+        else if (Input.GetKey(KeyCode.L))// Hack para perder a batalha
         {
             valueBar -= 100;
         }
@@ -115,7 +115,7 @@ public class BattleManager : MonoBehaviour
     {
 
 
-        HudBattleManager.Instance.textGeral.text = "Bora reagir?";
+        HudBattleManager.Instance.textGeral.text = "Sua Ação";
 
 
         yield return new WaitForSeconds(2f);
@@ -127,9 +127,8 @@ public class BattleManager : MonoBehaviour
             }
             else //Ações timing acontece
             {
-                audioSource.clip = attacksPlayer[TimingActionObject].audioClip;
-                audioSource.Play();
-                StartCoroutine(PlayerAttack(TimingActionObject));
+               
+                StartCoroutine(PlayerAttack(TimingActionObject));// Chama a ação do jogador que estava em preparo
                 state = BattleState.PLAYERTURN;
                 yield break;
 
@@ -145,7 +144,7 @@ public class BattleManager : MonoBehaviour
             else //Ações timing acontece
             {
 
-                StartCoroutine(EnemyAttack(TimingActionObjectEnemy));
+                StartCoroutine(EnemyAttack(TimingActionObjectEnemy)); // Chama a ação do inimmgo que estava em preparo
                 state = BattleState.ENEMYTURN;
                 yield break;
 
@@ -414,75 +413,71 @@ public class BattleManager : MonoBehaviour
         { 
             //valueBar -= enemyAction[i].dmg + modificadorEnemy;
 
-            StartCoroutine(BarValueAnimation(enemyAction[i].dmg + modificadorEnemy));
-            StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false));
-            audioSource.clip = enemyAction[i].audioClip;
-            audioSource.Play();
+            StartCoroutine(BarValueAnimation(enemyAction[i].dmg + modificadorEnemy)); //Puxa a coroutine quue faz o dano a barra
+            StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false)); //Puxa a animação do ataque do inimigo
+            modificadorEnemy = 0;
         }
-        else if (enemyAction[i].typeAction == "Agrupamento")
+        else if (enemyAction[i].typeAction == "Agrupamento") // Ataque que vai juntar inimigos para a batalha, demora x turnos pra funcionar
         {
-            if (turnsForTimingActionEnemy == maxTurnsForActionEnemy && startTimingActionEnemy)
+            if (turnsForTimingActionEnemy == maxTurnsForActionEnemy && startTimingActionEnemy)//aviso que o roximo turno é o ataque
             {
-                Debug.Log("Deu certo");
+                StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false)); //Puxa a animação do ataque do inimigo
+                //Debug.Log("Deu certo");
                 enemyAction.Clear();
                 enemyAction.Add(enemyAtributes.actionBlockEnemy);
                 startTimingActionEnemy = false;
-                
+             
+
             }
-            else if (!startTimingActionEnemy)
+            else if (!startTimingActionEnemy) //É o começo do ataque, assim que o inimigo usa faz isso:
             {
-                Debug.Log("Começou");
+                StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false)); 
+                //Debug.Log("Começou");
                 turnsForTimingActionEnemy = 0;
                 startTimingActionEnemy = true;
                 maxTurnsForActionEnemy = enemyAction[i].turnsForTimingActionEnemy;
                 TimingActionObjectEnemy = i;
             }
-            else
+            else //O inimigo finalmente ataca
             {
-                //valueBar -= enemyAction[i].dmg + modificadorEnemy;
-                StartCoroutine(BarValueAnimation(enemyAction[i].dmg + modificadorEnemy));
+                StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false));
+                StartCoroutine(BarValueAnimation(enemyAction[i].dmg + modificadorEnemy)); modificadorEnemy = 0;
                 HudBattleManager.Instance.textGeral.text = enemyAction[1].fraseAction[Random.Range(0, enemyAction[i].fraseAction.Count)];
-                audioSource.clip = enemyAction[i].audioClip;
-                audioSource.Play();
+           
             }
         }
-        else if (enemyAction[i].typeAction == "Roubo")
+        else if (enemyAction[i].typeAction == "Roubo") //Ação de roubar estamina do jogador
         {
-
-
             stamina -= 5 ;
             HudBattleManager.Instance.textStm.color = Color.red;
-            StartCoroutine(BarValueAnimation(enemyAction[i].dmg + modificadorEnemy));
+            StartCoroutine(BarValueAnimation(enemyAction[i].dmg + modificadorEnemy)); modificadorEnemy = 0;
             StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false));
-            audioSource.clip = enemyAction[i].audioClip;
-            audioSource.Play();
         }
-        else if (enemyAction[i].typeAction == "BuffOrDebuffAction")
+        else if (enemyAction[i].typeAction == "BuffOrDebuffAction") //Ação de bufar a proxima ação do inimigo ou debuff na ação do player
         {
             if (enemyAction[i].buffPlayer)
             {
-                modificadorPlayer = -enemyAction[i].modificadorBuffOrDebuff;             
+                modificadorPlayer = -enemyAction[i].modificadorBuffOrDebuff;// Modifica a ação do player         
             }
             else 
             {
-                modificadorEnemy = enemyAction[i].modificadorBuffOrDebuff;
+                modificadorEnemy = enemyAction[i].modificadorBuffOrDebuff;//Modifica a ação do inimigo
             }
-            //valueBar -= enemyAction[i].dmg + modificadorEnemy;
+            
             StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false));
-            audioSource.clip = enemyAction[i].audioClip;
-            audioSource.Play();
+            
         }
         
 
         yield return new WaitForSeconds(2f);
         HudBattleManager.Instance.textStm.color = Color.white;
-        modificadorEnemy = 0;
-        if (valueBar >= valueWinEnemy)
+        
+        if (valueBar >= valueWinEnemy) //Condição de perda
         {
             HudBattleManager.Instance.loseScreen.SetActive(true);
             yield return new WaitForSeconds(1f);
             PassInfos.Instance.DialogueScriptable = enemyAtributes.dialogueDerrota;
-            TransitionSceneManager.Instance.Transition(enemyAtributes.sceneDerrota);
+            TransitionSceneManager.Instance.Transition(enemyAtributes.sceneDerrota); // muda pra cena de derrota
         }
         else
         {
