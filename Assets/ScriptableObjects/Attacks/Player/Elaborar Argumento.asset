@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: Elaborar Argumento
   m_EditorClassIdentifier: 
   nameTitle: Elaborar Argumento
-  useCombat: 
+  useCombat: "Sua proxima a\xE7\xE3o tera um bon\xFBs"
   combatDescr: "Voc\xEA se prepara e procura na sua menta argumentos que possa usar,
     a proxima a\xE7\xE3o sera mais efetiva"
   fraseAction:
   - preparou um argumento
   dmg: 0
-  costStm: -5
-  learned: 0
+  costStm: -2
+  learned: 1
   audioClip: {fileID: 0}
   typeAction: BuffOrDebuffAction
   buffPlayer: 1
-  modificadorBuffOrDebuff: -2
+  modificadorBuffOrDebuff: -4
   turnsForTimingAction: 0
   turnsForTimingActionEnemy: 0

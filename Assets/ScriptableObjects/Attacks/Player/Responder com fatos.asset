@@ -17,8 +17,8 @@ MonoBehaviour:
   combatDescr: "Voc\xEA tenta debater com o oponente"
   fraseAction:
   - respondeu com fatos
-  dmg: -2
-  costStm: -3
+  dmg: -3
+  costStm: -2
   learned: 0
   audioClip: {fileID: 0}
   typeAction: Normal

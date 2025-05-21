@@ -19,8 +19,8 @@ MonoBehaviour:
   fraseAction:
   - privou perfil
   - privou perfil
-  dmg: -3
-  costStm: -5
+  dmg: -4
+  costStm: -4
   learned: 0
   audioClip: {fileID: 0}
   typeAction: Normal

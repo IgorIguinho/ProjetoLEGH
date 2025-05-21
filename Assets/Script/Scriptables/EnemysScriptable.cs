@@ -7,9 +7,10 @@ public class EnemysScriptable : ScriptableObject
 {
   public List<AttackScriptable> AttackScripts;
     [Header("Efetividade ações do player")]
-  public List<AttackScriptable> superEffective;
-  public List<AttackScriptable> noEffective;
-  public List<AttackScriptable> invunerable;
+    public List<AttackScriptable> superEffective;
+    public List<AttackScriptable> noEffective;
+    public List<AttackScriptable> invunerable;
+    public List <AttackScriptable> actionIncorrect;
     [Space(4)]
     public AudioClip musicBattle;
     public Sprite spriteBattle;

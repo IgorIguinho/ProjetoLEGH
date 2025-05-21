@@ -21,6 +21,9 @@ MonoBehaviour:
   noEffective:
   - {fileID: 11400000, guid: bcda3e4064821314790405de8258170b, type: 2}
   invunerable: []
+  actionIncorrect:
+  - {fileID: 11400000, guid: bcda3e4064821314790405de8258170b, type: 2}
+  - {fileID: 11400000, guid: 8dfa63ec5c60d2c41aa5dbc60b00df1f, type: 2}
   musicBattle: {fileID: 8300000, guid: 6756ceaf08d0a3c4098e6f74244c9dcf, type: 3}
   spriteBattle: {fileID: -1366961809, guid: 9fcb669c63740414bb8cf6ea98719ac5, type: 3}
   actionBlockEnemy: {fileID: 0}
@@ -28,5 +31,7 @@ MonoBehaviour:
   haveDialogueNext: 0
   nextDialogue: {fileID: 0}
   nextScene: StartWorldProto3
+  haveLearAction: 0
+  actionToLearn: {fileID: 0}
   dialogueDerrota: {fileID: 11400000, guid: cc3f791d3741bca458ce9be23fb2a8d7, type: 2}
   sceneDerrota: ComunidadePAQ

@@ -13,16 +13,15 @@ MonoBehaviour:
   m_Name: Chamar Autoridades
   m_EditorClassIdentifier: 
   nameTitle: 
-  descr: 
-  combatDescr: "Voc\xEA liga para as autoridades, elas chegaram em 4 turnos podendo
-    finalar o combate dependendo do crime do oponente"
+  useCombat: 
+  combatDescr: Voce denunciou, vai demorar 10 turnos
   fraseAction: []
-  dmg: 0
-  costStm: -10
+  dmg: 18
+  costStm: -8
   learned: 0
   audioClip: {fileID: 0}
-  typeAction: 
+  typeAction: WaintingTurns
   buffPlayer: 0
   modificadorBuffOrDebuff: 0
-  turnsForTimingAction: 0
+  turnsForTimingAction: 5
   turnsForTimingActionEnemy: 0

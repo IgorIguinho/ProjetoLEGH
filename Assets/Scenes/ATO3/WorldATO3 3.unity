@@ -2274,7 +2274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorVisual: {fileID: 1921711818}
-  normalCursorSprite: {fileID: 21300000, guid: 55ae0a3554c244849bc84f43ecb689ee, type: 3}
+  normalCursorSprite: {fileID: 0}
   clickCursorSprite: {fileID: 21300000, guid: 1fccaab626c440b4c916715f11139605, type: 3}
   predefinedActions:
   - targetPosition: {fileID: 1884896034}

@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Respirar fundo
   m_EditorClassIdentifier: 
   nameTitle: Respirar
-  useCombat: "Voc\xEA respirou fundo"
+  useCombat: "Voc\xEA restaurou sua energia"
   combatDescr: "Voc\xEA respira e se acalma, aumentando sua energia"
   fraseAction:
   - "Calma Lel\xEA, camla"
   - Relaxa, vou ficar bem
   dmg: 0
-  costStm: 5
+  costStm: 6
   learned: 1
   audioClip: {fileID: 8300000, guid: c56bc65bc42314c498474dc2441d150a, type: 3}
   typeAction: RestoreEnergia

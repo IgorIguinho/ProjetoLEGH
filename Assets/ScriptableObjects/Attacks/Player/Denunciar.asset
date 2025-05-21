@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Denunciar
   m_EditorClassIdentifier: 
   nameTitle: Denunciar
-  useCombat: 
+  useCombat: Voce denunciou, vai demorar 2 turnos
   combatDescr: "Voc\xEA denuncia o oponente, demora 2 turnos para a denunciar se
     completar pois a modera\xE7\xE3o ira olhar o perfil do oponente"
   fraseAction:
   - denunciou
-  dmg: -5
-  costStm: -5
+  dmg: -6
+  costStm: -4
   learned: 0
   audioClip: {fileID: 0}
   typeAction: WaintingTurns

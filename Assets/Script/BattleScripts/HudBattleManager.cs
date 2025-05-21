@@ -28,7 +28,6 @@ public class HudBattleManager : MonoBehaviour
 
     [Header("Lists")]
     public List<GameObject> buttons;
-    public List<Text> valueStm;
 
     [Header("Images")]
     public Image imageEnemy;
@@ -37,7 +36,7 @@ public class HudBattleManager : MonoBehaviour
     public Slider battleBar;
     public Image energyBar;
     public float energyValue;
-    public List<Image> energyImages;
+    public List<Sprite> energyImages;
     
 
     private void Awake()
@@ -57,8 +56,6 @@ public class HudBattleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-     
         textGeral.text = "Bora para a luta??";
         NameForButtons();
         balonPlayer.SetActive(false);
@@ -70,7 +67,7 @@ public class HudBattleManager : MonoBehaviour
     {
         battleBar.value = BattleManager.Instance.valueBar;
         textStm.text = BattleManager.Instance.stamina.ToString() + "/" + BattleManager.Instance.staminaMax.ToString();
-      
+        AnimationEnergyBar();
         if (BattleManager.Instance.state != BattleState.PLAYERTURN) 
         {
             for (int i = 0; i < buttons.Count; i++)
@@ -86,8 +83,6 @@ public class HudBattleManager : MonoBehaviour
         }
 
     }
-
-    
 
     public void NameForButtons()
     {
@@ -167,7 +162,7 @@ public class HudBattleManager : MonoBehaviour
             textBalonPlayer.text = attack.fraseAction[Random.Range(attack.fraseAction.Count - 1, 0)];
             textGeral.text = attack.useCombat;
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2);
             balonPlayer.SetActive(false);
             yield break;
         }
@@ -177,18 +172,30 @@ public class HudBattleManager : MonoBehaviour
             textBalonEnemy.text = attack.fraseAction[Random.Range(attack.fraseAction.Count - 1, 0)];
             textGeral.text = attack.useCombat;
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2);
             balonEnemy.gameObject.SetActive(false);
             yield break;
         }
-
+     
 
     }
 
     public void AnimationEnergyBar()
     {
         energyValue = BattleManager.Instance.stamina;
-        energyBar.sprite = energyImages[(int)energyValue].sprite;
+        energyBar.sprite = energyImages[(int)energyValue];
+    }
+
+    public void BuffOrDebuffEffcts(bool start)
+    {
+        if (start)
+        {
+
+        }
+        else
+        {
+
+        }
     }
 
     

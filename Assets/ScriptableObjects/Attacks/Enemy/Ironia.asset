@@ -19,7 +19,7 @@ MonoBehaviour:
   - "Vc \xE9 mulher? kkkkkk"
   - "De longe \xE9 feia, de perte parece que ta longe"
   - "\"A pia ta cheia de lou\xE7a...\""
-  dmg: 1
+  dmg: 2
   costStm: 0
   learned: 0
   audioClip: {fileID: 8300000, guid: 757f8a449bf107a4b9efa35625c5ebc0, type: 3}

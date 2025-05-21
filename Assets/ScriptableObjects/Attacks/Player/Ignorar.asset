@@ -17,8 +17,8 @@ MonoBehaviour:
   combatDescr: "Voc\xEA faz um esfor\xE7o para ignorar o comentario do seu oponente"
   fraseAction:
   - '*Ignorei*'
-  dmg: -5
-  costStm: -3
+  dmg: -2
+  costStm: -2
   learned: 1
   audioClip: {fileID: 8300000, guid: c56bc65bc42314c498474dc2441d150a, type: 3}
   typeAction: Normal
