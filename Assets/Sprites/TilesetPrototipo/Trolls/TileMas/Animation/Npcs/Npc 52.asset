@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
-  m_Name: Npc 52
+  m_Name: NPC 52
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -1821068043, guid: e58ad03bec6379643a5d49a292bcb3a4, type: 3}
-  - {fileID: 305304555, guid: e58ad03bec6379643a5d49a292bcb3a4, type: 3}
+  - {fileID: -1991738681, guid: e58ad03bec6379643a5d49a292bcb3a4, type: 3}
+  - {fileID: 432185453, guid: e58ad03bec6379643a5d49a292bcb3a4, type: 3}
   m_MinSpeed: 1
   m_MaxSpeed: 1
   m_AnimationStartTime: 0

@@ -125,7 +125,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ATO3/WorldATO3 3TEST.unity
     guid: 6f4aa8166a33a5d41a8330cc61b7e2e9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ATO3/WorldATO3 4.unity
     guid: 2c6420538f7685447976a5365c43ad77
   - enabled: 1
@@ -137,4 +137,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ATO3/WorldATO3 6.unity
     guid: d70c1047f624f5b418f401fde55d2e49
+  - enabled: 1
+    path: Assets/Scenes/ATO4/WorldATO4 1.unity
+    guid: 02e60e91e3801c249a7a7cc0565b8bc4
+  - enabled: 1
+    path: Assets/Scenes/ATO4/WorldATO4 2.unity
+    guid: 19a37c78472101045b50ea922b53fb1d
+  - enabled: 1
+    path: Assets/Scenes/ATO4/WorldATO4 3.unity
+    guid: 505266a0816a33944b42479ae68f44b1
+  - enabled: 1
+    path: Assets/Scenes/ATO4/WorldATO4 4.unity
+    guid: c00176127442d1a478228943a9ae7e08
   m_configObjects: {}

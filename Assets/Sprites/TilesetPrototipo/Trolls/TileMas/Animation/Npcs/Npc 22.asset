@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
-  m_Name: Npc 22
+  m_Name: NPC 22
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -591700229, guid: e58ad03bec6379643a5d49a292bcb3a4, type: 3}
-  - {fileID: 578461542, guid: e58ad03bec6379643a5d49a292bcb3a4, type: 3}
+  - {fileID: -232663197, guid: e58ad03bec6379643a5d49a292bcb3a4, type: 3}
+  - {fileID: -1374760692, guid: e58ad03bec6379643a5d49a292bcb3a4, type: 3}
   m_MinSpeed: 1
   m_MaxSpeed: 1
   m_AnimationStartTime: 0
