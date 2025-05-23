@@ -20,7 +20,7 @@ MonoBehaviour:
   - Seu feioso
   - Asqueroso
   - Maluco
-  dmg: 5
+  dmg: 4
   costStm: 3
   learned: 1
   audioClip: {fileID: 8300000, guid: c56bc65bc42314c498474dc2441d150a, type: 3}

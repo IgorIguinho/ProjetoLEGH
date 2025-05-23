@@ -3558,6 +3558,8 @@ MonoBehaviour:
   inputFlied: {fileID: 0}
   attack: {fileID: 11400000, guid: 69bfc220fceb00d40990fdd2aa0451a3, type: 2}
   scene: Battle
+  screenshotKey: 293
+  resolutionMultiplier: 3
 --- !u!114 &1224750096
 MonoBehaviour:
   m_ObjectHideFlags: 0

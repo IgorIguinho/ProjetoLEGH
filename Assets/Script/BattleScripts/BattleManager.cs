@@ -83,11 +83,11 @@ public class BattleManager : MonoBehaviour
         enemyAction = new List<AttackScriptable>(enemyAtributes.AttackScripts);
         soundTrack.clip = enemyAtributes.musicBattle;
         stamina = staminaMax;
+        HudBattleManager.Instance.NameForButtons();
         if (!isTutorial)
         {
             attacksPlayer = PassInfos.Instance.actionPlayer;
             state = BattleState.START;
-            HudBattleManager.Instance.NameForButtons();
             StartCoroutine(EnemyAttack(0));
         }
 

@@ -17,8 +17,7 @@ MonoBehaviour:
   superEffective:
   - {fileID: 11400000, guid: 69bfc220fceb00d40990fdd2aa0451a3, type: 2}
   - {fileID: 11400000, guid: 8b252e048c1495446b0f5084650deb18, type: 2}
-  noEffective:
-  - {fileID: 11400000, guid: bcda3e4064821314790405de8258170b, type: 2}
+  noEffective: []
   invunerable: []
   actionIncorrect:
   - {fileID: 11400000, guid: bcda3e4064821314790405de8258170b, type: 2}
