@@ -17,7 +17,7 @@ public class InfosPersistent : MonoBehaviour
     {
         Volume.Instance.takeSoundTrack();
         CamShake.Instance.cameraTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
-        DialogueManager.Instance.StartNewScene();
+ 
     }
 
 
