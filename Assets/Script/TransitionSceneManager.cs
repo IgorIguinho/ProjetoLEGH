@@ -36,6 +36,7 @@ public class TransitionSceneManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(sceneName);
         animator.SetTrigger("FadeOut");
+        DialogueManager.Instance.StartNewScene();
         if (PassInfos.Instance.learningAction)
         {
             StartCoroutine(LearningActionWarning.Instance.LearnAction(PassInfos.Instance.actionToLearning));

@@ -99,6 +99,7 @@ MonoBehaviour:
   - {r: 0.08627451, g: 0.3372549, b: 0, a: 1}
   - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
   - {r: 0.49019608, g: 0.003921569, b: 0, a: 1}
+  canSkip: 1
   haveCutscene: 1
   cutScene:
   - {fileID: 11400000, guid: c475bf19f55ee6348a6b9607adacd484, type: 2}

@@ -12,6 +12,7 @@ public class DialogueScriptable : ScriptableObject
     public List<Sprite> imagePlayer;
     public List<Sprite> imageNPC;
     public List<Color> textColor;
+    public bool canSkip;
     [Header("Cutscene")]
     public bool haveCutscene;
     public List<PlayableAsset> cutScene;

@@ -4710,7 +4710,7 @@ MonoBehaviour:
   actionDescripiton: {fileID: 357884220}
   energyDescription: {fileID: 1663591789}
   actionStep: {fileID: 1353593391}
-  loseScreen: {fileID: 0}
+  loseScreen: {fileID: 898669494}
   balonPlayer: {fileID: 51023300}
   balonEnemy: {fileID: 33962284}
   buttons:
@@ -6455,8 +6455,6 @@ MonoBehaviour:
   - {fileID: 1909459733}
   - {fileID: 843763183}
   combatManager: {fileID: 1913716391}
-  descriptionGroup: {fileID: 839353025}
-  actionGroup: {fileID: 1353593391}
   stepInt: 0
 --- !u!1 &1943527149
 GameObject:

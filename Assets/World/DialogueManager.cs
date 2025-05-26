@@ -1,3 +1,4 @@
+using SuperTiled2Unity;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,31 +14,30 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance { get; private set; }
 
-   
     public GameObject dialogueGroup;
     public GameObject dialogueBG;
+    public GameObject gameobject;
+    public GameObject buttonForSkip;
+    public DialogueScriptable dialoguePrefab;
+
+    [Space(1)]
+    [Header("DialogueInfos")]
     public Text textGeral;
     public Image imagePlayer;
     public Image imageNPC;
     public List<Color> colorText;
-    public bool learnAction;
-    public AttackScriptable attackScriptable;
-    public bool haveCutscene;
-    public List<PlayableAsset> cutScene;
-    bool canRunCutscene;
-    public int numberListCutscene = 0;
-    PlayableDirector directorCutscene;
-    public List<int> numberCutsecne;
-    
+    public List<string> dialogueList;
+    public List<Sprite> imageNPCList;
+    public List<Sprite> imagePlayerList;
+    public List<string> thisIsList;
     bool canNextDialogue = false;
     public char[] ctr;
-    //NPC
-    public List<Sprite> imageNPCList;
-    public GameObject gameobject;
-  
+    public bool isDialogue = false;
+    
+    [SerializeField] private int numberOfDialogue = 0;
 
 
-    //puzzle
+    [Space(1)]
     [Header("PuzzleInfos")]
     public bool isPuzzle;
     public PuzzleDialogueScriptable puzzleScriptables;
@@ -51,19 +51,29 @@ public class DialogueManager : MonoBehaviour
     //Player
 
     [Space(1)]
-    public List<Sprite> imagePlayerList;
+    [Header("NextInfos")]
+   
     public bool isNextScene;
     public string nextScene;
     public string battleScene;
     public bool isBattle;
-
-   
     public EnemysScriptable enemysScriptable;
-    public List<string> dialogueList;
-    public List<string> thisIsList;
-    public bool isDialogue = false;
-    [SerializeField]private int numberOfDialogue = 0;
 
+    [Space(1)]
+    [Header("Cutscene infos")]
+    public bool haveCutscene;
+    public List<PlayableAsset> cutScene;
+    bool canRunCutscene;
+    public int numberListCutscene = 0;
+    [SerializeField]PlayableDirector directorCutscene;
+    public List<int> numberCutsecne;
+
+    [Space(1)]
+    [Header("Learn Infos")]
+    public bool learnAction;
+    public AttackScriptable attackScriptable;
+
+    [Space(1)]
     [Header("dialogue Puzzle Revolução")]
     public int numberDialogueNpc;
     public bool isBispoDialogue;
@@ -99,7 +109,7 @@ public class DialogueManager : MonoBehaviour
     void Update()
     {
         dialogueSistem();
-
+        
     }
 
 
@@ -129,6 +139,7 @@ public class DialogueManager : MonoBehaviour
         { canRunCutscene = true; }
         DialogueManager.Instance.isDialogue = true;
         DialogueManager.Instance.isPuzzle = false;
+        dialoguePrefab = dialogue;
     }
 
     void dialogueSistem()
@@ -137,7 +148,7 @@ public class DialogueManager : MonoBehaviour
         if (isDialogue == true)
         {
             //textGeral.text = dialogueList[numberOfDialogue];
-             
+            buttonForSkip.SetActive(dialoguePrefab.canSkip);
             ctr = dialogueList[numberOfDialogue].ToCharArray();
            
             if (startCoroutine && !isCoroutineRun)
@@ -162,7 +173,7 @@ public class DialogueManager : MonoBehaviour
                 imageNPC .color = Color.white;
             }
 
-            if (Input.GetMouseButtonDown(0) && canNextDialogue == true)
+            if ((Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.Space)) && canNextDialogue == true)
             {
                 
                 if (haveCutscene && numberCutsecne[numberListCutscene] == numberOfDialogue && canRunCutscene )
@@ -201,7 +212,7 @@ public class DialogueManager : MonoBehaviour
 
 
             }
-            else if (Input.GetMouseButtonDown(0) && canNextDialogue == false) 
+            else if ((Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.Space)) && canNextDialogue == false) 
             { 
                 textGeral.text = dialogueList[numberOfDialogue];
           
@@ -212,6 +223,7 @@ public class DialogueManager : MonoBehaviour
 
             if (numberOfDialogue == dialogueList.Count)
             {
+                dialoguePrefab.canSkip = true;  
 
                 if (isBattle)
                 {
@@ -344,7 +356,7 @@ public class DialogueManager : MonoBehaviour
 
         if (numberOfDialogue == dialogueList.Count)
         {
-
+            dialoguePrefab.canSkip = true;
             if (isBattle)
             {
                 numberListCutscene = 0;
@@ -374,6 +386,35 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    public void SkipDialogue()
+    {
+        numberOfDialogue = dialogueList.Count;
+        dialoguePrefab.canSkip = true;
+
+        if (isBattle)
+        {
+            numberListCutscene = 0;
+            PassInfos.Instance.enemyToPass = enemysScriptable;
+
+            TransitionSceneManager.Instance.Transition(battleScene);
+        }
+        else if (isNextScene)
+        {
+            numberListCutscene = 0;
+            isDialogue = false;
+            TransitionSceneManager.Instance.Transition(nextScene);
+        }
+        else
+        {
+            numberListCutscene = 0;
+            isDialogue = false;
+            if (learnAction)
+            {
+                StartCoroutine(LearningActionWarning.Instance.LearnAction(attackScriptable));
+            }
+        }
+    }
+
     IEnumerator machineText()
     {
         isCoroutineRun = true;
@@ -394,5 +435,10 @@ public class DialogueManager : MonoBehaviour
             isCoroutineRun = false;
             yield break;
         }
+    }
+
+    public void StartNewScene()
+    {
+        directorCutscene = GameObject.FindGameObjectWithTag("DirectorCutscene").GetComponent<PlayableDirector>();
     }
 }

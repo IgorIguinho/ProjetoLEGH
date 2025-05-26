@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,9 +8,10 @@ using UnityEngine.UI;
 public class ActionInconScript : MonoBehaviour
 {
     public AttackScriptable action;
-    public Text actionNameHolder;
-    public Text descriptionHolder;
-    public GameObject imageSelect;
+    public TextMeshProUGUI actionNameHolder;
+    public TextMeshProUGUI descriptionHolder;
+    public Sprite imageSelect;
+    public Sprite noSelectImage;
     public Button buttonSelect;
     [SerializeField]private bool isActive;
     // Start is called before the first frame update
@@ -47,7 +49,7 @@ public class ActionInconScript : MonoBehaviour
             gameObject.GetComponent<Image>().color = Color.grey;
             descriptionHolder.text = "???????????????????????????????????????";
         }
-        else { descriptionHolder.text = attack.nameTitle; }
+        else { descriptionHolder.text = attack.combatDescr; }
     }
 
   
@@ -57,7 +59,7 @@ public class ActionInconScript : MonoBehaviour
         while(true){
             if ( action.name == PassInfos.Instance.actionPlayer[i].name)
             {
-                imageSelect.SetActive(true);
+                gameObject.GetComponent<Image>().sprite = imageSelect;
                 TraderAction.Instance.numberAction++;
                 isActive = true;
                 break;
@@ -90,7 +92,7 @@ public class ActionInconScript : MonoBehaviour
             //Para tirar a skill
             else
             {
-                imageSelect.SetActive(false);
+                gameObject.GetComponent<Image>().sprite = noSelectImage;
                 PassInfos.Instance.actionPlayer.Remove(action);
                 TraderAction.Instance.numberAction--;
                 isActive = false;
