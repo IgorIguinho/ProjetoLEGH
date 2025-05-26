@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RunMiaManager : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class RunMiaManager : MonoBehaviour
     public float playerSpeedIncrement = 0.5f; // Quanto a velocidade do jogador aumenta a cada clique
     public float maxPlayerSpeed = 15f;
     public float miaSpeedFactor = 1.1f; // Mia será sempre este fator mais rápida que o jogador
+
+    public Image spaceImage;
+    public Sprite pressedSpace;
+    public Sprite nonPressedSpace;
 
     private Rigidbody2D leleRb;
     private Rigidbody2D miaRb;
@@ -46,12 +51,17 @@ public class RunMiaManager : MonoBehaviour
         // Controla a entrada do jogador
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            spaceImage.sprite = pressedSpace;
             // Aumenta a velocidade até o máximo
             if (speedLele < maxPlayerSpeed)
             {
                 speedLele += playerSpeedIncrement;
             }
             timeSinceLastPress = 0f; // Reseta o timer
+        }
+        else if (Input.GetKeyUp(KeyCode.Space))
+        {
+            spaceImage.sprite = nonPressedSpace;
         }
 
         // Se o jogador não pressionar espaço por um tempo, diminui a velocidade gradualmente
