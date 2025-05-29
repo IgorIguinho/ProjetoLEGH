@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameTitle: Ignorar
   useCombat: "Voc\xEA ignorou o oponente"
-  combatDescr: "Voc\xEA faz um esfor\xE7o para ignorar o comentario do seu oponente"
+  combatDescr: "Voc\xEA faz um esfor\xE7o para ignorar o coment\xE1rio do seu oponente"
   fraseAction:
   - '*Ignorei*'
   dmg: -2

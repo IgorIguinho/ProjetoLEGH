@@ -36,27 +36,28 @@ MonoBehaviour:
   - {fileID: 483690194, guid: 0b8ebbba7dcbeae4286ea2cf9552f062, type: 3}
   - {fileID: -1618056177, guid: 459e470383d69bc4386187b5f0487dbc, type: 3}
   - {fileID: 1333119749, guid: 82acf6a218a356041aa03f6c2836d561, type: 3}
-  - {fileID: -354285044, guid: c295a8e7eaf1a9e4d896869dd0d91036, type: 3}
+  - {fileID: 0}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 1333119749, guid: 82acf6a218a356041aa03f6c2836d561, type: 3}
   imageNPC:
   - {fileID: -1823603206, guid: 3aa3dce41ba8892468a9127c4f070d25, type: 3}
   - {fileID: -1823603206, guid: 3aa3dce41ba8892468a9127c4f070d25, type: 3}
   - {fileID: -1823603206, guid: 3aa3dce41ba8892468a9127c4f070d25, type: 3}
-  - {fileID: 367952067, guid: 0775123ff5e7f224e8b9e20a4bcbc0bf, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: -1618056177, guid: 459e470383d69bc4386187b5f0487dbc, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: -354285044, guid: c295a8e7eaf1a9e4d896869dd0d91036, type: 3}
+  - {fileID: 0}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  textColor:
-  - {r: 0.18039216, g: 0.1764706, b: 0.1764706, a: 1}
-  - {r: 0.7058824, g: 0.7019608, b: 0.7019608, a: 1}
-  - {r: 0.18039216, g: 0.1764706, b: 0.1764706, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0.36078432, a: 1}
-  - {r: 0.33333334, g: 0.33333334, b: 0.33333334, a: 1}
-  - {r: 0.20784314, g: 0.20784314, b: 0.20784314, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.33333334, g: 0.33333334, b: 0.33333334, a: 1}
+  nameDialogue:
+  - "Pe\xE3o"
+  - "Pe\xE3o"
+  - "Pe\xE3o"
+  - Mia
+  - Guarda 1
+  - Guarda 2
+  - "Lel\xEA"
+  - Guarda 1
+  canSkip: 0
   haveCutscene: 1
   cutScene:
   - {fileID: 11400000, guid: 2eab18cd91af2a04188cf028ca8a413a, type: 2}

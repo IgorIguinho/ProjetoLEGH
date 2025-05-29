@@ -1,10 +1,10 @@
-NPC,"Mais uma vez no chão, burra burra burra",#580243 ,Screenshot_43,Lele_Assustada,Lelê
-Player,Por que você acha isso queride?,#4BBEE3,Screenshot_43,Lele_Assustada,Paquito
-NPC,Não consigo vencer eles,#580243 ,Screenshot_43,Lele_Assustada,Lelê
-Player,Por que você quer vencer eles?,#4BBEE3,Screenshot_43,Lele_Assustada,Paquito
-NPC,"Eles são maus, e eu tenho que parar isso pra ninguem sofrer mais, só eu posso",#580243 ,Screenshot_43,Lele_Assustada,Lelê
-NPC,"A Rainha Azul acredita em mim, só eu que consigo",#580243 ,Screenshot_43,Lele_Assustada,Lelê
-Player,"Olha Lele, você é realmente forte e tem bons argumentos",#4BBEE3,Screenshot_43,Lele_Assustada,Paquito
-Player,"Mais ainda sinto inocencia na sua vida, sobre essa Rainha lidamos depois",#4BBEE3,Screenshot_43,Lele_Assustada,Paquito
-Player,"Contra o rei, ele não tem força sozinho",#4BBEE3,Screenshot_43,Lele_Assustada,Paquito
-Player,Tente se prepara ou derrotar ele antes que seu Agrupamento chegue,#4BBEE3,Screenshot_43,Lele_Assustada,Paquito
+NPC,"Mais uma vez no chão, burra burra burra",Lelê,Screenshot_43,Lele_Assustada,#580243 
+Player,Por que você acha isso queride?,Paquito,Screenshot_43,Lele_Assustada,#4BBEE3
+NPC,Não consigo vencer eles,Lelê,Screenshot_43,Lele_Assustada,#580243 
+Player,Por que você quer vencer eles?,Paquito,Screenshot_43,Lele_Assustada,#4BBEE3
+NPC,"Eles são maus, e eu tenho que parar isso pra ninguem sofrer mais, só eu posso",Lelê,Screenshot_43,Lele_Assustada,#580243 
+NPC,"A Rainha Azul acredita em mim, só eu que consigo",Lelê,Screenshot_43,Lele_Assustada,#580243 
+Player,"Olha Lele, você é realmente forte e tem bons argumentos",Paquito,Screenshot_43,Lele_Assustada,#4BBEE3
+Player,"Mais ainda sinto inocencia na sua vida, sobre essa Rainha lidamos depois",Paquito,Screenshot_43,Lele_Assustada,#4BBEE3
+Player,"Contra o rei, ele não tem força sozinho",Paquito,Screenshot_43,Lele_Assustada,#4BBEE3
+Player,Tente se prepara ou derrotar ele antes que seu Agrupamento chegue,Paquito,Screenshot_43,Lele_Assustada,#4BBEE3

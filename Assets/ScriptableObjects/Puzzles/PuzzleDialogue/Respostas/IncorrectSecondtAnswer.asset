@@ -24,16 +24,19 @@ MonoBehaviour:
   imageNPC:
   - {fileID: 0}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  textColor:
-  - {r: 0, g: 0.34117648, b: 0.81960785, a: 1}
-  - {r: 0, g: 0.34117648, b: 0.81960785, a: 1}
+  nameDialogue:
+  - Bispo
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 
   battleScene: 
   isBattle: 0
+  enemy: {fileID: 0}
   isNextScene: 0
   nextScene: 
-  enemy: {fileID: 0}
   learnAction: 0
   attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

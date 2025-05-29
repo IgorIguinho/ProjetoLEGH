@@ -15,12 +15,12 @@ MonoBehaviour:
   text:
   - Affs, cansei de internet por hoje
   - Vou jogar um futebol que ganho mais.
-  - Muito obg, de vdd, n sabia oq fazer e vc foi tao f###
+  - Muito obg, de vdd, n sabia oq fazer e vc foi tao foda
   - "N\xE3o foi nada. Odeio ver esse tipo de situa\xE7\xE3o de abuso, ali\xE1s qual
     seu nome?"
   - Mia e o seu?
   - "Lel\xEA, prazer!"
-  - "Lele, nome bonito\u2026"
+  - "Lel\xEA, nome bonito\u2026"
   - "Golpes na internet est\xE3o cada vez mais frequentes. Cuidado quando pedirem
     dinheiro."
   - "Voc\xEA pode ligar pra pessoa e confirmar se \xE9 realmente verdade."
@@ -29,7 +29,7 @@ MonoBehaviour:
   - NPC
   - NPC
   - Player
-  - Player
+  - NPC
   - NPC
   - Player
   - NPC
@@ -39,7 +39,7 @@ MonoBehaviour:
   imagePlayer:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: 21300000, guid: 7bd5382e07e7c18478a816b7c8411ea7, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
@@ -50,30 +50,36 @@ MonoBehaviour:
   imageNPC:
   - {fileID: 21300000, guid: 370b73ff54c3f49448a371f955ab8703, type: 3}
   - {fileID: 21300000, guid: 370b73ff54c3f49448a371f955ab8703, type: 3}
-  - {fileID: 1935463112, guid: f7db8701e428a9d469bafd635e9e4003, type: 3}
-  - {fileID: 21300000, guid: 7bd5382e07e7c18478a816b7c8411ea7, type: 3}
   - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: 0}
   - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
-  - {fileID: 21300000, guid: 7bd5382e07e7c18478a816b7c8411ea7, type: 3}
+  - {fileID: 0}
   - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
-  - {fileID: 21300000, guid: 7bd5382e07e7c18478a816b7c8411ea7, type: 3}
-  textColor:
-  - {r: 0.08627451, g: 0.3372549, b: 0, a: 1}
-  - {r: 0.08627451, g: 0.3372549, b: 0, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
+  nameDialogue:
+  - Troll Je
+  - Troll Je
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Mia
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 
   battleScene: 
   isBattle: 0
   enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
   learnAction: 0
   attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

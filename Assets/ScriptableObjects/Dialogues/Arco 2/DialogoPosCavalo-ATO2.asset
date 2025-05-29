@@ -80,30 +80,31 @@ MonoBehaviour:
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
-  - {fileID: 21300000, guid: 6b4bc57b2d613b745810ded07d8727ad, type: 3}
+  - {fileID: 21300000, guid: 5231816a8c2c66a409a20f100a42c377, type: 3}
   - {fileID: 21300000, guid: 6b4bc57b2d613b745810ded07d8727ad, type: 3}
   - {fileID: 21300000, guid: 5231816a8c2c66a409a20f100a42c377, type: 3}
   - {fileID: 21300000, guid: 6b4bc57b2d613b745810ded07d8727ad, type: 3}
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
-  textColor:
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.74509805, g: 1, b: 0.9529412, a: 1}
-  - {r: 0.74509805, g: 1, b: 0.9529412, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.74509805, g: 1, b: 0.9529412, a: 1}
+  nameDialogue:
+  - "Lel\xEA"
+  - Cavalo
+  - Cavalo
+  - "Pe\xE3o 4"
+  - "Pe\xE3o 5"
+  - "Pe\xE3o 6"
+  - "Pe\xE3o 5"
+  - "Pe\xE3o 6"
+  - "Pe\xE3o 4"
+  - "Pe\xE3o 5"
+  - "Pe\xE3o 4"
+  - "Lel\xEA"
+  - "Pe\xE3o 5"
+  - "Lel\xEA"
+  - "Pe\xE3o 5"
+  - "Lel\xEA"
+  - Cavalo
+  canSkip: 0
   haveCutscene: 1
   cutScene:
   - {fileID: 11400000, guid: a7b0eb50e000ddb48a1b4c609e98c034, type: 2}

@@ -60,47 +60,44 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   imageNPC:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
-  textColor:
-  - {r: 0.22352941, g: 0.22352941, b: 0.22352941, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.22352941, g: 0.22352941, b: 0.22352941, a: 1}
-  - {r: 0.22352941, g: 0.22352941, b: 0.22352941, a: 1}
-  - {r: 0.22352941, g: 0.22352941, b: 0.22352941, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.22352941, g: 0.22352941, b: 0.22352941, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.22352941, g: 0.22352941, b: 0.22352941, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  pitchAudio:
-  - 0.2
-  - 1.3
-  - 0.2
-  - 0.2
-  - 0.2
-  - 1.3
-  - 0.2
-  - 1.3
-  - 1.3
-  - 0.2
-  - 1.3
-  - 1.3
-  - 1.3
+  nameDialogue:
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - TioMilonario
+  - TioMilonario
+  - TioMilonario
+  - "Lel\xEA"
+  - TioMilonario
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - TioMilonario
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - "Lel\xEA"
+  canSkip: 0
+  haveCutscene: 0
+  cutScene: []
+  numberCutScene: 
   battleScene: 
   isBattle: 0
   enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
+  learnAction: 0
+  attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

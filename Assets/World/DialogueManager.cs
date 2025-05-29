@@ -2,6 +2,7 @@ using SuperTiled2Unity;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -22,10 +23,12 @@ public class DialogueManager : MonoBehaviour
 
     [Space(1)]
     [Header("DialogueInfos")]
-    public Text textGeral;
+    public TextMeshProUGUI textGeral;
+    public TextMeshProUGUI nameHolderPlayer;
+    public TextMeshProUGUI nameHolderNPC;
     public Image imagePlayer;
     public Image imageNPC;
-    public List<Color> colorText;
+    public List<string> dialogueName;
     public List<string> dialogueList;
     public List<Sprite> imageNPCList;
     public List<Sprite> imagePlayerList;
@@ -42,7 +45,7 @@ public class DialogueManager : MonoBehaviour
     public bool isPuzzle;
     public PuzzleDialogueScriptable puzzleScriptables;
     public GameObject puzzleGroup;
-    public Text questionText;
+    public TextMeshProUGUI questionText;
     public List<Button> answersButton;
     public int numberPuzzle;
     public bool havePuzzle;
@@ -117,10 +120,10 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueManager.Instance.isDialogue = false;
         DialogueManager.Instance.dialogueList = dialogue.text;
+        DialogueManager.Instance.dialogueName = dialogue.nameDialogue;
         DialogueManager.Instance.thisIsList = dialogue.thisIs;
         DialogueManager.Instance.imageNPCList = dialogue.imageNPC;
         DialogueManager.Instance.imagePlayerList = dialogue.imagePlayer;
-        DialogueManager.Instance.colorText = dialogue.textColor;
         DialogueManager.Instance.isBattle = dialogue.isBattle;
         DialogueManager.Instance.battleScene = dialogue.battleScene;
         DialogueManager.Instance.enemysScriptable = dialogue.enemy;
@@ -160,20 +163,25 @@ public class DialogueManager : MonoBehaviour
             }
             imageNPC.sprite = imageNPCList[numberOfDialogue];
             imagePlayer.sprite = imagePlayerList[numberOfDialogue];
-            //textGeral.color = colorText[numberOfDialogue];
-            dialogueBG.GetComponent<Outline>().effectColor = colorText[numberOfDialogue];
+           
             if (thisIsList[numberOfDialogue] == "Player")
-            { 
+            {
+                dialogueBG.GetComponent<RectTransform>().eulerAngles = new Vector3(0, 0, 0);
+                nameHolderNPC.text = "";
+                nameHolderPlayer.text = dialogueName[numberOfDialogue];
                 imagePlayer.color = Color.white;
                 imageNPC.color = Color.gray;
             }
             else if (thisIsList[numberOfDialogue] == "NPC") 
-            { 
+            {
+                dialogueBG.GetComponent<RectTransform>().eulerAngles = new Vector3(0, 180, 0);
+                nameHolderPlayer.text = "";
+                nameHolderNPC.text = dialogueName[numberOfDialogue];
                 imagePlayer.color = Color.gray;
                 imageNPC .color = Color.white;
             }
 
-            if ((Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.Space)) && canNextDialogue == true)
+            if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && canNextDialogue == true)
             {
                 
                 if (haveCutscene && numberCutsecne[numberListCutscene] == numberOfDialogue && canRunCutscene )
@@ -212,7 +220,7 @@ public class DialogueManager : MonoBehaviour
 
 
             }
-            else if ((Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.Space)) && canNextDialogue == false) 
+            else if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && canNextDialogue == false) 
             { 
                 textGeral.text = dialogueList[numberOfDialogue];
           
@@ -259,7 +267,7 @@ public class DialogueManager : MonoBehaviour
             questionText.text = puzzleScriptables.question;
             for (int i = 0; i < answersButton.Count; i++)
             {
-                answersButton[i].GetComponentInChildren<Text>().text = puzzleScriptables.answers[i];
+                answersButton[i].GetComponentInChildren<TextMeshProUGUI>().text = puzzleScriptables.answers[i];
                 answersButton[i].onClick.AddListener(IncorretAnswerButton);
                 
             }

@@ -32,10 +32,9 @@ MonoBehaviour:
   - "Pois bem, aquela cidade inteira foi contaminada com ideias idiotas do rei, e
     eu preciso mudar isso\u2026"
   - "Eu j\xE1 enviei alguns devotos para reverter a situa\xE7\xE3o, mas todos fracassaram\u2026"
-  - "At\xE9 voc\xEA chegar. Voc\xEA \xE9 a parte fundamental que faltava em nosso
-    plano."
-  - "Fundamental no plano? Eu ajudo, mas depois voc\xEA me ajuda a resolver uma coisa
-    pessoal?"
+  - "At\xE9 voc\xEA chegar. Voc\xEA \xE9 a \xFAnica que pode derrotar ele, a \xFAnica
+    pessoa deste reino com tal poder"
+  - "A \xFAnica? com certeza, pode deixar que eu dou conta"
   - "Voc\xEA faria isso??? Lele, voc\xEA \xE9 demais!!!"
   - "Para encontr\xE1-lo, voc\xEA precisar\xE1 passar pela porta do castelo. Tome
     cuidado, o rei \xE9 poderoso."
@@ -81,45 +80,46 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   imageNPC:
-  - {fileID: -1472770339, guid: 847b3fa5c80a6d14583ca36f06ae45cb, type: 3}
-  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  textColor:
-  - {r: 0, g: 0.34117648, b: 0.81960785, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  nameDialogue:
+  - Bispo
+  - Rainha
+  - "Lel\xEA"
+  - Rainha
+  - Rainha
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Rainha
+  - "Lel\xEA"
+  - Rainha
+  - Rainha
+  - "Lel\xEA"
+  - Rainha
+  - Rainha
+  - Rainha
+  - "Lel\xEA"
+  - Rainha
+  - Rainha
+  - "Lel\xEA"
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

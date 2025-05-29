@@ -37,21 +37,22 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   imageNPC:
-  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: 965001606, guid: 1493581df21deee4eace5dffb3d9df24, type: 3}
-  - {fileID: 965001606, guid: 1493581df21deee4eace5dffb3d9df24, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -175385637, guid: e411dd076681b0d4e9893d7241dcda74, type: 3}
-  - {fileID: -175385637, guid: e411dd076681b0d4e9893d7241dcda74, type: 3}
-  - {fileID: 965001606, guid: 1493581df21deee4eace5dffb3d9df24, type: 3}
-  - {fileID: -175385637, guid: e411dd076681b0d4e9893d7241dcda74, type: 3}
-  textColor:
-  - {r: 0.4509804, g: 0, b: 0.019607844, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4509804, g: 0, b: 0.019607844, a: 1}
-  - {r: 0.70980394, g: 0, b: 0.015686275, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4509804, g: 0, b: 0.019607844, a: 1}
-  - {r: 0.70980394, g: 0, b: 0.015686275, a: 1}
+  nameDialogue:
+  - Torre 1
+  - "Lel\xEA"
+  - Torre 1
+  - Torre 2
+  - "Lel\xEA"
+  - Torre 1
+  - Torre 2
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

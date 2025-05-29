@@ -50,25 +50,26 @@ MonoBehaviour:
   imageNPC:
   - {fileID: 1829270674, guid: fb9b7159a801c6d4ab5267785d017263, type: 3}
   - {fileID: 1829270674, guid: fb9b7159a801c6d4ab5267785d017263, type: 3}
-  - {fileID: 21300000, guid: 3ee7fc24e483833468685891448fd9ff, type: 3}
+  - {fileID: 0}
   - {fileID: 1829270674, guid: fb9b7159a801c6d4ab5267785d017263, type: 3}
   - {fileID: 1829270674, guid: fb9b7159a801c6d4ab5267785d017263, type: 3}
-  - {fileID: 21300000, guid: 3ee7fc24e483833468685891448fd9ff, type: 3}
+  - {fileID: 0}
   - {fileID: 21300000, guid: 59503109795da6b42a34a38fe041454c, type: 3}
   - {fileID: 21300000, guid: 59503109795da6b42a34a38fe041454c, type: 3}
   - {fileID: 21300000, guid: 59503109795da6b42a34a38fe041454c, type: 3}
   - {fileID: 21300000, guid: 59503109795da6b42a34a38fe041454c, type: 3}
-  textColor:
-  - {r: 0.12941177, g: 0, b: 0.2901961, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.12941177, g: 0, b: 0.2901961, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.12941177, g: 0, b: 0.2901961, a: 1}
-  - {r: 0.12941177, g: 0, b: 0.2901961, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.12941177, g: 0, b: 0.2901961, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.12941177, g: 0, b: 0.2901961, a: 1}
+  nameDialogue:
+  - Troll Kingo
+  - "Lel\xEA"
+  - Troll Kingo
+  - "Lel\xEA"
+  - Troll Kingo
+  - Troll Kingo
+  - "Lel\xEA"
+  - Troll Kingo
+  - "Lel\xEA"
+  - Troll Kingo
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

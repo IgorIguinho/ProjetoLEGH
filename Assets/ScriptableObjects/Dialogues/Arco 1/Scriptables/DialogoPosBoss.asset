@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DialogoPosBoss
   m_EditorClassIdentifier: 
   text:
-  - Que m####! Como pode ter argumento pra tudo?!
+  - Que merda! Como pode ter argumento pra tudo?!
   - "N\xE3o \xE9 dificil, \xE9 s\xF3 ser mente aberta e ouvir o que os outros tem
     pra dizer"
   - "Voc\xEA fala de um jeito t\xE3o complicado. S\xF3 pode ser para eu n\xE3o entender!"
@@ -78,22 +78,23 @@ MonoBehaviour:
   - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
   - {fileID: 21300000, guid: 7bd5382e07e7c18478a816b7c8411ea7, type: 3}
   - {fileID: 21300000, guid: 7bd5382e07e7c18478a816b7c8411ea7, type: 3}
-  textColor:
-  - {r: 0.12941177, g: 0, b: 0.2901961, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.12941177, g: 0, b: 0.2901961, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  nameDialogue:
+  - Troll Kingo
+  - "Lel\xEA"
+  - Troll Kingo
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Mia
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  canSkip: 0
   haveCutscene: 1
   cutScene:
   - {fileID: 11400000, guid: 4c2590110df3fa443a21cc775450bbc6, type: 2}
@@ -102,5 +103,10 @@ MonoBehaviour:
   battleScene: 
   isBattle: 0
   enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
   learnAction: 0
   attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

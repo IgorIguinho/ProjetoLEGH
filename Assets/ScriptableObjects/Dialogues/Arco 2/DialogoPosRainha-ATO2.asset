@@ -26,23 +26,24 @@ MonoBehaviour:
   - Player
   - Player
   imagePlayer:
-  - {fileID: -1662313547, guid: ba9bff208a9741141b63a3de78853458, type: 3}
-  - {fileID: 21300000, guid: c37a2ef1b2a194140ab309ddd786689b, type: 3}
+  - {fileID: 21300000, guid: 37d76eb6b9afc2640856e6e0f6cee142, type: 3}
+  - {fileID: 0}
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
-  - {fileID: -1662313547, guid: ba9bff208a9741141b63a3de78853458, type: 3}
+  - {fileID: 0}
   - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
   imageNPC:
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  textColor:
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
+  nameDialogue:
+  - "Pe\xE3o 4"
+  - "Pe\xE3o 8"
+  - Cavalo 1
+  - "Pe\xE3o 4"
+  - Rainha
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

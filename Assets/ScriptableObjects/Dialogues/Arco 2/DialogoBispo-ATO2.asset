@@ -13,30 +13,26 @@ MonoBehaviour:
   m_Name: DialogoBispo-ATO2
   m_EditorClassIdentifier: 
   text:
-  - "Lel\xEA, como \xE9 bom te ver aqui, a Rainha est\xE1 te esperando"
-  - "Como voc\xEA sabe meu nome? Quem \xE9 essa Rainha?"
-  - "Calma jovem, quem realiza as perguntas sou eu, para conhecer a Rainha voc\xEA
-    devera provar seu valor!"
-  - "Responda essas perguntas de forma correta que eu permito voc\xEA passar"
+  - "Hoho Lele. Chegou bem a tempo. A rainha est\xE1 te esperando. Entre"
+  - "Como voc\xEA sabe meu nome? Quem \xE9 a rainha?"
+  - "Chega de perguntas\u2026 Apenas entre."
   thisIs:
   - Player
   - Player
-  - NPC
   - NPC
   imagePlayer:
   - {fileID: -1472770339, guid: 847b3fa5c80a6d14583ca36f06ae45cb, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   imageNPC:
-  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -1472770339, guid: 847b3fa5c80a6d14583ca36f06ae45cb, type: 3}
-  - {fileID: -1472770339, guid: 847b3fa5c80a6d14583ca36f06ae45cb, type: 3}
-  - {fileID: -1472770339, guid: 847b3fa5c80a6d14583ca36f06ae45cb, type: 3}
-  textColor:
-  - {r: 0, g: 0.34117648, b: 0.81960785, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0, g: 0.34117648, b: 0.81960785, a: 1}
+  nameDialogue:
+  - Bispo
+  - Lele
+  - Bispo
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

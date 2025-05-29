@@ -24,8 +24,8 @@ MonoBehaviour:
   - Qual o problema da minha cor?
   - "Clean Girls tem a pele clara igual a minha amore, s\xF3 assim voc\xEA pode ficar
     diva igual eu"
-  - "Nada haver, minha beleza \xE9 \xFAnica, e n\xE3o existe isso de pele linda e
-    pele feia, todas as cores s\xE3o lindas"
+  - "Nada a ver, minha beleza \xE9 unica, e n\xE3o existe isso de pele linda e pele
+    feia, todas as cores s\xE3o lindas"
   - Desculpa militante, vou te bloquear tabom more!!!
   - E tem como fazer isso?
   thisIs:
@@ -53,34 +53,40 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   imageNPC:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1905158419, guid: 6671a4e912e083f4385efa97fc96740a, type: 3}
-  - {fileID: 1905158419, guid: 6671a4e912e083f4385efa97fc96740a, type: 3}
-  - {fileID: 1905158419, guid: 6671a4e912e083f4385efa97fc96740a, type: 3}
-  - {fileID: 1905158419, guid: 6671a4e912e083f4385efa97fc96740a, type: 3}
-  - {fileID: 1905158419, guid: 6671a4e912e083f4385efa97fc96740a, type: 3}
-  - {fileID: 1905158419, guid: 6671a4e912e083f4385efa97fc96740a, type: 3}
-  - {fileID: 1905158419, guid: 6671a4e912e083f4385efa97fc96740a, type: 3}
-  - {fileID: 1905158419, guid: 6671a4e912e083f4385efa97fc96740a, type: 3}
-  - {fileID: 1905158419, guid: 6671a4e912e083f4385efa97fc96740a, type: 3}
-  - {fileID: 1905158419, guid: 6671a4e912e083f4385efa97fc96740a, type: 3}
-  - {fileID: 1905158419, guid: 6671a4e912e083f4385efa97fc96740a, type: 3}
-  textColor:
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.9843137, g: 1, b: 0.74509805, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.9843137, g: 1, b: 0.74509805, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.9843137, g: 1, b: 0.74509805, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.9843137, g: 1, b: 0.74509805, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.9843137, g: 1, b: 0.74509805, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  nameDialogue:
+  - "Lel\xEA"
+  - Juuj Clena
+  - "Lel\xEA"
+  - Juuj Clena
+  - "Lel\xEA"
+  - Juuj Clena
+  - "Lel\xEA"
+  - Juuj Clena
+  - "Lel\xEA"
+  - Juuj Clena
+  - "Lel\xEA"
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 
   battleScene: 
   isBattle: 0
   enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
   learnAction: 1
   attackScriptable: {fileID: 11400000, guid: 8b252e048c1495446b0f5084650deb18, type: 2}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

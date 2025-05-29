@@ -20,7 +20,7 @@ MonoBehaviour:
   - 'Milho (nhoc nhoc), Milho (nhoc nhoc), Milho (nhoc nhoc), Milho (nhoc nhoc),
     Milho (nhoc nhoc), Milho (nhoc nhoc), Milho (nhoc nhoc), Milho (nhoc nhoc), Milho
     (nhoc nhoc), Milho (nhoc nhoc), Milho (nhoc nhoc), Milho (nhoc nhoc), '
-  - "Gente mas o que \xE9 isso?"
+  - "Gente mais o que \xE9 isso?"
   - "Ah, tbm n sei, mas se a gente der um item que vale dinheiro ele fala algo engra\xE7ado...
     t\xE1 ai faz dias KKKKKKKK"
   - "S\xF3 to aqui pra ver se alguma hora ele sai do personagem KKKKKKKK"
@@ -38,25 +38,26 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: -1267725969, guid: e668ec7fe98b861448a80979f472025a, type: 3}
-  - {fileID: 2133378887, guid: e668ec7fe98b861448a80979f472025a, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -446056819, guid: 3822f1ddb6a0c094d8ac8be0d72f396e, type: 3}
   imageNPC:
-  - {fileID: -446056819, guid: 3822f1ddb6a0c094d8ac8be0d72f396e, type: 3}
-  - {fileID: -446056819, guid: 3822f1ddb6a0c094d8ac8be0d72f396e, type: 3}
-  - {fileID: -446056819, guid: 3822f1ddb6a0c094d8ac8be0d72f396e, type: 3}
-  - {fileID: -446056819, guid: 3822f1ddb6a0c094d8ac8be0d72f396e, type: 3}
-  - {fileID: -446056819, guid: 3822f1ddb6a0c094d8ac8be0d72f396e, type: 3}
-  - {fileID: -446056819, guid: 3822f1ddb6a0c094d8ac8be0d72f396e, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  textColor:
-  - {r: 0.94509804, g: 1, b: 0.25490198, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.94509804, g: 1, b: 0.25490198, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 0.94509804, g: 1, b: 0.25490198, a: 1}
+  nameDialogue:
+  - Fleca
+  - "Lel\xEA"
+  - Fleca
+  - "Lel\xEA"
+  - ???
+  - ???
+  - Fleca
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

@@ -37,12 +37,13 @@ MonoBehaviour:
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
-  textColor:
-  - {r: 0.74509805, g: 1, b: 0.9529412, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.74509805, g: 1, b: 0.9529412, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.74509805, g: 1, b: 0.9529412, a: 1}
+  nameDialogue:
+  - Cavalo
+  - "Lel\xEA"
+  - Cavalo
+  - "Lel\xEA"
+  - Cavalo
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

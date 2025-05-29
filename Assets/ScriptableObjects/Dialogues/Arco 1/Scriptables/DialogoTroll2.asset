@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DialogoTroll2
   m_EditorClassIdentifier: 
   text:
-  - "Olha s\xF3 se n \xE9 vc, de novo. N se cansou de perder pro cara + f### dessa
+  - "Olha s\xF3 se n\xE9 vc, de novo. N se cansou de perder pro cara + foda dessa
     cidade? HAHAHAH"
   - "Mas foi voc\xEA quem fugiu..."
   - CA-LA-DA! Pq vc n vai cuidar da casa e do marido?! Isso se vc conseguir um hahaha
@@ -22,7 +22,7 @@ MonoBehaviour:
   - "Vai lavar uma lou\xE7a, ou melhor, vai lever ume lou\xE7e."
   - "Nunca ouviu falar em g\xEAnero neutro? voc\xEA s\xF3 parece mais burro agindo
     assim"
-  - "To nem ai, lugar de \u201Cmulher\u201D \xE9 na cozinha, vai l\xE1 vai hahahaha"
+  - "To nem ai, lugar de \u201Cmulher\u201D e na cozinha, vai l\xE1 vai hahahaha"
   thisIs:
   - NPC
   - Player
@@ -50,20 +50,26 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4d043d9df7ab7ef409a97b8d26e43172, type: 3}
   - {fileID: -1170812644, guid: 9fcb669c63740414bb8cf6ea98719ac5, type: 3}
   - {fileID: -1170812644, guid: 9fcb669c63740414bb8cf6ea98719ac5, type: 3}
-  textColor:
-  - {r: 0.49019608, g: 0.003921569, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.49019608, g: 0.003921569, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.49019608, g: 0.003921569, b: 0, a: 1}
-  - {r: 0.49019608, g: 0.003921569, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.49019608, g: 0.003921569, b: 0, a: 1}
+  nameDialogue:
+  - Troll Ye
+  - "Lel\xEA"
+  - Troll Ye
+  - "Lel\xEA"
+  - Troll Ye
+  - Troll Ye
+  - "Lel\xEA"
+  - Troll Ye
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 
   battleScene: Battle
   isBattle: 1
   enemy: {fileID: 11400000, guid: c66ad7f0802bf144a9b983c8b15cf541, type: 2}
+  isNextScene: 0
+  nextScene: 
   learnAction: 0
   attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

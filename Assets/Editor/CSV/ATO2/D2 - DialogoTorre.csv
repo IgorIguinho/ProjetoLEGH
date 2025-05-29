@@ -1,7 +1,7 @@
-Player,"Parado, não pode entrar!!!",#730005 ,Torre_IdleSheet_0,Lele_mov_frente,Torre 1
-Player,"A rainha me enviou, preciso conversar urgentemente com o rei.",#580243 ,Lele_mov_frente,Torre_IdleSheet_0,Lele
-NPC,Aquela fingida? hmmm,#730005 ,Lele_mov_frente,Torre_IdleSheet_0,Torre 1
-NPC,Por que ela enviou você?,#B50004 ,Lele_mov_frente,Torre_Idle2Sheet_0,Torre 2
-Player,Assuntos confidenciais reais… Deixe-me entrar por favor.,#580243 ,Lele_mov_frente,Torre_Idle2Sheet_0,Lele
-NPC,"Vamos liberar ela, entra aí, vai...",#730005 ,Lele_mov_frente,Torre_IdleSheet_0,Torre 1
-NPC,"Kkkk, não somos pagos o suficiente pra nos importar mesmo...",#B50004 ,Lele_mov_frente,Torre_Idle2Sheet_0,Torre 2
+Player,"Parado, não pode entrar!!!",Torre 1,Torre_IdleSheet_0,Lele_mov_frente
+Player,"A rainha me enviou, preciso conversar urgentemente com o rei.",Lelê,Lele_mov_frente,Torre_IdleSheet_0
+NPC,Aquela fingida? hmmm,Torre 1,Lele_mov_frente,Torre_IdleSheet_0
+NPC,Por que ela enviou você?,Torre 2,Lele_mov_frente,Torre_Idle2Sheet_0
+Player,Assuntos confidenciais reais… Deixe-me entrar por favor.,Lelê,Lele_mov_frente,Torre_Idle2Sheet_0
+NPC,"Vamos liberar ela, entra aí, vai...",Torre 1,Lele_mov_frente,Torre_IdleSheet_0
+NPC,"Kkkk, não somos pagos o suficiente pra nos importar mesmo...",Torre 2,Lele_mov_frente,Torre_Idle2Sheet_0

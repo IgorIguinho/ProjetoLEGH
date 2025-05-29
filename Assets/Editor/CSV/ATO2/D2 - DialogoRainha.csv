@@ -1,19 +1,19 @@
-NPC,"Sua alteza, aqui está Lele, como prometido.",#0057D1 ,Lele_mov_frente,Bispo_IdleSheet_0,Bispo
-Player,"Olá, Lele. Ouvi muito falar de você… Você tem muitas habilidades interessantes.",#D9BEFF ,Rainha_Idle-Sheet_0,Lele_mov_frente,Rainha
-Player,Quem falou sobre mim para você? A Leona?,#580243 ,Lele_mov_frente,Rainha_Idle-Sheet_0,Lele
-NPC,"Leona noites é? Bom, eu acabei escutando dos cidadãos mesmo.",#D9BEFF ,Lele_mov_frente,Rainha_Idle-Sheet_0,Rainha
-NPC,Muitos estão felizes por você ter derrotado alguns arruaceiros do outro lado.,#D9BEFF ,Lele_mov_frente,Rainha_Idle-Sheet_0,Rainha
-Player,Eu fico feliz em poder ajudar,#580243 ,Lele_mov_frente,Rainha_Idle-Sheet_0,Lele
-Player,Posso fazer uma pergunta? quem controla os cavaleiros de lá que espalham tanta fake news?,#580243 ,Lele_mov_frente,Rainha_Idle-Sheet_0,Lele
-NPC,"Fake news? Ah, só pode ser coisa dele…",#D9BEFF ,Lele_mov_frente,Rainha_Idle-Sheet_0,Rainha
-Player,Dele? Dele quem?,#580243 ,Lele_mov_frente,Rainha_Idle-Sheet_0,Lele
-NPC,"Do rei, ele tem falado mentiras para os súditos dele já a um tempo. Ninguém mais tem opinião…",#D9BEFF ,Lele_mov_frente,Rainha_Idle-Sheet_0,Rainha
-NPC,"Ninguém mais tem senso crítico, todos parecem zumbis...",#D9BEFF ,Lele_mov_frente,Rainha_Idle-Sheet_0,Rainha
-Player,Isso é péssimo. Por que ninguém se rebelou ainda?,#580243 ,Lele_mov_frente,Rainha_Idle-Sheet_0,Lele
-NPC,"Pois bem, aquela cidade inteira foi contaminada com ideias idiotas do rei, e eu preciso mudar isso…",#D9BEFF ,Lele_mov_frente,Rainha_Idle-Sheet_0,Rainha
-NPC,"Eu já enviei alguns devotos para reverter a situação, mas todos fracassaram…",#D9BEFF ,Lele_mov_frente,Rainha_Idle-Sheet_0,Rainha
-NPC,Até você chegar. Você é a parte fundamental que faltava em nosso plano.,#D9BEFF ,Lele_mov_frente,Rainha_Idle-Sheet_0,Rainha
-Player,"Fundamental no plano? Eu ajudo, mas depois você me ajuda a resolver uma coisa pessoal?",#580243 ,Lele_mov_frente,Rainha_Idle-Sheet_0,Lele
-NPC,"Você faria isso??? Lele, você é demais!!!",#D9BEFF ,Lele_mov_frente,Rainha_Idle-Sheet_0,Rainha
-NPC,"Para encontrá-lo, você precisará passar pela porta do castelo. Tome cuidado, o rei é poderoso.",#D9BEFF ,Lele_mov_frente,Rainha_Idle-Sheet_0,Rainha
-Player,Pode deixar!,#580243 ,Lele_mov_frente,Rainha_Idle-Sheet_0,Lele
+NPC,"Sua alteza, aqui está Lele, como prometido.",Bispo,Lele_mov_frente,Bispo_IdleSheet_0
+Player,"Olá, Lele. Ouvi muito falar de você… Você tem muitas habilidades interessantes.",Rainha,Rainha_Idle-Sheet_0,Lele_mov_frente
+Player,Quem falou sobre mim para você? A Leona?,Lelê,Lele_mov_frente,Rainha_Idle-Sheet_0
+NPC,"Leona noites é? Bom, eu acabei escutando dos cidadãos mesmo.",Rainha,Lele_mov_frente,Rainha_Idle-Sheet_0
+NPC,Muitos estão felizes por você ter derrotado alguns arruaceiros do outro lado.,Rainha,Lele_mov_frente,Rainha_Idle-Sheet_0
+Player,Eu fico feliz em poder ajudar,Lelê,Lele_mov_frente,Rainha_Idle-Sheet_0
+Player,Posso fazer uma pergunta? quem controla os cavaleiros de lá que espalham tanta fake news?,Lelê,Lele_mov_frente,Rainha_Idle-Sheet_0
+NPC,"Fake news? Ah, só pode ser coisa dele…",Rainha,Lele_mov_frente,Rainha_Idle-Sheet_0
+Player,Dele? Dele quem?,Lelê,Lele_mov_frente,Rainha_Idle-Sheet_0
+NPC,"Do rei, ele tem falado mentiras para os súditos dele já a um tempo. Ninguém mais tem opinião…",Rainha,Lele_mov_frente,Rainha_Idle-Sheet_0
+NPC,"Ninguém mais tem senso crítico, todos parecem zumbis...",Rainha,Lele_mov_frente,Rainha_Idle-Sheet_0
+Player,Isso é péssimo. Por que ninguém se rebelou ainda?,Lelê,Lele_mov_frente,Rainha_Idle-Sheet_0
+NPC,"Pois bem, aquela cidade inteira foi contaminada com ideias idiotas do rei, e eu preciso mudar isso…",Rainha,Lele_mov_frente,Rainha_Idle-Sheet_0
+NPC,"Eu já enviei alguns devotos para reverter a situação, mas todos fracassaram…",Rainha,Lele_mov_frente,Rainha_Idle-Sheet_0
+NPC,"Até você chegar. Você é a única que pode derrotar ele, a única pessoa deste reino com tal poder",Rainha,Lele_mov_frente,Rainha_Idle-Sheet_0
+Player,"A única? com certeza, pode deixar que eu dou conta",Lelê,Lele_mov_frente,Rainha_Idle-Sheet_0
+NPC,"Você faria isso??? Lele, você é demais!!!",Rainha,Lele_mov_frente,Rainha_Idle-Sheet_0
+NPC,"Para encontrá-lo, você precisará passar pela porta do castelo. Tome cuidado, o rei é poderoso.",Rainha,Lele_mov_frente,Rainha_Idle-Sheet_0
+Player,Pode deixar!,Lelê,Lele_mov_frente,Rainha_Idle-Sheet_0

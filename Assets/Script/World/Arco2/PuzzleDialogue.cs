@@ -86,7 +86,7 @@ public class PuzzleDialogue : MonoBehaviour
         PuzzleDialogue.Instance.thisIsList = dialogue.thisIs;
         PuzzleDialogue.Instance.imageNPCList = dialogue.imageNPC;
         PuzzleDialogue.Instance.imagePlayerList = dialogue.imagePlayer;
-        PuzzleDialogue.Instance.colorText = dialogue.textColor;        
+        ///PuzzleDialogue.Instance.colorText = dialogue.textColor;        
         PuzzleDialogue.Instance.enemysScriptable = dialogue.enemy;
         PuzzleDialogue.Instance.startCoroutine = true;
         PuzzleDialogue.Instance.isDialogue = true;

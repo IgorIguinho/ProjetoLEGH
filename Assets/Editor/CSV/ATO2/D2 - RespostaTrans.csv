@@ -1,9 +1,9 @@
-Player,"Eu sou ingualzinha a Birdo, nosso mindset é ingual, nos duas somos divas e poderas",#EF485E,moça_0,Lele_mov_frente,NPC
-Player,"E vc, é ingual a quem?",#EF485E,moça_0,Lele_mov_frente,NPC
-Player,"Eu sou igual a mim mesma, eu acho",#580243 ,Lele_mov_frente,moça_0,Lele
-NPC,Ah... que sem graça...,#EF485E,Lele_mov_frente,moça_0,NPC
-Player,E quem é Birdo?,#580243 ,Lele_mov_frente,moça_0,Lele
-NPC,Tu não sabe? Simplesmente a personagem mais diva do Super Mario,#EF485E,Lele_mov_frente,moça_0,NPC
-NPC,"A melhor no Mario Tênis, cospe ovos pela boca, super veloz",#EF485E,Lele_mov_frente,moça_0,NPC
-NPC,"E ainda tras a representatividade nas costas, como a primeira trans dos jogos",#EF485E,Lele_mov_frente,moça_0,NPC
-Player,"Que maneiro, ela parece ser muito legal",#580243 ,Lele_mov_frente,moça_0,Lele
+Player,"Eu sou ingualzinha a Birdo, nosso mindset é ingual, nos duas somos divas e poderas",Lune,moça_0,Lele_mov_frente,NPC
+Player,"E vc, é ingual a quem?",Lune,moça_0,Lele_mov_frente,NPC
+Player,"Eu sou igual a mim mesma, eu acho",Lelê,Lele_mov_frente,moça_0,Lele
+NPC,Ah... que sem graça...,Lune,Lele_mov_frente,moça_0,NPC
+Player,E quem é Birdo?,Lelê,Lele_mov_frente,moça_0,Lele
+NPC,Tu não sabe? Simplesmente a personagem mais diva do Super Mario,Lune,Lele_mov_frente,moça_0,NPC
+NPC,"A melhor no Mario Tênis, cospe ovos pela boca, super veloz",Lune,Lele_mov_frente,moça_0,NPC
+NPC,"E ainda tras a representatividade nas costas, como a primeira trans dos jogos",Lune,Lele_mov_frente,moça_0,NPC
+Player,"Que maneiro, ela parece ser muito legal",Lelê,Lele_mov_frente,moça_0,Lele

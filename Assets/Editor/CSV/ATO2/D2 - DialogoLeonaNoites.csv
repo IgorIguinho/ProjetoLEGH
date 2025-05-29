@@ -1,20 +1,20 @@
-Player,"Povo de Turiter, estamos em uma guerra há anos. Não sabemos mais como ser civilizados.",#D9BEFF ,Rainha_Idle-Sheet_0,PEOES,Rainha
-Player,"Mas não se preocupem, hoje vim anunciar que me tornarei a rainha de Turiter.",#D9BEFF ,Rainha_Idle-Sheet_0,PEOES,Rainha
-NPC,"Ue, mas você já não é a rainha?",#009D73 ,PEAO5,Rainha_Idle-Sheet_0,Peão 5
-Player,"Ó bobinho, eu sou sim, mas não de Turiter inteira. ",#D9BEFF ,Rainha_Idle-Sheet_0,PEOES,Rainha
-Player,"O rei não está mais dando conta da cidade, principalmente agora que sua reputação está lá embaixo…",#D9BEFF ,Rainha_Idle-Sheet_0,PEOES,Rainha
-Player,"Enfim, peço humildemente que vocês me apoiem nesse movimento, pois queremos uma cidade mais justa, não é?",#D9BEFF ,Rainha_Idle-Sheet_0,PEOES,Rainha
-NPC,É ISSO AÍ. RA-INHA!!! RA-INHA!!! RA-INHA!!!,#009D73 ,PEAO8,Rainha_Idle-Sheet_0,Peão 8
-NPC,RA-INHA!!! RA-INHA!!! RA-INHA!!!,#009D73 ,PEOES,Rainha_Idle-Sheet_0,Peões
-Player,Você realmente me enganou… Mas agora eu sei que você só é mais uma charlatã,#580243 ,Lele_mov_frente,Rainha_Idle-Sheet_0,Lele
-NPC,"Lelê? Obrigada pela ajuda, graças a você a cidade irá dessa pra melhor!",#D9BEFF ,Lele_mov_frente,Rainha_Idle-Sheet_0,Rainha
-Player,"Com as suas mentiras, ela irá para melhor, rainha?",#580243 ,Lele_mov_frente,Rainha_Idle-Sheet_0,Lele
-Player,"Ou melhor, Leona noites...",#580243 ,Lele_mov_frente,Rainha_Idle-Sheet_0,Lele
-Player,Leona noites? Achei que ela fosse uma doida que fica espalhando fake news na cidade.,#730005 ,TorreLEGH01,Rainha_Idle-Sheet_0,Torre 1
-Player,"Isso mesmo, é a Rainha e a Leona Noites são a mesma peça, que vive mentindo para todos.",#580243 ,Lele_mov_frente,Rainha_Idle-Sheet_0,Lele
-Player,"Pera, você mentiu para gente?",#009D73 ,PEAO5,Rainha_Idle-Sheet_0,Peão 5
-Player,Acalmem-se. Não menti para ninguém.,#D9BEFF ,Rainha_Idle-Sheet_0,Lele_mov_frente,Rainha
-Player,"Lelê, cuidado com o que fala. Ou se não todos saberão sobre seu lado obscuro…",#D9BEFF ,Rainha_Idle-Sheet_0,Lele_mov_frente,Rainha
-Player,Peça perdão e vá embora dessa cidade.,#D9BEFF ,Rainha_Idle-Sheet_0,Lele_mov_frente,Rainha
-player,"É isso aí, vai embora!!!",#009D73 ,PEAO7,Rainha_Idle-Sheet_0,Peão 7
-Player,Você tem ameaçado o rei e todos da cidade. Você não sairá impune.,#580243 ,Lele_mov_frente,Rainha_Idle-Sheet_0,Lele
+Player,"Povo de Turiter, estamos em uma guerra há anos. Não sabemos mais como ser civilizados.",Rainha,Rainha_Idle-Sheet_0,PEOES
+Player,"Mas não se preocupem, hoje vim anunciar que me tornarei a rainha de Turiter.",Rainha,Rainha_Idle-Sheet_0,PEOES
+NPC,"Ue, mas você já não é a rainha?",Peão 5,Rainha_Idle-Sheet_0,PEAO5
+Player,"Ó bobinho, eu sou sim, mas não de Turiter inteira. ",Rainha,Rainha_Idle-Sheet_0,PEOES
+Player,"O rei não está mais dando conta da cidade, principalmente agora que sua reputação está lá embaixo…",Rainha,Rainha_Idle-Sheet_0,PEOES
+Player,"Enfim, peço humildemente que vocês me apoiem nesse movimento, pois queremos uma cidade mais justa, não é?",Rainha,Rainha_Idle-Sheet_0,PEOES
+NPC,É ISSO AÍ. RA-INHA!!! RA-INHA!!! RA-INHA!!!,Peão 8,Rainha_Idle-Sheet_0,PEAO8
+NPC,RA-INHA!!! RA-INHA!!! RA-INHA!!!,Peões,PEOES,PEOES
+Player,Você realmente me enganou… Mas agora eu sei que você só é mais uma charlatã,Lelê,Lele_mov_frente,Rainha_Idle-Sheet_0
+NPC,"Lelê? Obrigada pela ajuda, graças a você a cidade irá dessa pra melhor!",Rainha,Lele_mov_frente,Rainha_Idle-Sheet_0
+Player,"Com as suas mentiras, ela irá para melhor, rainha?",Lelê,Lele_mov_frente,Rainha_Idle-Sheet_0
+Player,"Ou melhor, Leona noites...",Lelê,Lele_mov_frente,Rainha_Idle-Sheet_0
+Player,Leona noites? Achei que ela fosse uma doida que fica espalhando fake news na cidade.,Torre 1,TorreLEGH01,Rainha_Idle-Sheet_0
+Player,"Isso mesmo, é a Rainha e a Leona Noites são a mesma peça, que vive mentindo para todos.",Lelê,Lele_mov_frente,Rainha_Idle-Sheet_0
+Player,"Pera, você mentiu para gente?",Peão 5,PEAO5,Rainha_Idle-Sheet_0
+Player,Acalmem-se. Não menti para ninguém.,Rainha,Rainha_Idle-Sheet_0,Lele_mov_frente
+Player,"Lelê, cuidado com o que fala. Ou se não todos saberão sobre seu lado obscuro…",Rainha,Rainha_Idle-Sheet_0,Lele_mov_frente
+Player,Peça perdão e vá embora dessa cidade.,Rainha,Rainha_Idle-Sheet_0,Lele_mov_frente
+player,"É isso aí, vai embora!!!",Peão 7,PEAO7,Rainha_Idle-Sheet_0
+Player,Você tem ameaçado o rei e todos da cidade. Você não sairá impune.,Lelê,Lele_mov_frente,Rainha_Idle-Sheet_0

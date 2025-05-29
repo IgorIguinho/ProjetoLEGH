@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameTitle: Ironia
   useCombat: "Voc\xEA usou Ironia sutil"
-  combatDescr: "Voc\xEA faz um comentario ironico com intens\xE3o de deixar o alvo
-    constrangido"
+  combatDescr: "Voc\xEA faz um coment\xE1rio ir\xF4nico com inten\xE7\xE3o de deixar
+    o alvo constrangido"
   fraseAction:
   - Ain, cortou esse cabelo onde?
   - "E protetor solar, tu n\xE3o usa?"

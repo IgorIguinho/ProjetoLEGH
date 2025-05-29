@@ -1,16 +1,16 @@
-Player,"Ei, mas a resposta tava errada",#580243 ,Lele_mov_frente,PeaoVermelho_Mov_0,Lele
-NPC,"KKKKKKKKKK que otaria, eu la vou saber, isso ai nem é legal kkkkk",#009D73,Lele_mov_frente,PeaoVermelho_Mov_0,Peao
-Player,Droga,#580243 ,Lele_mov_frente,PeaoVermelho_Mov_0,Lele
-Player,LELEEEEEEEE,#695200 ,Mia_Frente_Feliz,Lele_mov_frente,Mia
-Player,"Ah, oi Mia, tudo bem?",#580243 ,Lele_mov_frente,Mia_frente_Idle_sheet_0,Lele
-NPC,"Oiiii, to bem s",#695200 ,Lele_mov_frente,Mia_frente_Idle_sheet_0,Mia
-NPC,"Vi que aquele cara te trollou, tem que ficar mais espera hihihi",#695200 ,Lele_mov_frente,Mia_frente_Idle_sheet_0,Mia
-Player,"Verdade, achei que esse tipo de pessoa só existia la no TicTeco",#580243 ,Lele_mov_frente,Mia_frente_Idle_sheet_0,Lele
-NPC,"N, eles estao por toda a parte",#695200 ,Lele_mov_frente,Mia_frente_Idle_sheet_0,Mia
-Player,"Enfim Mia, você ta meio diferente né?",#580243 ,Lele_mov_frente,Mia_frente_Idle_sheet_0,Lele
-NPC,"a, e q eu queria fica mais parecida com vc",#695200 ,Lele_mov_frente,Mia_frente_Idle_sheet_0,Mia
-Player,"Ficou muito bonita, e inclusive",#580243 ,Lele_mov_frente,Mia_frente_Idle_sheet_0,Lele
-NPC,Voce sabe qual foi o evento mais importante do mundo LGBTQIAP+?,#580243 ,Lele_mov_frente,Mia_frente_Idle_sheet_0,Lele
-NPC,"Sei, foi a revoluçao de stomewall",#695200 ,Lele_mov_frente,Mia_frente_Idle_sheet_0,Mia
-Player,"Valeu, você é uma querida",#580243 ,Lele_mov_frente,Mia_frente_Idle_sheet_0,Lele
-Player,"Ela falou que eu sou querida, hihihihi",#695200 ,Mia_Frente_Feliz,Lele_mov_frente,Mia
+Player,"Ei, mas a resposta tava errada",Lelê,Lele_mov_frente,PeaoVermelho_Mov_0
+NPC,"KKKKKKKKKK que otaria, eu la vou saber, isso ai nem é legal kkkkk",Peão,Lele_mov_frente,PeaoVermelho_Mov_0
+Player,Droga,Lelê,Lele_mov_frente,None
+Player,LELEEEEEEEE,Mia,Mia_Feliz,Lele_mov_frente
+Player,"Ah, oi Mia, tudo bem?",Lelê,Lele_mov_frente,Mia_frente_Idle_sheet_0
+NPC,"Oiiii, to bem s",Mia,Lele_mov_frente,Mia_frente_Idle_sheet_0
+NPC,"Vi que aquele cara te trollou, tem que ficar mais espera hihihi",Mia,Lele_mov_frente,Mia_frente_Idle_sheet_0
+Player,"Verdade, achei que esse tipo de pessoa só existia la no TicTeco",Lelê,Lele_mov_frente,Mia_frente_Idle_sheet_0
+NPC,"N, eles estao por toda a parte",Mia,Lele_mov_frente,Mia_frente_Idle_sheet_0
+Player,"Enfim Mia, você ta meio diferente né?",Lelê,Lele_mov_frente,Mia_frente_Idle_sheet_0
+NPC,"a, e q eu queria fica mais parecida com vc",Mia,Lele_mov_frente,Mia_frente_Idle_sheet_0
+Player,"Ficou muito bonita, e inclusive",Lelê,Lele_mov_frente,Mia_frente_Idle_sheet_0
+Player,Você sabe qual foi o evento mais importante do mundo LGBTQIAP+?,Lelê,Lele_mov_frente,Mia_frente_Idle_sheet_0
+NPC,"Sei, foi a revoluçao de stomewall",Mia,Lele_mov_frente,Mia_frente_Idle_sheet_0
+Player,"Valeu, você é uma querida",Lelê,Lele_mov_frente,Mia_frente_Idle_sheet_0
+Player,"Ela falou que eu sou querida, hihihihi",Mia,Mia_Feliz,Lele_mov_frente

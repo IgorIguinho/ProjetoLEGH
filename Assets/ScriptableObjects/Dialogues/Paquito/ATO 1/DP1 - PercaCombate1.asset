@@ -22,8 +22,7 @@ MonoBehaviour:
   - Quero, quero muito!!!
   - "Ent\xE3o t\xE1, quando for enfretar eles novamente, lembre, xingar de volta
     n\xE3o adianta nada"
-  - "E se precisar aprender novas a\xE7\xF5es, estarei dispon\xEDvel a qualquer momento"
-  - Boa sorte
+  - E se precisar vou estar do lado do sorveteiro, pode ir quando quiser
   thisIs:
   - Player
   - Player
@@ -32,9 +31,7 @@ MonoBehaviour:
   - NPC
   - Player
   - Player
-  - Player
   imagePlayer:
-  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
   - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
   - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
   - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
@@ -50,16 +47,15 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
   - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
   - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
-  - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
-  textColor:
-  - {r: 0.29411766, g: 0.74509805, b: 0.8901961, a: 1}
-  - {r: 0.29411766, g: 0.74509805, b: 0.8901961, a: 1}
-  - {r: 0.29411766, g: 0.74509805, b: 0.8901961, a: 1}
-  - {r: 0.29411766, g: 0.74509805, b: 0.8901961, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.29411766, g: 0.74509805, b: 0.8901961, a: 1}
-  - {r: 0.29411766, g: 0.74509805, b: 0.8901961, a: 1}
-  - {r: 0.29411766, g: 0.74509805, b: 0.8901961, a: 1}
+  nameDialogue:
+  - Paquito
+  - Paquito
+  - Paquito
+  - Paquito
+  - "Lel\xEA"
+  - Paquito
+  - Paquito
+  canSkip: 0
   haveCutscene: 1
   cutScene:
   - {fileID: 11400000, guid: a13ce94c63124cb449a4c4e04656223e, type: 2}

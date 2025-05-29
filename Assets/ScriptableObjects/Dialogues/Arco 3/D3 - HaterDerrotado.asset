@@ -23,7 +23,7 @@ MonoBehaviour:
   - "Finalmente vai ter justi\xE7a por aqui."
   thisIs:
   - Player
-  - Player
+  - NPC
   - Player
   - Player
   - Player
@@ -32,8 +32,8 @@ MonoBehaviour:
   - {fileID: 882610209, guid: 9d2a676236c379d4cbfe1d121991789a, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 882610209, guid: 9d2a676236c379d4cbfe1d121991789a, type: 3}
-  - {fileID: 21300000, guid: f068064ed5fbfca4d9472773755c35da, type: 3}
-  - {fileID: 21300000, guid: f068064ed5fbfca4d9472773755c35da, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   imageNPC:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
@@ -42,13 +42,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0f0214fe4ae55b440a1ee82e072dc1f7, type: 3}
   - {fileID: 21300000, guid: 0f0214fe4ae55b440a1ee82e072dc1f7, type: 3}
   - {fileID: 21300000, guid: 0f0214fe4ae55b440a1ee82e072dc1f7, type: 3}
-  textColor:
-  - {r: 0.2901961, g: 0.41568628, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.2901961, g: 0.41568628, b: 0, a: 1}
-  - {r: 1, g: 0.015686275, b: 0.30980393, a: 1}
-  - {r: 1, g: 0.015686275, b: 0.30980393, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  nameDialogue:
+  - Hater Boss
+  - "Lel\xEA"
+  - Hater Boss
+  - Sistema
+  - Sistema
+  - "Lel\xEA"
+  canSkip: 0
   haveCutscene: 1
   cutScene:
   - {fileID: 11400000, guid: 010cc41acd621ff45909807620c66361, type: 2}

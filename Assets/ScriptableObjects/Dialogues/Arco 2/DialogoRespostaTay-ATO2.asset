@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text:
   - "Nossa, a Tayana \xE9 uma mulher muito forte"
-  - "Ce \xE9 loco, famosa body builder n\xE9...."
-  - "Com lincen\xE7a, o que a Tayana fez?"
+  - "Se \xE9 loco, famosa budy builder n\xE9...."
+  - Com lincensa, o que a Tayana fez?
   - "Voc\xEA n\xE3o sabe? Ela simplesmente bateu o recorde mudial na paralimpiada
-    de 2024 la em Paris"
+    de 2024 la em paris"
   - "\xC9, pra ser mais exato ela quebrou o recorde paral\xEDmpico de halterofilismo
     ao erguer 156 quilos."
   - "Que legal, n\xE3o sabia que o Brasil participava da paralimpiada"
@@ -42,23 +42,24 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   imageNPC:
-  - {fileID: -61618077, guid: 246c068f4761cb140b18903bd4929d09, type: 3}
-  - {fileID: -61618077, guid: 246c068f4761cb140b18903bd4929d09, type: 3}
-  - {fileID: -61618077, guid: 246c068f4761cb140b18903bd4929d09, type: 3}
-  - {fileID: -61618077, guid: 246c068f4761cb140b18903bd4929d09, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1807320354, guid: cd6a588e9bd9e764795a02b3132671a9, type: 3}
-  - {fileID: 1807320354, guid: cd6a588e9bd9e764795a02b3132671a9, type: 3}
-  - {fileID: 1807320354, guid: cd6a588e9bd9e764795a02b3132671a9, type: 3}
-  - {fileID: 1807320354, guid: cd6a588e9bd9e764795a02b3132671a9, type: 3}
-  textColor:
-  - {r: 0.28235295, g: 0.7058824, b: 0.9372549, a: 1}
-  - {r: 0.28235295, g: 0.8980392, b: 0.9372549, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.28235295, g: 0.8980392, b: 0.9372549, a: 1}
-  - {r: 0.28235295, g: 0.7058824, b: 0.9372549, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.28235295, g: 0.7058824, b: 0.9372549, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  nameDialogue:
+  - Pixeoto
+  - "Pe\xE3o"
+  - "Lel\xEA"
+  - "Pe\xE3o"
+  - Pixeoto
+  - "Lel\xEA"
+  - Pixeoto
+  - "Lel\xEA"
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

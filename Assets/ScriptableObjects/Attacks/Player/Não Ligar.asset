@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameTitle: "N\xE3o ligar"
   useCombat: "A proxima a\xE7\xE3o do oponente sera menos efetiva"
-  combatDescr: "Voc\xEA se concentra e fortalece seu menta, fazendo com que a proxima
+  combatDescr: "Voc\xEA se concentra e fortalece seu mental, fazendo com que a pr\xF3xima
     a\xE7\xE3o do oponente fa\xE7a pouco efeito"
   fraseAction:
   - "N\xE3o ligo"

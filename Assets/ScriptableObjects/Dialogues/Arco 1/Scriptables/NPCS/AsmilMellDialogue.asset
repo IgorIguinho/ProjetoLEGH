@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AsmilMellDialogue
   m_EditorClassIdentifier: 
   text:
-  - "kk amiga, olha esses homens do seculo 21, essa gera\xE7\xE3o t\xE1 perdida"
-  - "Como assim? o que tem os homens do s\xE9culo 21?"
+  - "kk amiga, olha esses homens de hj em dia, essa gera\xE7\xE3o t\xE1 perdida"
+  - como assim? o que tem os homens em 2024?
   - "Voc\xEA n\xE3o viu? eles querem ser mimados agora, na vdd acho q nem s\xE3o
     homens kkkk"
   - "T\xE3o at\xE9 querendo dividir a conta, teve um que foi dar uma cantada em mim
@@ -51,27 +51,28 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   imageNPC:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -335479630, guid: d21503d6a2a5bc34db01397608fda75e, type: 3}
-  - {fileID: -335479630, guid: d21503d6a2a5bc34db01397608fda75e, type: 3}
-  - {fileID: -335479630, guid: d21503d6a2a5bc34db01397608fda75e, type: 3}
-  - {fileID: -335479630, guid: d21503d6a2a5bc34db01397608fda75e, type: 3}
-  - {fileID: -335479630, guid: d21503d6a2a5bc34db01397608fda75e, type: 3}
-  - {fileID: -335479630, guid: d21503d6a2a5bc34db01397608fda75e, type: 3}
-  - {fileID: -335479630, guid: d21503d6a2a5bc34db01397608fda75e, type: 3}
-  - {fileID: -335479630, guid: d21503d6a2a5bc34db01397608fda75e, type: 3}
-  - {fileID: -335479630, guid: d21503d6a2a5bc34db01397608fda75e, type: 3}
-  - {fileID: -335479630, guid: d21503d6a2a5bc34db01397608fda75e, type: 3}
-  textColor:
-  - {r: 1, g: 0.34117648, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 1, g: 0.34117648, b: 1, a: 1}
-  - {r: 1, g: 0.34117648, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 1, g: 0.34117648, b: 1, a: 1}
-  - {r: 1, g: 0.34117648, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 1, g: 0.34117648, b: 1, a: 1}
+  nameDialogue:
+  - Asmin_mell
+  - "Lel\xEA"
+  - Asmin_mell
+  - Asmin_mell
+  - "Lel\xEA"
+  - Asmin_mell
+  - Asmin_mell
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Asmin_mell
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

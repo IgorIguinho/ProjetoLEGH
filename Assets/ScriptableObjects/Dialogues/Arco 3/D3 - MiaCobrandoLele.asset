@@ -60,7 +60,7 @@ MonoBehaviour:
   - NPC
   - Player
   imagePlayer:
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
+  - {fileID: 0}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
@@ -80,42 +80,43 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   imageNPC:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  - {fileID: 1360489175, guid: a7b7f8a008697554f863749977ca121e, type: 3}
-  textColor:
-  - {r: 0.4117647, g: 0.32156864, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 1, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  nameDialogue:
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - Mia
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  canSkip: 0
   haveCutscene: 1
   cutScene:
   - {fileID: 11400000, guid: 418f8335809966b468e1fe239903d5f3, type: 2}

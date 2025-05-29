@@ -65,17 +65,17 @@ MonoBehaviour:
   imagePlayer:
   - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
   - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: 724964621, guid: 790854b62240dce46bfb7a877697edce, type: 3}
   - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
   - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
   - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: 724964621, guid: 790854b62240dce46bfb7a877697edce, type: 3}
-  - {fileID: 724964621, guid: 790854b62240dce46bfb7a877697edce, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: 21300000, guid: 5231816a8c2c66a409a20f100a42c377, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: -175385637, guid: e411dd076681b0d4e9893d7241dcda74, type: 3}
+  - {fileID: 0}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 6b4bc57b2d613b745810ded07d8727ad, type: 3}
   - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
@@ -84,47 +84,48 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2419089612b4fde4e81705195fe6eb9d, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   imageNPC:
-  - {fileID: 21300000, guid: 5231816a8c2c66a409a20f100a42c377, type: 3}
-  - {fileID: 21300000, guid: 5231816a8c2c66a409a20f100a42c377, type: 3}
-  - {fileID: 21300000, guid: 6b4bc57b2d613b745810ded07d8727ad, type: 3}
-  - {fileID: 21300000, guid: 5231816a8c2c66a409a20f100a42c377, type: 3}
-  - {fileID: 21300000, guid: 5231816a8c2c66a409a20f100a42c377, type: 3}
-  - {fileID: 21300000, guid: 5231816a8c2c66a409a20f100a42c377, type: 3}
-  - {fileID: 21300000, guid: c37a2ef1b2a194140ab309ddd786689b, type: 3}
-  - {fileID: 21300000, guid: 5231816a8c2c66a409a20f100a42c377, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
-  textColor:
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4509804, g: 0, b: 0.019607844, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0.8509804, g: 0.74509805, b: 1, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  nameDialogue:
+  - Rainha
+  - Rainha
+  - "Pe\xE3o 5"
+  - Rainha
+  - Rainha
+  - Rainha
+  - "Pe\xE3o 8"
+  - "Pe\xF5es"
+  - "Lel\xEA"
+  - Rainha
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Torre 1
+  - "Lel\xEA"
+  - "Pe\xE3o 5"
+  - Rainha
+  - Rainha
+  - Rainha
+  - "Pe\xE3o 7"
+  - "Lel\xEA"
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

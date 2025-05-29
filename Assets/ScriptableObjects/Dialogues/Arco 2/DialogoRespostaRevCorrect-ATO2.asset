@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
+  - {fileID: 21300000, guid: 7bd5382e07e7c18478a816b7c8411ea7, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
@@ -62,41 +62,42 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
+  - {fileID: 21300000, guid: 7bd5382e07e7c18478a816b7c8411ea7, type: 3}
   imageNPC:
-  - {fileID: -1682006492, guid: bf06997b6a526f64da99e91c1841d075, type: 3}
-  - {fileID: -1682006492, guid: bf06997b6a526f64da99e91c1841d075, type: 3}
-  - {fileID: 21300000, guid: f068064ed5fbfca4d9472773755c35da, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
-  - {fileID: -1520971376, guid: 280c903650555a347b1fb1dec4d17a40, type: 3}
-  - {fileID: 21300000, guid: f068064ed5fbfca4d9472773755c35da, type: 3}
-  textColor:
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0, g: 0.6156863, b: 0.4509804, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
+  nameDialogue:
+  - "Lel\xEA"
+  - "Pe\xE3o"
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  canSkip: 0
   haveCutscene: 1
   cutScene:
   - {fileID: 11400000, guid: 52f54583507d70f4eaedf169561c3441, type: 2}

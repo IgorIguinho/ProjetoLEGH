@@ -60,17 +60,18 @@ MonoBehaviour:
   - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
   - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
   - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
-  textColor:
-  - {r: 0.9882353, g: 1, b: 0.3529412, a: 1}
-  - {r: 0.29803923, g: 0.29803923, b: 0.61960787, a: 1}
-  - {r: 0.9882353, g: 1, b: 0.3529412, a: 1}
-  - {r: 0.29803923, g: 0.29803923, b: 0.61960787, a: 1}
-  - {r: 0.29803923, g: 0.29803923, b: 0.61960787, a: 1}
-  - {r: 0.9882353, g: 1, b: 0.3529412, a: 1}
-  - {r: 0.29803923, g: 0.29803923, b: 0.61960787, a: 1}
-  - {r: 0.9882353, g: 1, b: 0.3529412, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.9882353, g: 1, b: 0.3529412, a: 1}
+  nameDialogue:
+  - Daniel Moto
+  - Lucas Narins
+  - Daniel Moto
+  - Lucas Narins
+  - Daniel Moto
+  - Lucas Narins
+  - Daniel Moto
+  - Lucas Narins
+  - "Lel\xEA"
+  - Daniel Moto
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

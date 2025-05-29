@@ -36,7 +36,7 @@ MonoBehaviour:
   - Player
   - NPC
   - Player
-  - Player
+  - 
   - NPC
   - Player
   - NPC
@@ -66,18 +66,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
   - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
   - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
-  textColor:
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.29411766, g: 0.74509805, b: 0.8901961, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.29411766, g: 0.74509805, b: 0.8901961, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0, a: 1}
+  nameDialogue:
+  - SISTEMA
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Paquito
+  - "Lel\xEA"
+  - Paquito
+  - "Lel\xEA"
+  - Mia
+  canSkip: 0
   haveCutscene: 1
   cutScene:
   - {fileID: 11400000, guid: 3cddb4f556f58a949a2dc70e4f16fd2f, type: 2}

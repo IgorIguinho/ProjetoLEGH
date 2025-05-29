@@ -1,31 +1,31 @@
-Player,O que está acontecendo com esse frangote?,#009D73 ,PEAO4,Rei_Triste_0,Peão 4
-Player,"é... É, FRANGOTE!!!",#009D73 ,PEAO7,Rei_Triste_0,Peão 7
-Player,Estamos todos perdendo pra esse jovem fracote. Temos que mudar isso.,#009D73 ,PEAO4,Rei_Triste_0,Peão 4
-Player,"É, MUDAR!!!!!",#009D73 ,PEAO7,Rei_Triste_0,Peão 7
-Player,Vocês ousam me abandonar??? Vocês não tem ninguém além de mim.,#F80009 ,Rei_legh_Sheet_0,PEOES,Rei
-Player,"Se vocês forem embora, não haverá cidade que aceite vocês, como eu aceitei.",#F80009 ,Rei_legh_Sheet_0,PEOES,Rei
-NPC,Eu ouvi que a Leona às noites agora aceita qualquer um. Vamos até ela!,#009D73 ,Rei_legh_Sheet_0,PEOES,Peão 5
-NPC,"É isso ai, vamos lá!!!",#009D73 ,PEAO4,PEOES,Peão 4
-Player,Sério isso? A Leona noites É UMA FARSA!!! NÃO CONFIEM NELA.,#F80009 ,Rei_legh_Sheet_0,PEOES,Rei
-NPC,Olha só quem fala. Bem que os rumores pareciam estar certos...,#009D73 ,PEAO4,PEOES,Peão 4
-Player,Quais rumores?,#580243 ,Lele_mov_frente,PEOES,Lele
-NPC,Que o rei na verdade gosta de homem. Isso não é nada bom para a reputação tradicional da cidade.,#009D73 ,PEAO4,Lele_mov_frente,Peão 4
-NPC,O QUE??? NÃO PODE SER!!!!,#009D73 ,PEAO6,Lele_mov_frente,Peão 6
-Player,NÃO! ISSO É MENTIRA!!!,#F80009 ,Rei_legh_Sheet_0,Rei_legh_Sheet_0,Rei
-Player,Aquela bruxa desgraçada!!! Ela disse que não ia vazar.,#F80009 ,Rei_legh_Sheet_0,Rei_legh_Sheet_0,Rei
-Player,Você tá bem?,#580243 ,Lele_mov_frente,Rei_legh_Sheet_0,Lele
-NPC,Óbvio que não!!! Aquela velha tem me chantageado com isso desde que nos conhecemos,#F80009 ,Lele_mov_frente,Rei_legh_Sheet_0,Rei
-NPC,E agora ela vaza isso pros meus súditos…,#F80009 ,Lele_mov_frente,Rei_legh_Sheet_0,Rei
-Player,"Que você é gay? Eu sinto muito por eles terem te tratado assim, mas não sinta vergonha disso",#580243 ,Lele_mov_frente,Rei_legh_Sheet_0,Lele
-NPC,"Quando cheguei aqui, as pessoas me tratavam como rei, por eu ser maneiro",#F80009 ,Lele_mov_frente,Rei_legh_Sheet_0,Rei
-NPC,Agora eles me odeiam.,#F80009 ,Lele_mov_frente,Rei_legh_Sheet_0,Rei
-Player,"Não é que te odeiam, eles só não conseguem ter empatia. E lembre que vc não deve satisfação pra ninguém",#580243 ,Lele_mov_frente,Rei_legh_Sheet_0,Lele
-NPC,Talvez… Mas tudo isso é culpa daquela fraudulenta.,#F80009 ,Lele_mov_frente,Rei_legh_Sheet_0,Rei
-Player,"Quem é essa Leona noites, que está vazando tanta informação?",#580243 ,Lele_mov_frente,Rei_legh_Sheet_0,Lele
-NPC,Você conheceu ela. É a rainha do lado vermelho.,#F80009 ,Lele_mov_frente,Rei_legh_Sheet_0,Rei
-Player,É ELA?!,#580243 ,Lele_mov_frente,Rei_legh_Sheet_0,Lele
-NPC,Sim… ,#F80009 ,Lele_mov_frente,Rei_legh_Sheet_0,Rei
-NPC,"Pelo jeito ela mentiu um monte para você, te manipulando até você fazer o que ela quisesse.",#F80009 ,Lele_mov_frente,Rei_legh_Sheet_0,Rei
-Player,"Nossa,como me deixei enganar assim por ela?!… Preciso resolver isso",#580243 ,Lele_mov_frente,Rei_legh_Sheet_0,Lele
-NPC,Ela é muito forte influente,#F80009 ,Lele_mov_frente,Rei_legh_Sheet_0,Rei
-Player,"Mas se ela está fazendo tudo isso, alguém tem que fazer alguma coisa",#580243 ,Lele_mov_frente,Rei_legh_Sheet_0,Lele
+Player,O que está acontecendo com esse frangote?,Peão 4,PEAO4,Rei_Triste_0
+Player,"é... É, FRANGOTE!!!",Peão 7,PEAO7,Rei_Triste_0
+Player,Estamos todos perdendo pra esse jovem fracote. Temos que mudar isso.,Peão 4,PEAO4,Rei_Triste_0
+Player,"É, MUDAR!!!!!",Peão 7,PEAO7,Rei_Triste_0
+Player,Vocês ousam me abandonar??? Vocês não tem ninguém além de mim.,Rei,Rei_legh_Sheet_0,PEOES
+Player,"Se vocês forem embora, não haverá cidade que aceite vocês, como eu aceitei.",Rei,Rei_legh_Sheet_0,PEOES
+NPC,Eu ouvi que a Leona às noites agora aceita qualquer um. Vamos até ela!,Peão 5,Rei_legh_Sheet_0,PEAO5
+Player,"É isso ai, vamos lá!!!",Peão 4,PEAO4,PEOES
+Player,Sério isso? A Leona noites É UMA FARSA!!! NÃO CONFIEM NELA.,Rei,Rei_legh_Sheet_0,PEOES
+Player,Olha só quem fala. Bem que os rumores pareciam estar certos...,Peão 4,PEAO4,PEOES
+Player,Quais rumores?,Lelê,Lele_mov_frente,PEOES
+Player,Que o rei na verdade gosta de homem. Isso não é nada bom para a reputação tradicional da cidade.,Peão 4,PEAO4,Lele_mov_frente
+NPC,O QUE??? NÃO PODE SER!!!!,Peão 6,PEOES,PEAO6
+Player,NÃO! ISSO É MENTIRA!!!,Rei,Rei_legh_Sheet_0,PEOES
+Player,Aquela bruxa desgraçada!!! Ela disse que não ia vazar.,Rei,Rei_legh_Sheet_0,PEOES
+Player,Você tá bem?,Lelê,Lele_mov_frente,Rei_legh_Sheet_0
+NPC,Óbvio que não!!! Aquela velha tem me chantageado com isso desde que nos conhecemos,Rei,Lele_mov_frente,Rei_legh_Sheet_0
+NPC,E agora ela vaza isso pros meus súditos…,Rei,Lele_mov_frente,Rei_legh_Sheet_0
+Player,"Que você é gay? Eu sinto muito por eles terem te tratado assim, mas não sinta vergonha disso",Lelê,Lele_mov_frente,Rei_legh_Sheet_0
+NPC,"Quando cheguei aqui, as pessoas me tratavam como rei, por eu ser maneiro",Rei,Lele_mov_frente,Rei_legh_Sheet_0
+NPC,Agora eles me odeiam.,Rei,Lele_mov_frente,Rei_legh_Sheet_0
+Player,"Não é que te odeiam, eles só não conseguem ter empatia. E lembre que vc não deve satisfação pra ninguém",Lelê,Lele_mov_frente,Rei_legh_Sheet_0
+NPC,Talvez… Mas tudo isso é culpa daquela fraudulenta.,Rei,Lele_mov_frente,Rei_legh_Sheet_0
+Player,"Quem é essa Leona noites, que está vazando tanta informação?",Lelê,Lele_mov_frente,Rei_legh_Sheet_0
+NPC,Você conheceu ela. É a rainha do lado vermelho.,Rei,Lele_mov_frente,Rei_legh_Sheet_0
+Player,É ELA?!,Lelê,Lele_mov_frente,Rei_legh_Sheet_0
+NPC,Sim… ,Rei,Lele_mov_frente,Rei_legh_Sheet_0
+NPC,"Pelo jeito ela mentiu um monte para você, te manipulando até você fazer o que ela quisesse.",Rei,Lele_mov_frente,Rei_legh_Sheet_0
+Player,"Nossa,como me deixei enganar assim por ela?!… Preciso resolver isso",Lelê,Lele_mov_frente,Rei_legh_Sheet_0
+NPC,Ela é muito forte influente,Rei,Lele_mov_frente,Rei_legh_Sheet_0
+Player,"Mas se ela está fazendo tudo isso, alguém tem que fazer alguma coisa",Lelê,Lele_mov_frente,Rei_legh_Sheet_0

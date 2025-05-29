@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: DialogoRespostaTrans-ATO2
   m_EditorClassIdentifier: 
   text:
-  - "Eu sou \"ingualzinha\" a Birdo, nosso mindset \xE9 ingual, nos duas somos divas
-    e poderosas"
-  - "E vc, \xE9 \"ingual\" a quem?"
+  - "Eu sou ingualzinha a Birdo, nosso mindset \xE9 ingual, nos duas somos divas
+    e poderas"
+  - "E vc, \xE9 ingual a quem?"
   - Eu sou igual a mim mesma, eu acho
   - "Ah... que sem gra\xE7a..."
   - "E quem \xE9 Birdo?"
@@ -53,16 +53,17 @@ MonoBehaviour:
   - {fileID: 1480249014, guid: 1956c64d810f203418fa9a1d858114e7, type: 3}
   - {fileID: 1480249014, guid: 1956c64d810f203418fa9a1d858114e7, type: 3}
   - {fileID: 1480249014, guid: 1956c64d810f203418fa9a1d858114e7, type: 3}
-  textColor:
-  - {r: 0.9372549, g: 0.28235295, b: 0.36862746, a: 1}
-  - {r: 0.9372549, g: 0.28235295, b: 0.36862746, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.9372549, g: 0.28235295, b: 0.36862746, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.9372549, g: 0.28235295, b: 0.36862746, a: 1}
-  - {r: 0.9372549, g: 0.28235295, b: 0.36862746, a: 1}
-  - {r: 0.9372549, g: 0.28235295, b: 0.36862746, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
+  nameDialogue:
+  - Lune
+  - Lune
+  - "Lel\xEA"
+  - Lune
+  - "Lel\xEA"
+  - Lune
+  - Lune
+  - Lune
+  - "Lel\xEA"
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 
