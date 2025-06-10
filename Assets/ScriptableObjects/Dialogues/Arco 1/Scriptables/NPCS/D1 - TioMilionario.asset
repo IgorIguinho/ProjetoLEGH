@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72838054fec1684a904ccabd9dae52c, type: 3}
+  m_Name: D1 - TioMilionario
+  m_EditorClassIdentifier: 
+  text:
+  - "Ei voc\xEA, t\xE1 cansado de n\xE3o ter dinheiro pra nada?"
+  - "humm, na vdd sim. Como fa\xE7o pra mudar isso?"
+  - "Primeiro, tome banho gelado, trabalhe 5 vezes mais, compre roupas que comuniquem
+    que voc\xEA \xE9 bem sucedido..."
+  - "e invista na bolsa todo m\xEAs, assim voc\xEA ter\xE1 sucesso na vida pessoal
+    e financeira..."
+  - "e para avan\xE7ar mais ainda e sair da pobreza \xE9 s\xF3 comprar meu curso"
+  - Eu discordo um pouco, mas parece interessante. Quanto custa esse curso?
+  - "Ele custa R$4.000,00, mas s\xF3 porque voc\xEA \xE9 um cara gente boa eu dou
+    um desconto, a\xED fica R$2.000,00. O que acha?"
+  - QUE CARO!!!!
+  - "Como que \xE9 que algu\xE9m vai ter dinheiro para isso se custa mais que um
+    sal\xE1rio m\xEDnimo?"
+  - "pensa que \xE9 um investimento pro futuro, \xE9 o passo a passo de como eu consegui"
+  - "N\xE3o valeu"
+  - Garanto que tu ficou rico vendendo um curso duvidoso
+  - Tchau
+  thisIs:
+  - NPC
+  - Player
+  - NPC
+  - NPC
+  - NPC
+  - Player
+  - NPC
+  - Player
+  - Player
+  - NPC
+  - Player
+  - Player
+  - Player
+  imagePlayer:
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  imageNPC:
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  - {fileID: 1721036716, guid: 9e7d637ed213ccc40894669daa7ea8e9, type: 3}
+  nameDialogue:
+  - TioMilonario
+  - "Lel\xEA"
+  - TioMilonario
+  - TioMilonario
+  - TioMilonario
+  - "Lel\xEA"
+  - TioMilonario
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - TioMilonario
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - "Lel\xEA"
+  canSkip: 0
+  haveCutscene: 0
+  cutScene: []
+  numberCutScene: 
+  battleScene: 
+  isBattle: 0
+  enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
+  learnAction: 0
+  attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72838054fec1684a904ccabd9dae52c, type: 3}
+  m_Name: D2 - Dialogo1
+  m_EditorClassIdentifier: 
+  text:
+  - "Vejam s\xF3, temos uma nova integrante na \xE1rea. Hohoho seja bem vinda. Qual
+    \xE9 seu nome jovem?"
+  - Seja bem vindo!!!
+  - "Oi, meu nome \xE9 Lele. Qual o nome desse lugar?"
+  - "Ho Ho,reconhe\xE7o seu desconhecimento. Pois bem. estamos em Turiter, uma cidade
+    espl\xEAndida, onde h\xE1 um rei honesto e gente de bem. Oh e eu, o cavaleiro
+    mais honrado destas terras"
+  - "Isso a\xED, \xE9 isso mesmo. Sim, concordo."
+  - "Por que est\xE3o separados por cores?"
+  - "Ora ora, j\xE1 est\xE1 olhando demais. Daquele lado vivem os asquerosos que
+    insistem em n\xE3o aceitar as coisas corretamente, como deveriam ser."
+  - "N\xE3o \xE9 muito legal falar mal das pessoas pelas costas delas."
+  - "Oh, voc\xEA est\xE1 a defend\xEA-los???? Esperava mais de voc\xEA, tsk."
+  - Duas caras, tsk tsk tsk tsk.
+  - "Calma, calma, eu n\xE3o quis defender nada, s\xF3 estou tentando entender."
+  - "Por que voc\xEA odeia tanto eles?"
+  - "O estilo deles de vida n\xE3o combina com o nosso."
+  - "Como pode uma civiliza\xE7\xE3o apoiar o casamento gay?"
+  - "\xC9 isso mesmo kikikiki."
+  - "Eles s\xE3o nojentos."
+  - "\xC9 o fim da reprodu\xE7\xE3o! Tudo vai acabar em desgra\xE7a!"
+  - ...
+  - "N\xE3o faz sentido odiar eles por isso. O que importa \xE9 o sentimento e n\xE3o
+    a pessoa\u2026\r"
+  - "Ah, j\xE1 entendi. Voc\xEA tamb\xE9m \xE9 uma deles."
+  - Mais um jovem sendo corrompido  por essa ideologia de pecadores imbecis.
+  - Pecadora
+  - Imbecil
+  - Cancela ela!!!
+  - Mas eu...
+  - "Enfim, voc\xEA est\xE1 sendo muito agressivo. "
+  - Vou continuar minha jornada.
+  - "Al\xE9m de est\xFApida, \xE9 mal educada. Tenho certeza que n\xE3o teve um pai
+    na inf\xE2ncia para educar voc\xEA"
+  - "Hahaha, \xF3rf\xE3"
+  - Hahaha...
+  - Mas... eu nunca vi meu pai...
+  - Que briga sem sentido. Vamos parar por aqui.
+  - "Voc\xEA que est\xE1 cometendo um erro, jovem\u2026 Posso n\xE3o ser o rei, mas
+    estes fi\xE9is far\xE3o a minha vontade"
+  - "CAROS SEGUIDORES, PRECISO DA AJUDA DE VOC\xCAS CONTRA ESSE MONSTRO. ATAQUEM!!!"
+  thisIs:
+  - Player
+  - Player
+  - Player
+  - NPC
+  - NPC
+  - Player
+  - NPC
+  - Player
+  - NPC
+  - Player
+  - Player
+  - Player
+  - NPC
+  - NPC
+  - Player
+  - Player
+  - Player
+  - Player
+  - Player
+  - NPC
+  - NPC
+  - Player
+  - Player
+  - Player
+  - Player
+  - Player
+  - Player
+  - NPC
+  - NPC
+  - NPC
+  - Player
+  - Player
+  - NPC
+  - Player
+  imagePlayer:
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: 21300000, guid: 5231816a8c2c66a409a20f100a42c377, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 15bed586b51fcea4faed1d431a162eba, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: b0ecae4accf200442a0a8a8c8a92b2aa, type: 3}
+  - {fileID: 21300000, guid: a51dd8cbb3614154895755065612a04b, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 15bed586b51fcea4faed1d431a162eba, type: 3}
+  - {fileID: 21300000, guid: a51dd8cbb3614154895755065612a04b, type: 3}
+  - {fileID: 21300000, guid: b0ecae4accf200442a0a8a8c8a92b2aa, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: b0ecae4accf200442a0a8a8c8a92b2aa, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  imageNPC:
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: 21300000, guid: 15bed586b51fcea4faed1d431a162eba, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: 21300000, guid: 15bed586b51fcea4faed1d431a162eba, type: 3}
+  - {fileID: 21300000, guid: b0ecae4accf200442a0a8a8c8a92b2aa, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
+  - {fileID: 21300000, guid: 5231816a8c2c66a409a20f100a42c377, type: 3}
+  nameDialogue:
+  - Cavalo
+  - "Pe\xF5es"
+  - "Lel\xEA"
+  - Cavalo
+  - "Pe\xF5es"
+  - "Lel\xEA"
+  - Cavalo
+  - "Lel\xEA"
+  - Cavalo
+  - "Pe\xF5es"
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Cavalo
+  - Cavalo
+  - "Pe\xE3o3"
+  - "Pe\xE3o2"
+  - Cavalo
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Cavalo
+  - Cavalo
+  - "Pe\xE3o 1"
+  - "Pe\xE3o 2"
+  - "Pe\xE3o 3"
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Cavalo
+  - "Pe\xE3o 1"
+  - "Pe\xE3o 3"
+  - "Pe\xE3o 3"
+  - "Lel\xEA"
+  - Cavalo
+  - Cavalo
+  canSkip: 0
+  haveCutscene: 1
+  cutScene:
+  - {fileID: 11400000, guid: 3e449d9e19eaff042a1bf9795de632bc, type: 2}
+  numberCutScene: 21000000
+  battleScene: Battle
+  isBattle: 1
+  enemy: {fileID: 11400000, guid: 5e9fcc3c97bb292408efb2b152429ed1, type: 2}
+  isNextScene: 0
+  nextScene: 
+  learnAction: 0
+  attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

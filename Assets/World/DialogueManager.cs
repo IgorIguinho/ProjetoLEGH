@@ -112,7 +112,15 @@ public class DialogueManager : MonoBehaviour
     void Update()
     {
         dialogueSistem();
-        
+        if (isRevulocaoDialogue && isBispoDialogue)
+        {
+            numberDialogueNpc++;
+            isRevulocaoDialogue = false;
+            isBispoDialogue = false;
+            if (gameobject != null)
+            { gameobject.SetActive(true); }
+
+        }
     }
 
 
@@ -277,16 +285,9 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            if (isRevulocaoDialogue && isBispoDialogue)
-            {
-                numberDialogueNpc++;
-                isRevulocaoDialogue = false;
-                isBispoDialogue = false;
-
-            }
+            
             dialogueGroup.SetActive(false);
-            if (gameobject != null)
-            { gameobject.SetActive(true); }
+            
             numberOfDialogue = 0;
 
         }

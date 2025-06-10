@@ -25,11 +25,11 @@ MonoBehaviour:
   - NPC
   imagePlayer:
   - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
+  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
+  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
   imageNPC:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
   - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
   - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
   - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}

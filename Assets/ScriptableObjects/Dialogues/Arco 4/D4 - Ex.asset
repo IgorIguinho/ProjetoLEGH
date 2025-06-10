@@ -84,18 +84,18 @@ MonoBehaviour:
   - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
   nameDialogue:
   - Luca
-  - "Lel\xEA"
-  - "Lel\xEA"
+  - Lele
   - Luca
-  - "Lel\xEA"
+  - Lele
   - Luca
-  - "Lel\xEA"
+  - Lele
+  - Luca
+  - Lele
   - Luca
   - Luca
-  - "Lel\xEA"
+  - Lele
   - Luca
-  - "Lel\xEA"
-  - Luca
+  - Lele
   - Luca
   canSkip: 0
   haveCutscene: 0
@@ -104,8 +104,8 @@ MonoBehaviour:
   battleScene: 
   isBattle: 0
   enemy: {fileID: 0}
-  isNextScene: 0
-  nextScene: 
+  isNextScene: 1
+  nextScene: WorldATO4 3
   learnAction: 0
   attackScriptable: {fileID: 0}
   havePuzzle: 0

@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72838054fec1684a904ccabd9dae52c, type: 3}
+  m_Name: D2 - DialogoRainha
+  m_EditorClassIdentifier: 
+  text:
+  - "Sua alteza, aqui est\xE1 Lele, como prometido."
+  - "Ol\xE1, Lele. Ouvi muito falar de voc\xEA\u2026 Voc\xEA tem muitas habilidades
+    interessantes."
+  - "Quem falou sobre mim para voc\xEA? A Leona?"
+  - "Leona noites \xE9? Bom, eu acabei escutando dos cidad\xE3os mesmo."
+  - "Muitos est\xE3o felizes por voc\xEA ter derrotado alguns arruaceiros do outro
+    lado."
+  - Eu fico feliz em poder ajudar
+  - "Posso fazer uma pergunta? quem controla os cavaleiros de l\xE1 que espalham
+    tanta fake news?"
+  - "Fake news? Ah, s\xF3 pode ser coisa dele\u2026"
+  - Dele? Dele quem?
+  - "Do rei, ele tem falado mentiras para os s\xFAditos dele j\xE1 a um tempo. Ningu\xE9m
+    mais tem opini\xE3o\u2026"
+  - "Ningu\xE9m mais tem senso cr\xEDtico, todos parecem zumbis..."
+  - "Isso \xE9 p\xE9ssimo. Por que ningu\xE9m se rebelou ainda?"
+  - "Pois bem, aquela cidade inteira foi contaminada com ideias idiotas do rei, e
+    eu preciso mudar isso\u2026"
+  - "Eu j\xE1 enviei alguns devotos para reverter a situa\xE7\xE3o, mas todos fracassaram\u2026"
+  - "At\xE9 voc\xEA chegar. Voc\xEA \xE9 a \xFAnica que pode derrotar ele, a \xFAnica
+    pessoa deste reino com tal poder"
+  - "A \xFAnica? com certeza, pode deixar que eu dou conta"
+  - "Voc\xEA faria isso??? Lele, voc\xEA \xE9 demais!!!"
+  - "Para encontr\xE1-lo, voc\xEA precisar\xE1 passar pela porta do castelo. Tome
+    cuidado, o rei \xE9 poderoso."
+  - Pode deixar!
+  thisIs:
+  - NPC
+  - Player
+  - Player
+  - NPC
+  - NPC
+  - Player
+  - Player
+  - NPC
+  - Player
+  - NPC
+  - NPC
+  - Player
+  - NPC
+  - NPC
+  - NPC
+  - Player
+  - NPC
+  - NPC
+  - Player
+  imagePlayer:
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  imageNPC:
+  - {fileID: -1472770339, guid: 847b3fa5c80a6d14583ca36f06ae45cb, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
+  nameDialogue:
+  - Bispo
+  - Rainha
+  - "Lel\xEA"
+  - Rainha
+  - Rainha
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Rainha
+  - "Lel\xEA"
+  - Rainha
+  - Rainha
+  - "Lel\xEA"
+  - Rainha
+  - Rainha
+  - Rainha
+  - "Lel\xEA"
+  - Rainha
+  - Rainha
+  - "Lel\xEA"
+  canSkip: 0
+  haveCutscene: 0
+  cutScene: []
+  numberCutScene: 
+  battleScene: 
+  isBattle: 0
+  enemy: {fileID: 0}
+  isNextScene: 1
+  nextScene: WorldATO2 5
+  learnAction: 0
+  attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

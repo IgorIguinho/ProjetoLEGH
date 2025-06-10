@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72838054fec1684a904ccabd9dae52c, type: 3}
+  m_Name: D2 - RespostaRevCorrect
+  m_EditorClassIdentifier: 
+  text:
+  - Ei, mas a resposta tava errada
+  - "KKKKKKKKKK que ot\xE1ria, eu vou l\xE1 saber, isso a\xED nem \xE9 legal kkkkk"
+  - Droga
+  - LELEEE
+  - Ah, oi Mia, tudo bem?
+  - Oiiii, to bem sim
+  - Vi que aquele cara te trollou, tem que ficar mais espera hihihi
+  - "Verdade, achei que esse tipo de pessoa s\xF3 existia l\xE1 no TicTeco"
+  - "N, eles est\xE3o por toda a parte"
+  - "Enfim Mia, voc\xEA t\xE1 meio diferente n\xE9?"
+  - "Ah, \xE9 q eu queria fica mais parecida com vc"
+  - "Ficou muito bonita... \xC1lias,"
+  - "Voc\xEA sabe qual foi o evento mais importante do mundo LGBTQIAP+?"
+  - "Sei simm, foi a revolu\xE7\xE3o de Stonewall. Ela foi um marco para os direitos
+    da comunidade Lgbt+"
+  - "Ah n\xE3o sabia disso, obrigada Mia, voc\xEA \xE9 uma querida"
+  - Ela falou que eu sou querida, hihihihi
+  thisIs:
+  - Player
+  - NPC
+  - Player
+  - Player
+  - Player
+  - NPC
+  - NPC
+  - Player
+  - NPC
+  - Player
+  - NPC
+  - Player
+  - Player
+  - NPC
+  - Player
+  - Player
+  imagePlayer:
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 7bd5382e07e7c18478a816b7c8411ea7, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 7bd5382e07e7c18478a816b7c8411ea7, type: 3}
+  imageNPC:
+  - {fileID: -1682006492, guid: bf06997b6a526f64da99e91c1841d075, type: 3}
+  - {fileID: -1682006492, guid: bf06997b6a526f64da99e91c1841d075, type: 3}
+  - {fileID: 21300000, guid: f068064ed5fbfca4d9472773755c35da, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: -1401401551, guid: f4c74b9c11e1c9648975d08b08eefb5f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  nameDialogue:
+  - "Lel\xEA"
+  - "Pe\xE3o"
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  canSkip: 0
+  haveCutscene: 1
+  cutScene:
+  - {fileID: 11400000, guid: 52f54583507d70f4eaedf169561c3441, type: 2}
+  - {fileID: 11400000, guid: 8c553718452828240bb1be569778da3e, type: 2}
+  - {fileID: 11400000, guid: e4b37b3f1b6b1e74492b64322a99e1b9, type: 2}
+  - {fileID: 11400000, guid: 886a93aac440d6d48a702b88c911a30c, type: 2}
+  numberCutScene: 01000000030000000e0000000f000000
+  battleScene: 
+  isBattle: 0
+  enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
+  learnAction: 0
+  attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   text:
   - Que burra kkkk
   - Tinha que ser mulher hahaha
-  - 'Oi, ta tudo bem? '
+  - "Oi, t\xE1 tudo bem? "
   - N, nem um pouco
   - "Hoje a tarde, minha m\xE3e mandou mensagem pedindo ajuda pra arrumar uma maquina
     ou algo assim"
@@ -76,11 +76,11 @@ MonoBehaviour:
   - {fileID: -636420824, guid: b8af1bd917a506148b3f98f90d310bed, type: 3}
   - {fileID: -636420824, guid: b8af1bd917a506148b3f98f90d310bed, type: 3}
   - {fileID: -636420824, guid: b8af1bd917a506148b3f98f90d310bed, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 370b73ff54c3f49448a371f955ab8703, type: 3}
+  - {fileID: 21300000, guid: 370b73ff54c3f49448a371f955ab8703, type: 3}
   - {fileID: 21300000, guid: 4d043d9df7ab7ef409a97b8d26e43172, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 370b73ff54c3f49448a371f955ab8703, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   nameDialogue:
   - Troll Je

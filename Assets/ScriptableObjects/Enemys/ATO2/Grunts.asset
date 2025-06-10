@@ -32,8 +32,8 @@ MonoBehaviour:
   spriteBattle: {fileID: -1682006492, guid: bf06997b6a526f64da99e91c1841d075, type: 3}
   actionBlockEnemy: {fileID: 11400000, guid: 5c7c3e4ab18191b419f5b62dc5090d9c, type: 2}
   animationBattle: {fileID: 7400000, guid: 452e3eef9ca48554a9cb3532e49db466, type: 2}
-  haveDialogueNext: 0
-  nextDialogue: {fileID: 0}
+  haveDialogueNext: 1
+  nextDialogue: {fileID: 11400000, guid: c20d87fc945224640b07691b393fc128, type: 2}
   nextScene: WorldATO2 2
   haveLearAction: 0
   actionToLearn: {fileID: 0}

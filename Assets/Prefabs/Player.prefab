@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: d9b864c7638bca042adb195b4deacbb5, type: 2}
-  baseSpeed: 3
+  baseSpeed: 5
   sanStm: 0
 --- !u!114 &6332719587364331249
 MonoBehaviour:

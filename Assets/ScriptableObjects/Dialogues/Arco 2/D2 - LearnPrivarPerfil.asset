@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72838054fec1684a904ccabd9dae52c, type: 3}
+  m_Name: D2 - LearnPrivarPerfil
+  m_EditorClassIdentifier: 
+  text:
+  - "Ol\xE1, o que aconteceu com ele?"
+  - Acho que ela privou o perfil
+  - Como assim?
+  - Tinha muita gente xingando ela
+  - "Ai ela se cansou e deixou o usu\xE1rio dela s\xF3 pra quem ela segue"
+  - Ou seja, somente quem ela deixa consegue ver e falar com ela
+  - Coitada, espero que ela fique bem
+  thisIs:
+  - Player
+  - NPC
+  - Player
+  - NPC
+  - Player
+  - NPC
+  - Player
+  imagePlayer:
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  imageNPC:
+  - {fileID: -61618077, guid: 246c068f4761cb140b18903bd4929d09, type: 3}
+  - {fileID: -61618077, guid: 246c068f4761cb140b18903bd4929d09, type: 3}
+  - {fileID: -61618077, guid: 246c068f4761cb140b18903bd4929d09, type: 3}
+  - {fileID: -61618077, guid: 246c068f4761cb140b18903bd4929d09, type: 3}
+  - {fileID: -61618077, guid: 246c068f4761cb140b18903bd4929d09, type: 3}
+  - {fileID: -61618077, guid: 246c068f4761cb140b18903bd4929d09, type: 3}
+  - {fileID: -61618077, guid: 246c068f4761cb140b18903bd4929d09, type: 3}
+  nameDialogue:
+  - "Lel\xEA"
+  - Peao
+  - "Lel\xEA"
+  - Peao
+  - Peao
+  - Peao
+  - "Lel\xEA"
+  canSkip: 0
+  haveCutscene: 0
+  cutScene: []
+  numberCutScene: 
+  battleScene: 
+  isBattle: 0
+  enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
+  learnAction: 1
+  attackScriptable: {fileID: 11400000, guid: ab231bfee6bfd8c488d7717d698b8390, type: 2}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

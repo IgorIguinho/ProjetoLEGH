@@ -11,6 +11,7 @@ TagManager:
   - peao
   - PeaoVermelho
   - SoundTrack
+  - SoundEffects
   layers:
   - Default
   - TransparentFX

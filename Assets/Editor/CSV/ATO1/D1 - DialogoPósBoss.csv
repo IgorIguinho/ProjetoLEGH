@@ -1,14 +1,14 @@
 NPC,Que merda! Como pode ter argumento pra tudo?!,Troll Kingo,Lele_mov_frente,Troll_Boss_Idle_0,Troll Boss
-Player,"Não é dificil, é só ser mente aberta e ouvir o que os outros tem pra dizer",Lelê,Lele_mov_frente,Troll_Boss_Idle_0,Lele
+Player,É só ouvir o que os outros têm para dizer e ser mente aberta ,Lelê,Lele_mov_frente,Troll_Boss_Idle_0,Lele
 NPC,Você fala de um jeito tão complicado. Só pode ser para eu não entender!,Troll Kingo,Lele_mov_frente,Troll_Boss_Idle_0,Troll Boss
-Player,"Na real, parece que você não quer entender. Como se alguem tivesse te machucado e pra tentar se sentir melhor, desconta nos outros.",Lelê,Lele_mov_frente,Troll_Boss_Idle_0,Lele
-Player,"Tente ser mais empático, ninguém vai te machucar por isso",Lelê,Lele_mov_frente,Troll_Boss_Idle_0,Lele
+Player,"Na verdade, parece que você não quer entender. Como se alguém tivesse te machucado e pra tentar se sentir melhor, desconta nos outros.",Lelê,Lele_mov_frente,Troll_Boss_Idle_0,Lele
+Player,"Tente ser mais empático, ninguém vai te magoar por isso",Lelê,Lele_mov_frente,Troll_Boss_Idle_0,Lele
 Player,"M-Mia, é você? Olá?",Lelê,Lele_mov_frente,Mia_frente_Idle_sheet_0,Lele
 Player,O que anda fazendo aqui?,Lelê,Lele_mov_frente,Mia_frente_Idle_sheet_0,Lele
 NPC,Eu tava passando e vi vc ai...,Mia,Lele_mov_frente,Mia_frente_Idle_sheet_0,Mia
-NPC,Foi mt daora o q vc fez,Mia,Lele_mov_frente,Mia_Feliz,Mia
+NPC,Foi mt daora o que vc fez,Mia,Lele_mov_frente,Mia_Feliz,Mia
 Player,Você conhece ele?,Lelê,Lele_mov_frente,Mia_frente_Idle_sheet_0,Lele
-NPC,"S, e famoso por n deixar as pessoas de seguirem pra outra cidade.",Mia,Lele_mov_frente,Mia_frente_Idle_sheet_0,Mia
+NPC,"Simm, ele é famoso por n deixar as pessoas seguirem pra outra cidade.",Mia,Lele_mov_frente,Mia_frente_Idle_sheet_0,Mia
 NPC,"Ele mexe com as mulheres, mas os homens ele deixa sair pq tem medo deles",Mia,Lele_mov_frente,Mia_frente_Idle_sheet_0,Mia
 Player,"Ou seja, é um grande covarde.",Lelê,Lele_mov_frente,Mia_frente_Idle_sheet_0,Lele
 NPC,"Mt daora seu jeito de acabar com ele, realmente foda.",Mia,Lele_mov_frente,Mia_Feliz,Mia

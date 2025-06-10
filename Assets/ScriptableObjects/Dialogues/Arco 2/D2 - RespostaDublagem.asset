@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72838054fec1684a904ccabd9dae52c, type: 3}
+  m_Name: D2 - RespostaDublagem
+  m_EditorClassIdentifier: 
+  text:
+  - "Voc\xEA sabia que o elefante \xE9 o unico mamifero que n\xE3o consegue pular?"
+  - "Voc\xEA sabia que o Turiter foi lan\xE7ado em 2006"
+  - "Voc\xEA sabia que Mamonas Assasinas \xE9 s\xF3 o nome da banda, eles nunca mataram
+    ningu\xE9m"
+  - "Voc\xEA sabia que a Gloria Groove j\xE1 dublou o Chase do patrulha canina"
+  - "Ou ser\xE1 que foi o Ney Matogrosso?"
+  - "Voc\xEA sabia que meu colega n\xE3o \xE9 bom de mem\xF3ria"
+  - "Voc\xEA sabia que isso aqui \xE9 um jogo"
+  - "Puxa vinheta e se voc\xEA \xE9 um f###nha, deixa um joinha"
+  - "Ta bom ent\xE3o"
+  - "Voc\xEA sabia que em uma panela funda, acrescente o leite condensado, a margarina
+    e o chocolate em p\xF3. Cozinhe em fogo m\xE9dio e mexa at\xE9 que o brigadeiro
+    comece a desgrudar da panela.Deixe esfriar e fa\xE7a pequenas bolas com a m\xE3o,
+    passe a massa no chocolate granulado."
+  thisIs:
+  - Player
+  - NPC
+  - Player
+  - NPC
+  - NPC
+  - Player
+  - NPC
+  - Player
+  - Player
+  - Player
+  imagePlayer:
+  - {fileID: 1602012337, guid: db4831e9f7d096543932a9843eef104e, type: 3}
+  - {fileID: 1602012337, guid: db4831e9f7d096543932a9843eef104e, type: 3}
+  - {fileID: 1602012337, guid: db4831e9f7d096543932a9843eef104e, type: 3}
+  - {fileID: 1602012337, guid: db4831e9f7d096543932a9843eef104e, type: 3}
+  - {fileID: 1602012337, guid: db4831e9f7d096543932a9843eef104e, type: 3}
+  - {fileID: 1602012337, guid: db4831e9f7d096543932a9843eef104e, type: 3}
+  - {fileID: 1602012337, guid: db4831e9f7d096543932a9843eef104e, type: 3}
+  - {fileID: 1602012337, guid: db4831e9f7d096543932a9843eef104e, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 1602012337, guid: db4831e9f7d096543932a9843eef104e, type: 3}
+  imageNPC:
+  - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
+  - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
+  - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
+  - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
+  - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
+  - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
+  - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
+  - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
+  - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
+  - {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
+  nameDialogue:
+  - Daniel Moto
+  - Lucas Narins
+  - Daniel Moto
+  - Lucas Narins
+  - Daniel Moto
+  - Lucas Narins
+  - Daniel Moto
+  - Lucas Narins
+  - "Lel\xEA"
+  - Daniel Moto
+  canSkip: 0
+  haveCutscene: 0
+  cutScene: []
+  numberCutScene: 
+  battleScene: 
+  isBattle: 0
+  enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
+  learnAction: 0
+  attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

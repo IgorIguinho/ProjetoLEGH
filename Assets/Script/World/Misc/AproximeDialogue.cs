@@ -9,6 +9,7 @@ public class AproximeDialogue : MonoBehaviour
     
     public GameObject storeButtonWarining;
     public GameObject storeWarning;
+    public GameObject WARNINGWARNING;
     public List<DialogueScriptable> dialogue;
   
     GameObject playerObject;
@@ -18,7 +19,8 @@ public class AproximeDialogue : MonoBehaviour
    
     public bool oneDialogue;
     public int numberDialogue;
-    bool block = false;
+[SerializeField]    private bool block = false;
+    bool canWarning = true;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +31,18 @@ public class AproximeDialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (WARNINGWARNING != null )
+        {
+            if (numberDialogue == 1 && canWarning)
+            {
+                WARNINGWARNING.SetActive(true);
+            }
+            else
+            {
+                WARNINGWARNING.SetActive(false);
+            }
+
+        }
         blockDialogue();
         if (revDialogue)
         {
@@ -39,19 +52,25 @@ public class AproximeDialogue : MonoBehaviour
 
     public void blockDialogue()
     {
-        if (oneDialogue == true)
+        if (PassInfos.Instance.blockDialogues.Contains(gameObject.name))
+        {
+            storeWarning.SetActive(false);
+            storeButtonWarining.SetActive(false);
+        }
+        else if (oneDialogue == true )
         {
             float dist = Vector2.Distance(transform.position, playerObject.transform.position);
 
 
             if (block == false)
             {
-                if (dist < 2.5f)
+                if (dist < 1)
                 {
 
                     if (!DialogueManager.Instance.isDialogue || DialogueManager.Instance.isPuzzle)
                     { storeButtonWarining.SetActive(true); }
 
+                    storeWarning.SetActive(false);
                     storeButtonWarining.SetActive(true);
 
                     if (Input.GetKeyDown(KeyCode.E))
@@ -59,6 +78,7 @@ public class AproximeDialogue : MonoBehaviour
                         storeWarning.SetActive(false);
                         storeButtonWarining.SetActive(false);
                         block = true;
+                        PassInfos.Instance.blockDialogues.Add(gameObject.name);
                         storeButtonWarining.SetActive(false);
                         DialogueManager.Instance.dialogueReloadInfos(dialogue[numberDialogue]);
 
@@ -67,17 +87,19 @@ public class AproximeDialogue : MonoBehaviour
                 else
                 {
 
-                    storeButtonWarining.SetActive(false);
+                    storeButtonWarining.SetActive(false); storeWarning.SetActive(true);
 
                 }
             }
         }
-        else {
+        else if (oneDialogue == false) 
+        {
             float dist = Vector2.Distance(transform.position, playerObject.transform.position);
-            if (dist < 2.5f)
+            if (dist < 1f)
             {
                 if (!DialogueManager.Instance.isDialogue || DialogueManager.Instance.isPuzzle )
-                { storeButtonWarining.SetActive(true); }
+                  
+                { storeButtonWarining.SetActive(true); storeWarning.SetActive(false); }
                
 
                 if (Input.GetKeyDown(KeyCode.E))
@@ -85,7 +107,8 @@ public class AproximeDialogue : MonoBehaviour
                     storeWarning.SetActive(false);
                     
                     storeButtonWarining.SetActive(false);
-
+                    if (numberDialogue == 1)
+                    { canWarning = false; }
                     DialogueManager.Instance.dialogueReloadInfos(dialogue[numberDialogue]);
                     if (bispoDialogue && DialogueManager.Instance.isRevulocaoDialogue)
                     {

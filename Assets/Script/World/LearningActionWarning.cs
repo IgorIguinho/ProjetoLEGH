@@ -14,6 +14,7 @@ public class LearningActionWarning : MonoBehaviour
     public GameObject warningGroup;
     public TextMeshProUGUI textAction;
     public List<GameObject> warningListText;
+    public GameObject warningPaquitoButton;
     public Color warningImage;
 
 
@@ -52,6 +53,7 @@ public class LearningActionWarning : MonoBehaviour
     public IEnumerator LearnAction(AttackScriptable actionScriptable)
     {
         actionScriptable.learned = true;
+        warningPaquitoButton.SetActive(true);
         textAction.text = actionScriptable.nameTitle;
         StartCoroutine(fade(false));
         yield return new WaitForSeconds(3);
@@ -68,7 +70,7 @@ public class LearningActionWarning : MonoBehaviour
         if (fadeAway)
         {
             // loop over 1 second backwards
-            for (float i = 1; i > 0; i -= Time.deltaTime)
+            for (float i = 1; i >= 1; i -= Time.deltaTime)
             {
                 // set color with i as alpha
                 warningImage = new Color(1, 1, 1, i);
@@ -79,7 +81,7 @@ public class LearningActionWarning : MonoBehaviour
         else
         {
             // loop over 1 second
-            for (float i = 0; i < 1; i += Time.deltaTime)
+            for (float i = 0; i <= 1; i += Time.deltaTime)
             {
                 // set color with i as alpha
                 warningImage = new Color(1, 1, 1, i);

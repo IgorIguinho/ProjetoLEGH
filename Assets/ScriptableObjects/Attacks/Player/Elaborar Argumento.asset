@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameTitle: Elaborar Argumento
   useCombat: "Sua proxima a\xE7\xE3o tera um bon\xFBs"
-  combatDescr: "Voc\xEA se prepara e procura na sua menta argumentos que possa usar,
+  combatDescr: "Voc\xEA se prepara e procurana sua mente argumentos que possa usar,
     a proxima a\xE7\xE3o sera mais efetiva"
   fraseAction:
   - preparou um argumento
