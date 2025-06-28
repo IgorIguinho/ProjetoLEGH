@@ -11,31 +11,35 @@ public class HudBattleManager : MonoBehaviour
 
     public static HudBattleManager Instance { get; private set; }
 
-  
-    
-    public GameObject actionStep;
-    public GameObject textStep;
-    public Image imageEnemy;
-    public GameObject loseScreen;
 
-    public Slider battleBar;
-
+    [Header("Text")]
     public TextMeshProUGUI textBalonPlayer;
     public TextMeshProUGUI textBalonEnemy;
-    public GameObject balonPlayer;
-    public GameObject balonEnemy;
-
-    public Slider energyBar;
-
-    public Text textGeral;
-    public Text textPequeno;
-    public Text textStm;
+    public TextMeshProUGUI textGeral;
+    public TextMeshProUGUI textStm;
     public TextMeshProUGUI actionDescripiton;
     public TextMeshProUGUI energyDescription;
+
+    [Header("GameOjbect")]
+    public GameObject actionStep;
+    public GameObject loseScreen;
+    public GameObject balonPlayer;
+    public GameObject balonEnemy;
+    public GameObject buttonForDesisntencia;
+
+    [Header("Lists")]
+    public List<GameObject> buttons;
+
+    [Header("Images")]
+    public Image imageEnemy;
+
+    [Header("Slides")]
+    public Slider battleBar;
+    public Image energyBar;
+    public float energyValue;
+    public List<Sprite> energyImages;
     
 
-    public List<GameObject> buttons;
-    public List<Text> valueStm;
     private void Awake()
     {
         // If there is an instance, and it's not me, delete myself.
@@ -53,12 +57,11 @@ public class HudBattleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startTextStep();
-     
         textGeral.text = "Bora para a luta??";
         NameForButtons();
         balonPlayer.SetActive(false);
         balonEnemy.gameObject.SetActive(false);
+        buttonForDesisntencia.SetActive(false);
     }
 
     // Update is called once per frame
@@ -66,16 +69,32 @@ public class HudBattleManager : MonoBehaviour
     {
         battleBar.value = BattleManager.Instance.valueBar;
         textStm.text = BattleManager.Instance.stamina.ToString() + "/" + BattleManager.Instance.staminaMax.ToString();
-        energyBar.value = BattleManager.Instance.stamina;
-    }
+        AnimationEnergyBar();
+        if (BattleManager.Instance.state != BattleState.PLAYERTURN) 
+        {
+            for (int i = 0; i < buttons.Count; i++)
+            {
+                buttons[i].GetComponent<Button>().enabled = false;
+            }
+        }else
+        {
+            for (int i = 0; i < buttons.Count; i++)
+            {
+                buttons[i].GetComponent<Button>().enabled = true;
+            }
+        }
 
-    
+        if (BattleManager.Instance.stamina >=0)
+        {
+            buttonForDesisntencia.SetActive(true);
+        }
+    }
 
     public void NameForButtons()
     {
         for (int i = 0; i < buttons.Count; i++)
         {
-            buttons[i].GetComponentInChildren<Text>().text = BattleManager.Instance.attacksPlayer[i].nameTitle;
+            buttons[i].GetComponentInChildren<TextMeshProUGUI>().text = BattleManager.Instance.attacksPlayer[i].nameTitle;
 
             int currentIdex = i;
 
@@ -146,10 +165,23 @@ public class HudBattleManager : MonoBehaviour
         if (isPlayer)
         {
             balonPlayer.SetActive(true);
-            textBalonPlayer.text = attack.fraseAction[Random.Range(attack.fraseAction.Count - 1, 0)];
-            textGeral.text = attack.useCombat;
+            if (attack.typeAction == "WaintingTurns" && BattleManager.Instance.turnsForTimingAction == BattleManager.Instance.maxTurnsForAction && BattleManager.Instance.startTimingAction)
+            {
+                textBalonPlayer.text = attack.fraseAction[1];
+                textGeral.text = attack.useCombatForWaitingAction;
+            }
+            else if (attack.typeAction == "WaintingTurns")
+            {
+                textBalonPlayer.text = attack.fraseAction[0];
+                textGeral.text = attack.useCombat;
+            }
+            else
+            {
+                textBalonPlayer.text = attack.fraseAction[Random.Range(attack.fraseAction.Count - 1, 0)];
+                textGeral.text = attack.useCombat;
+            }
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2);
             balonPlayer.SetActive(false);
             yield break;
         }
@@ -159,26 +191,31 @@ public class HudBattleManager : MonoBehaviour
             textBalonEnemy.text = attack.fraseAction[Random.Range(attack.fraseAction.Count - 1, 0)];
             textGeral.text = attack.useCombat;
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2);
             balonEnemy.gameObject.SetActive(false);
             yield break;
         }
-
+     
 
     }
 
-    public void startActionStep()
+    public void AnimationEnergyBar()
     {
-        actionStep.SetActive(true);
-        textStep.SetActive(false);
-        NameForButtons();
-
+        energyValue = BattleManager.Instance.stamina;
+        energyBar.sprite = energyImages[(int)energyValue];
     }
 
-    public void startTextStep()
+    public void BuffOrDebuffEffcts(bool start)
     {
-        textStep.SetActive(true);
-        actionStep.SetActive(false);
+        if (start)
+        {
 
+        }
+        else
+        {
+
+        }
     }
+
+    
 }

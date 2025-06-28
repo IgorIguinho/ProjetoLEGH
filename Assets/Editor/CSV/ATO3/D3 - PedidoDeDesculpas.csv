@@ -1,20 +1,20 @@
-Player,"Me desculpa Lele, me desculpa",6952FF,LeleMia_frente_Idle_sheet_0,Lele_mov_frente,Mia
-Player,Por que voce fez tudo isso?,#69525C ,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Lele
-NPC,Eu não sei... Eu nunca tive uma amiga antes e você me tratou tao bem...,6952FF,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
-NPC,Eu só queria que você não me deixasse para trás,6952FF,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
-Player,Tem formas melhores de se tratar uma amiga. Foi muito errado da sua parte tudo que fez comigo...,#69525C ,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Lele
-NPC,Nunca quis te magoar. Eu acabei me animando com a ideia de ter uma amiga e fiquei obcecada por vc... ,6952FF,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
-NPC,Voce consegue me perdoar? Eu não fiz por mal...,6952FF,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
-Player,"Tudo bem, com uma condição",#69525C ,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Lele
-NPC,Qual condição?,6952FF,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
-Player,Que você tentará ser você mesma e não uma cópia de mim.,#69525C ,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Lele
-NPC,"Vou tentar...  Você é muito gentil comigo Lele, obrigada",6952FF,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
-Player,"Você é muito legal, espero que possamos ser amigas por muito tempo :3",#69525C ,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Lele
-NPC,Eu irei adorar ,6952FF,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
-Player,Ufa consegui voltar. Tive que bater boca com os moderadores para eles deixarem eu voltar ,D9BEFF,LeonaNoites_Frente_mov3ato_0,Lele_mov_frente,Leona
-Player,Então é possivel voltar,#69525C ,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
-NPC,"Depende. Eu fui banida temporariamente, tem pessoas que são banidas permanentemente. É diferente",D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
-Player,"Entendi, irei seguir as diretrizes para isso não acontecer comigo. ",#69525C ,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
-NPC,"Devo lhe agradecer Lele, os haters começaram a sumir e puft, ninguém está mais me atacando. Obg por tudo",D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
-Player,Não foi nada,#69525C ,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
-NPC,"Chega de enrolação, precisamos ir agora. o Portal fica para este lado",D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+Player,"Me desculpa Lele, me desculpa",Mia,LeleMia_frente_Idle_sheet_0,Lele_mov_frente,Mia
+Player,Por que voce fez tudo isso?,#Lelê ,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Lele
+NPC,Eu não sei... Eu nunca tive uma amiga antes e você me tratou tao bem...,Mia,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
+NPC,Eu só queria que você não me deixasse para trás,Mia,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
+Player,Tem formas melhores de se tratar uma amiga. Foi muito errado da sua parte tudo que fez comigo...,#Lelê ,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Lele
+NPC,Nunca quis te magoar. Eu acabei me animando com a ideia de ter uma amiga e fiquei obcecada por vc... ,Mia,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
+NPC,Voce consegue me perdoar? Eu não fiz por mal...,Mia,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
+Player,"Tudo bem, com uma condição",#Lelê ,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Lele
+NPC,Qual condição?,Mia,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
+Player,Que você tentará ser você mesma e não uma cópia de mim.,#Lelê ,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Lele
+NPC,"Vou tentar...  Você é muito gentil comigo Lele, obrigada",Mia,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
+Player,"Você é muito legal, espero que possamos ser amigas por muito tempo :3",#Lelê ,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Lele
+NPC,Eu irei adorar ,Mia,Lele_mov_frente,LeleMia_frente_Idle_sheet_0,Mia
+Player,Ufa consegui voltar. Tive que bater boca com os moderadores para eles deixarem eu voltar ,Leona,LeonaNoites_Frente_mov3ato_0,Lele_mov_frente,Leona
+Player,Então é possivel voltar,#Lelê ,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
+NPC,"Depende. Eu fui banida temporariamente, tem pessoas que são banidas permanentemente. É diferente",Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+Player,"Entendi, irei seguir as diretrizes para isso não acontecer comigo. ",#Lelê ,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
+NPC,"Devo lhe agradecer Lele, os haters começaram a sumir e puft, ninguém está mais me atacando. Obg por tudo",Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+Player,Não foi nada,#Lelê ,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
+NPC,"Chega de enrolação, precisamos ir agora. o Portal fica para este lado",Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona

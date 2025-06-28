@@ -68,7 +68,7 @@ public class PlayerMov : MonoBehaviour
 
         if (horizontal > 0 || horizontal < 0 || vertical > 0 || vertical < 0)
         {
-          soundWalk.GetComponent<AudioSource>().volume = 0.8f;
+          soundWalk.GetComponent<AudioSource>().volume = Configs.Instance.volumeSoundEffcts;
 
             if (vertical != 0)
             {

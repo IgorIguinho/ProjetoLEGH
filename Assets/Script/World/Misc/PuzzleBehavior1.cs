@@ -25,6 +25,15 @@ public class PuzzleBehavior1 : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         doorPuzzle.SetActive(false);
         passed = false;
+        if (PassInfos.Instance.puzzlesComplets[0])
+        {
+            isLocked = false;
+            passed = true;
+            nextPuzzleDoor.SetActive(false);
+            completeLight.SetActive(true);
+            lightNextDoor.SetActive(true);
+
+        }
     }
 
     // Update is called once per frame

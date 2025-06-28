@@ -16,5 +16,5 @@ MonoBehaviour:
   nickName: '@max_krvalh0'
   textComents: "Se quer respeito, come\xE7a se dando ao respeito. N\xE3o d\xE1 pra
     postar foto de shortinho e depois reclamar de ass\xE9dio."
-  imageAccount: {fileID: 0}
+  imageAccount: {fileID: 523966797, guid: d3910ce12c41cfc4a973612d1bd0e0a5, type: 3}
   isHater: 1

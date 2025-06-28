@@ -16,7 +16,7 @@ public class HaterMiniGameManager : MonoBehaviour
     public bool startMiniGame;
     public AttackScriptable actionToLearn;
     GameObject player;
-
+    bool canLearning ;
     public float rotationSpeed;
 
     private void Awake()
@@ -35,63 +35,79 @@ public class HaterMiniGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        arrowToMachine.SetActive(true);
+        canLearning = true;
+        if (arrowToMachine != null)
+        {
+            arrowToMachine.SetActive(true);
+        }
         player = GameObject.FindGameObjectWithTag("Player");
         player.transform.position = PassInfos.Instance.playerRespawn;
-        
+     
+
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (PassInfos.Instance.numberMachineOpen == 5 && canLearning)
+        {
+            StartCoroutine(LearningActionWarning.Instance.LearnAction(actionToLearn));
+            canLearning = false;
+        }
         ArrowFollowMachine();
         enableWarningObject();
         numberMachineOpen = PassInfos.Instance.numberMachineOpen;
         atualMachine = numberMachineOpen + 1;
 
-        if (atualMachine == machineHaters.Count +1 )
-        {
-            StartCoroutine(LearningActionWarning.Instance.LearnAction(actionToLearn));
-            atualMachine++;
-        }
+      
 
     }
 
     public void ArrowFollowMachine()
     {
-        GameObject machineForOpen = machineHaters[numberMachineOpen];
-        float dist = Vector2.Distance(machineForOpen.transform.position, arrowToMachine.transform.position);
+        if (numberMachineOpen < machineHaters.Count)
+        {
+            GameObject machineForOpen = machineHaters[numberMachineOpen];
+        
+
+        if (arrowToMachine != null) { 
+            float dist = Vector2.Distance(machineForOpen.transform.position, arrowToMachine.transform.position);
         if (dist > 1f)
         {
             arrowToMachine.SetActive(true);
             Vector3 direction = machineForOpen.transform.position - arrowToMachine.transform.position;
 
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Quaternion targetRotation = Quaternion.Euler(0,0,angle - 180); 
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            Quaternion targetRotation = Quaternion.Euler(0, 0, angle - 180);
 
-        arrowToMachine.transform.rotation = Quaternion.RotateTowards(arrowToMachine.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime * 100f);
+            arrowToMachine.transform.rotation = Quaternion.RotateTowards(arrowToMachine.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime * 100f);
         }
-        else 
-        {   
+        else
+        {
             arrowToMachine.SetActive(false);
+        }
+    }
         }
     }
 
     public void enableWarningObject()
     {
-        GameObject machineForOpen = machineHaters[numberMachineOpen];
-        
-
-        
-        
-            machineForOpen.GetComponentInChildren<HaterMiniGameAproxime>().enabled = true;
-           machineForOpen.GetComponentInChildren<HaterMiniGameAproxime>().canvaObject.SetActive(true);
-
-        for (int i = 0; i < numberMachineOpen; i++)
+        if (numberMachineOpen < machineHaters.Count)
         {
-            machineHaters[i].GetComponent<ChangeSkinMinigame>().CompleteVsiual();
-        }
+            GameObject machineForOpen = machineHaters[numberMachineOpen];
 
+
+
+
+            machineForOpen.GetComponentInChildren<HaterMiniGameAproxime>().enabled = true;
+            machineForOpen.GetComponentInChildren<HaterMiniGameAproxime>().canvaObject.SetActive(true);
+
+            for (int i = 0; i < numberMachineOpen; i++)
+            {
+                machineHaters[i].GetComponent<ChangeSkinMinigame>().CompleteVsiual();
+            }
+        }
     }
 
 

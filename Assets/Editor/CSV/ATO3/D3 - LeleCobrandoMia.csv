@@ -1,6 +1,6 @@
-Player,"Mia, eu não vou precisar da sua ajuda por agora. Pode ir fazer outras coisas",#580243 ,Lele_mov_frente,Mia_Frente_Mov_lele_0,Lele
-NPC,"Que nada, eu adoro te ajudar. Tem vários comentários muito divertidos :D",69525C,Lele_mov_frente,Mia_Frente_Mov_lele_0,Mia
-Player,"Eu não quero sua ajuda, tá bom? Só sai daqui por enquanto…",#69525C ,Lele_mov_frente,Mia_Frente_Mov_lele_0,Lele
-NPC,M-mas-,69525C,Lele_mov_frente,Mia_Frente_Mov_lele_0,Mia
-Player,"Não tem mas, depois nós conversa…",#580243 ,Lele_mov_frente,Mia_Frente_Mov_lele_0,Lele
-NPC,Td bem :c,69525C,Lele_mov_frente,Mia_Frente_Mov_lele_0,Mia
+Player,"Mia, eu não vou precisar da sua ajuda por agora. Pode ir fazer outras coisas",Lelê,Lele_mov_frente,Mia_Frente_Mov_lele_0,Lele
+NPC,"Que nada, eu adoro te ajudar. Tem vários comentários muito divertidos :D",Mia,Lele_mov_frente,Mia_Frente_Mov_lele_0,Mia
+Player,"Eu não quero sua ajuda, tá bom? Só sai daqui por enquanto…",Lelê,Lele_mov_frente,Mia_Frente_Mov_lele_0,Lele
+NPC,M-mas-,Mia,Lele_mov_frente,Mia_Frente_Mov_lele_0,Mia
+Player,"Não tem mas, depois nós conversa…",Lelê,Lele_mov_frente,Mia_Frente_Mov_lele_0,Lele
+NPC,Td bem :c,Mia,Lele_mov_frente,Mia_Frente_Mov_lele_0,Mia

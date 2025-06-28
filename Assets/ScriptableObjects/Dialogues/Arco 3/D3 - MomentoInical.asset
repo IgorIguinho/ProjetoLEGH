@@ -32,7 +32,7 @@ MonoBehaviour:
   - "Vamos trazer isso \xE0 tona e atacar ela!!!"
   - 'ISSO!!! Lembrei, daquela foto horrorosa, e que verruga feia ein. '
   - "Que foto \xE9 essa, manda pra mim no direct."
-  - '*enviar a foto*'
+  - '*enviar a foto* !COLOCAR EMOJI!'
   - MEU DEUS QUE HORROR!!! EU PRECISO COMPARTILHAR ISSO COM OS GRUPOS!!!!
   - "Leona Noites ser\xE1 humilhada!!!!"
   - "O que que aconteceu Lel\xEA? Pq vc est\xE1 chorando?"
@@ -157,40 +157,41 @@ MonoBehaviour:
   - {fileID: -1618056177, guid: 459e470383d69bc4386187b5f0487dbc, type: 3}
   - {fileID: -1618056177, guid: 459e470383d69bc4386187b5f0487dbc, type: 3}
   - {fileID: -1618056177, guid: 459e470383d69bc4386187b5f0487dbc, type: 3}
-  textColor:
-  - {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
-  - {r: 0.64705884, g: 0.64705884, b: 0.64705884, a: 1}
-  - {r: 0.18039216, g: 0.1764706, b: 0.1764706, a: 1}
-  - {r: 0.64705884, g: 0.64705884, b: 0.64705884, a: 1}
-  - {r: 0.18039216, g: 0.1764706, b: 0.1764706, a: 1}
-  - {r: 0.7058824, g: 0.7019608, b: 0.7019608, a: 1}
-  - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 0.7137255, g: 1, b: 0.07450981, a: 1}
-  - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 0.7137255, g: 1, b: 0.07450981, a: 1}
-  - {r: 0.7137255, g: 1, b: 0.07450981, a: 1}
-  - {r: 0.7137255, g: 1, b: 0.07450981, a: 1}
-  - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 0.7058824, g: 0.7019608, b: 0.7019608, a: 1}
-  - {r: 0.7137255, g: 1, b: 0.07450981, a: 1}
-  - {r: 0.7058824, g: 0.7019608, b: 0.7019608, a: 1}
-  - {r: 0.64705884, g: 0.64705884, b: 0.64705884, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0.36078432, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0.36078432, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0.36078432, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0.36078432, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0.36078432, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0.36078432, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0.36078432, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0.36078432, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0.36078432, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.4117647, g: 0.32156864, b: 0.36078432, a: 1}
+  nameDialogue:
+  - "Pe\xE3o 1"
+  - "Pe\xE3o 2"
+  - "Pe\xE3o 3"
+  - "Pe\xE3o 2"
+  - "Pe\xE3o 3"
+  - "Pe\xE3o 4"
+  - "Pe\xE3o 5"
+  - Glitch
+  - "Pe\xE3o 5"
+  - Glitch
+  - Glitch
+  - Glitch
+  - "Pe\xE3o 5"
+  - "Pe\xE3o 4"
+  - Glitch
+  - "Pe\xE3o 4"
+  - "Pe\xE3o 2"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  - "Lel\xEA"
+  - Mia
+  canSkip: 0
   haveCutscene: 1
   cutScene:
   - {fileID: 11400000, guid: 1b4faf2797f5d894193352d2e27a6afc, type: 2}

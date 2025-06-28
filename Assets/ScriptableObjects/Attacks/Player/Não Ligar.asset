@@ -13,18 +13,20 @@ MonoBehaviour:
   m_Name: "N\xE3o Ligar"
   m_EditorClassIdentifier: 
   nameTitle: "N\xE3o ligar"
-  useCombat: "N\xE3o ligar"
-  combatDescr: "Ato se preparar, pensar e n\xE3o ligar pra a\xE7\xE3o do inimigo,
-    por ter feito esse ato a proxima a\xE7\xE3o do inimigo ira dar metade do dano
-    a barra."
+  useCombat: "A proxima a\xE7\xE3o do oponente sera menos efetiva"
+  combatDescr: "Voc\xEA se concentra e fortalece seu mental, fazendo com que a pr\xF3xima
+    a\xE7\xE3o do oponente fa\xE7a pouco efeito"
   fraseAction:
   - "N\xE3o ligo"
   dmg: 0
-  costStm: 5
+  costStm: -4
   learned: 1
   audioClip: {fileID: 0}
   typeAction: BuffOrDebuffAction
+  useCombatForWaitingAction: 
   buffPlayer: 0
-  modificadorBuffOrDebuff: -2
+  modificadorBuffOrDebuff:
+    operacao: 3
+    valor: 2
   turnsForTimingAction: 0
   turnsForTimingActionEnemy: 0

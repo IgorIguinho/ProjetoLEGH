@@ -130,6 +130,21 @@
    <object id="1" x="10" y="0" width="22" height="28"/>
   </objectgroup>
  </tile>
+ <tile id="636">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="10" y="0" width="22" height="28.0976"/>
+  </objectgroup>
+ </tile>
+ <tile id="637">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="26.1121"/>
+  </objectgroup>
+ </tile>
+ <tile id="638">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="20" height="28.0291"/>
+  </objectgroup>
+ </tile>
  <tile id="639">
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0" width="32" height="22.0909"/>

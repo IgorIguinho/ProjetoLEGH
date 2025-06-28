@@ -1,7 +1,24 @@
+using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
+public enum OperacaoMatematica 
+{ 
+    Soma,
+    Subtracao,
+    Multiplicacao,
+    Divisao
+}
+
+[Serializable]
+public struct ModificadorBuffDebuff
+{
+    public OperacaoMatematica operacao;
+    public float valor;
+}
 [CreateAssetMenu(fileName = "AttackStats", menuName = "Actions")]
 public class AttackScriptable : ScriptableObject
 {
@@ -18,8 +35,9 @@ public class AttackScriptable : ScriptableObject
     
     [Header("Type action....")]
     public string typeAction;
+    public string useCombatForWaitingAction;
     public bool buffPlayer;
-    public float modificadorBuffOrDebuff;
+    public ModificadorBuffDebuff modificadorBuffOrDebuff;
     //player
     public int turnsForTimingAction;
 

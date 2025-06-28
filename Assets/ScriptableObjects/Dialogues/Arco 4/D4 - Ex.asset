@@ -82,29 +82,30 @@ MonoBehaviour:
   - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
   - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
   - {fileID: -1291359131, guid: 8d71fc669eb60cf4680dd97780624ebe, type: 3}
-  textColor:
-  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
-  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
-  - {r: 0.34509805, g: 0.007843138, b: 0.2627451, a: 1}
-  - {r: 0.41960785, g: 0, b: 0.3254902, a: 1}
+  nameDialogue:
+  - Luca
+  - Lele
+  - Luca
+  - Lele
+  - Luca
+  - Lele
+  - Luca
+  - Lele
+  - Luca
+  - Luca
+  - Lele
+  - Luca
+  - Lele
+  - Luca
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 
-  battleScene: 
-  isBattle: 0
-  enemy: {fileID: 0}
+  battleScene: Battle
+  isBattle: 1
+  enemy: {fileID: 11400000, guid: ff9c0d642d10f2e439dc3cc951c8300b, type: 2}
   isNextScene: 0
-  nextScene: 
+  nextScene: WorldATO4 3
   learnAction: 0
   attackScriptable: {fileID: 0}
   havePuzzle: 0

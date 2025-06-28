@@ -14,13 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameTitle: Xingar
   useCombat: "Voc\xEA usou o Xingar"
-  combatDescr: "Voc\xEA xinga o alvo de uma forma repugnante, por liberar sua raiva,
-    voc\xEA ganha energia"
+  combatDescr: "Voc\xEA xinga o alvo, liberando sua raiva e ganhando energia em troca."
   fraseAction:
   - Seu feioso
   - Asqueroso
   - Maluco
-  dmg: 5
+  dmg: 4
   costStm: 3
   learned: 1
   audioClip: {fileID: 8300000, guid: c56bc65bc42314c498474dc2441d150a, type: 3}

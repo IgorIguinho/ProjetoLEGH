@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72838054fec1684a904ccabd9dae52c, type: 3}
+  m_Name: D2 - RespostaTrans
+  m_EditorClassIdentifier: 
+  text:
+  - "Eu sou ingualzinha a Birdo, nosso mindset \xE9 igual, n\xF3s duas somos divas
+    e poderosas"
+  - "E vc, \xE9 ingual \xE1 quem?"
+  - Eu sou igual a mim mesma, eu acho
+  - "Ah... que sem gra\xE7a"
+  - "E quem \xE9 Birdo?"
+  - "Tu n\xE3o sabe? Simplesmente a personagem mais diva do Super Mario"
+  - "A melhor no Mario T\xEAnis, cospe ovos pela boca, super veloz..."
+  - E ainda trouxe a representatividade nas costas, como a primeira personagem trans
+    dos jogos
+  - Que maneiro, ela parece ser muito legal
+  thisIs:
+  - Player
+  - Player
+  - Player
+  - NPC
+  - Player
+  - NPC
+  - NPC
+  - NPC
+  - Player
+  imagePlayer:
+  - {fileID: 1480249014, guid: 1956c64d810f203418fa9a1d858114e7, type: 3}
+  - {fileID: 1480249014, guid: 1956c64d810f203418fa9a1d858114e7, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  imageNPC:
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 1480249014, guid: 1956c64d810f203418fa9a1d858114e7, type: 3}
+  - {fileID: 1480249014, guid: 1956c64d810f203418fa9a1d858114e7, type: 3}
+  - {fileID: 1480249014, guid: 1956c64d810f203418fa9a1d858114e7, type: 3}
+  - {fileID: 1480249014, guid: 1956c64d810f203418fa9a1d858114e7, type: 3}
+  - {fileID: 1480249014, guid: 1956c64d810f203418fa9a1d858114e7, type: 3}
+  - {fileID: 1480249014, guid: 1956c64d810f203418fa9a1d858114e7, type: 3}
+  - {fileID: 1480249014, guid: 1956c64d810f203418fa9a1d858114e7, type: 3}
+  nameDialogue:
+  - Lune
+  - Lune
+  - "Lel\xEA"
+  - Lune
+  - "Lel\xEA"
+  - Lune
+  - Lune
+  - Lune
+  - "Lel\xEA"
+  canSkip: 0
+  haveCutscene: 0
+  cutScene: []
+  numberCutScene: 
+  battleScene: 
+  isBattle: 0
+  enemy: {fileID: 0}
+  isNextScene: 0
+  nextScene: 
+  learnAction: 0
+  attackScriptable: {fileID: 0}
+  havePuzzle: 0
+  puzzleDialogueScriptable: {fileID: 0}
+  numberActivePuzzle: 0

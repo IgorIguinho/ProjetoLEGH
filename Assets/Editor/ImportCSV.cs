@@ -138,8 +138,8 @@ public class CSVToDialogueEditor : EditorWindow
             dialogue.thisIs = new List<string>();
         if (dialogue.text == null)
             dialogue.text = new List<string>();
-        if (dialogue.textColor == null)
-            dialogue.textColor = new List<Color>();
+        if (dialogue.nameDialogue == null)
+            dialogue.nameDialogue = new List<string>();
         if (dialogue.imagePlayer == null)
             dialogue.imagePlayer = new List<Sprite>();
         if (dialogue.imageNPC == null)
@@ -159,25 +159,7 @@ public class CSVToDialogueEditor : EditorWindow
                 // Adiciona dados nas listas
                 dialogue.thisIs.Add(row[0]); // Coluna 1.
                 dialogue.text.Add(row[1]);  // Coluna 2.
-
-                // Processa a terceira coluna como cor hexadecimal.
-                string hexColor = row[2].Trim(); // Remove espaços extras ou caracteres invisíveis.
-                if (!hexColor.StartsWith("#"))
-                {
-                    hexColor = "#" + hexColor; // Garante que o código começa com '#'.
-                }
-
-                Color color;
-                if (ColorUtility.TryParseHtmlString(hexColor, out color))
-                {
-                    dialogue.textColor.Add(color); // Adiciona a cor à lista.
-                    Debug.Log($"Cor adicionada: {hexColor} -> {color}");
-                }
-                else
-                {
-                    // Debug.LogWarning($"Falha ao processar a cor: {hexColor}. Adicionando branco como padrão.");
-                    dialogue.textColor.Add(Color.white); // Adiciona branco como padrão.
-                }
+                dialogue.nameDialogue.Add(row[2]);  
 
                 // Verifica a lista de imagens antes de tentar adicionar os sprites
                 if (images == null || images.Count == 0)

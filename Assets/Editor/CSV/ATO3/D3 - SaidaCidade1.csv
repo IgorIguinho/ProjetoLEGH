@@ -1,8 +1,8 @@
-Player,Ninguém sai daqui . Hoje todos vão peida na farofa,2E2D2D,Npc_aleatoria-export_0,moça-export_0,NPC 3
-NPC,Quem você pensa que é tio! tá me tirando po##a,B4B3B3,Npc_aleatoria-export_0,moça-export_0,NPC 4
-Player,Se eu te visse na rua vc iria apanhar dimais da conta sô,2E2D2D,Npc_aleatoria-export_0,moça-export_0,NPC 3
-Player,"Parece que tá havendo uma  briga, vamos ver se conseguimos passar",69525C,Mia_Frente_Mov_lele_0,,Mia
-NPC,"Nã nã nã, vcs não podem passar não ",555555,Torre_IdleSheet-export_0,Mia_Frente_Mov_lele_0,Guarda 1
-NPC,"Estamos em greve, ninguém sai ninguém entra >:>",353535,,Lele_mov_frente,Guarda 2
-Player,Mas eu preciso muito ir até aquela plataforma,#580243 ,Lele_mov_frente,,Lele
-NPC,Ninguém sai ninguém entra >:<,555555,Torre_IdleSheet-export_0,Lele_mov_frente,Guarda 1
+Player,Ninguém sai daqui . Hoje todos vão peida na farofa,Peão,Npc_aleatoria-export_0,moça-export_0,NPC 3
+NPC,Quem você pensa que é tio! tá me tirando po##a,Peão,Npc_aleatoria-export_0,moça-export_0,NPC 4
+Player,Se eu te visse na rua vc iria apanhar dimais da conta sô,Peão,Npc_aleatoria-export_0,moça-export_0,NPC 3
+Player,"Parece que tá havendo uma  briga, vamos ver se conseguimos passar",Mia,Mia_Frente_Mov_lele_0,Lele_mov_frente,Mia
+Player,"Nã nã nã, vcs não podem passar não ",Guarda 1,Torre_IdleSheet-export_0,Mia_Frente_Mov_lele_0,Guarda 1
+Player,"Estamos em greve, ninguém sai ninguém entra >:>",Guarda 2,,Lele_mov_frente,Guarda 2
+Player,Mas eu preciso muito ir até aquela plataforma,Lelê,Lele_mov_frente,,Lele
+Player,Ninguém sai ninguém entra >:<,Guarda 1,Torre_IdleSheet-export_0,Lele_mov_frente,Guarda 1

@@ -16,23 +16,26 @@ public class BattleManager : MonoBehaviour
     //BattleSystem
     public BattleState state;
     public bool isTutorial;
+    private bool canAttack;
 
     public float valueBar;
     public float valueWinEnemy;
     public float valueWinPlayer;
     public float stamina;
     public float staminaMax;
-    public AudioSource audioSource;
+  
     public AudioSource soundTrack;
 
     //Types Attacks Player
-    float modificadorPlayer;
-    float modificadorEnemy;
-    bool startTimingAction;
+    ModificadorBuffDebuff modificadorPlayer;
+    ModificadorBuffDebuff modificadorEnemy;
+    private ModificadorBuffDebuff modificadorNeutro = new ModificadorBuffDebuff { operacao = OperacaoMatematica.Soma, valor = 0 };
+    public bool startTimingAction;
     [Header("Player type action....")]
     public int turnsForTimingAction;
     public int maxTurnsForAction;
     int TimingActionObject;
+    public float timeForUseNameAndWeaknes;
 
     [Space(4)]
     
@@ -75,13 +78,14 @@ public class BattleManager : MonoBehaviour
     void Start()
     {
 
-       
-        enemyAtributes = PassInfos.Instance.enemyToPass;     
+        canAttack = true;
+        enemyAtributes = PassInfos.Instance.enemyToPass;    // Puxa os atributos do inimigo  
         HudBattleManager.Instance.imageEnemy.GetComponent<Animator>().Play(enemyAtributes.animationBattle.name);   
        
         enemyAction = new List<AttackScriptable>(enemyAtributes.AttackScripts);
         soundTrack.clip = enemyAtributes.musicBattle;
         stamina = staminaMax;
+        HudBattleManager.Instance.NameForButtons();
         if (!isTutorial)
         {
             attacksPlayer = PassInfos.Instance.actionPlayer;
@@ -94,7 +98,7 @@ public class BattleManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Tab)) 
+        if (Input.GetKey(KeyCode.Tab))  // Hack para ganhar a batalha
         {
 
             if (enemyAtributes.haveDialogueNext == true)
@@ -105,20 +109,31 @@ public class BattleManager : MonoBehaviour
 
             SceneManager.LoadScene(enemyAtributes.nextScene);
         }
-        else if (Input.GetKey(KeyCode.L))
+        else if (Input.GetKey(KeyCode.L))// Hack para perder a batalha
         {
             valueBar -= 100;
         }
+
+
+        if (stamina > staminaMax)
+        {
+            stamina = staminaMax;
+        }
     }
 
+    public void Desistir()
+    {
+        StartCoroutine(BarValueAnimation(20));
+
+        HudBattleManager.Instance.loseScreen.SetActive(true);
+        PassInfos.Instance.DialogueScriptable = enemyAtributes.dialogueDerrota;
+        TransitionSceneManager.Instance.Transition(enemyAtributes.sceneDerrota);
+    }
     IEnumerator SetupBattle()
     {
 
+        HudBattleManager.Instance.textGeral.text = "Sua Ação";
 
-        HudBattleManager.Instance.textGeral.text = "Bora reagir?";
-
-
-        yield return new WaitForSeconds(2f);
         if (startTimingAction == true)
         {
             if (turnsForTimingAction < maxTurnsForAction) //Somando o turno para ação de preparo
@@ -127,10 +142,8 @@ public class BattleManager : MonoBehaviour
             }
             else //Ações timing acontece
             {
-                audioSource.clip = attacksPlayer[TimingActionObject].audioClip;
-                audioSource.Play();
-                HudBattleManager.Instance.startTextStep();
-                StartCoroutine(PlayerAttack(TimingActionObject));
+               
+                StartCoroutine(PlayerAttack(TimingActionObject));// Chama a ação do jogador que estava em preparo
                 state = BattleState.PLAYERTURN;
                 yield break;
 
@@ -146,8 +159,7 @@ public class BattleManager : MonoBehaviour
             else //Ações timing acontece
             {
 
-                HudBattleManager.Instance.startTextStep();
-                StartCoroutine(EnemyAttack(TimingActionObjectEnemy));
+                StartCoroutine(EnemyAttack(TimingActionObjectEnemy)); // Chama a ação do inimmgo que estava em preparo
                 state = BattleState.ENEMYTURN;
                 yield break;
 
@@ -155,7 +167,9 @@ public class BattleManager : MonoBehaviour
         }
 
         state = BattleState.PLAYERTURN;
-        HudBattleManager.Instance.startActionStep();
+        HudBattleManager.Instance.NameForButtons();
+        canAttack = true;
+  
         yield break;
        
     }
@@ -166,216 +180,148 @@ public class BattleManager : MonoBehaviour
 
         if (attacksPlayer[i].typeAction == "Normal")
         {
-            if (enemyAtributes.superEffective.Contains(attacksPlayer[i]))
+            if (enemyAtributes.superEffective.Contains(attacksPlayer[i]))// super efetiva
             {
-                // super efetiva
-                //valueBar += (attacksPlayer[i].dmg + modificadorPlayer) * 2;
-                StartCoroutine(BarValueAnimation(attacksPlayer[i].dmg + modificadorPlayer * 2));
-                stamina += attacksPlayer[i].costStm;
-
-                if (attacksPlayer[i].costStm < 0)
-                {
-                    //muda a cor da stamnia para vermelho
-                    HudBattleManager.Instance.textStm.color = Color.red;
-                }
-                else if (attacksPlayer[i].costStm > 0)
-                {
-                    //muda para verde
-                    HudBattleManager.Instance.textStm.color = Color.green;
-                }
-
+                float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                StartCoroutine(BarValueAnimation(danoFinal *2));
+                modificadorPlayer = modificadorNeutro; //Resetar o modifcador do dano
+                HudBattleManager.Instance.BuffOrDebuffEffcts(false); //Disabilita o efeito visual do buff 
                 StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
-                yield return new WaitForSeconds(1.5f);
-                
-                HudBattleManager.Instance.textStm.color = Color.white;
-                HudBattleManager.Instance.textGeral.text = "Esta ação foi muito efetiva";
-
+                yield return new WaitForSeconds(timeForUseNameAndWeaknes);
+                HudBattleManager.Instance.textGeral.text = "Esta ação foi super efetiva";
             }
-            else if (enemyAtributes.noEffective.Contains(attacksPlayer[i]))
+            else if (enemyAtributes.noEffective.Contains(attacksPlayer[i]))  // não efetiva
             {
-                // não efetiva
-                //valueBar += (attacksPlayer[i].dmg + modificadorPlayer) / 2;
-                StartCoroutine(BarValueAnimation(attacksPlayer[i].dmg + modificadorPlayer / 2));
-                stamina += attacksPlayer[i].costStm;
-                if (attacksPlayer[i].costStm < 0)
-                {
-                    //muda a cor da stamnia para vermelho
-                    HudBattleManager.Instance.textStm.color = Color.red;
-                }
-                else if (attacksPlayer[i].costStm > 0)
-                {
-                    //muda para verde
-                    HudBattleManager.Instance.textStm.color = Color.green;
-                }
+                float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                StartCoroutine(BarValueAnimation(danoFinal/2));
+                modificadorPlayer = modificadorNeutro;
+                HudBattleManager.Instance.BuffOrDebuffEffcts(false);
                 StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
-                yield return new WaitForSeconds(1.5f);
-             
-                HudBattleManager.Instance.textStm.color = Color.white;
-
-                HudBattleManager.Instance.textGeral.text = "Esta ação não foi efetiva";
-
+                yield return new WaitForSeconds(timeForUseNameAndWeaknes);
+                HudBattleManager.Instance.textGeral.text = "Esta ação foi não foi efetiva";
             }
-            else if (enemyAtributes.invunerable.Contains(attacksPlayer[i]))
+            else if (enemyAtributes.invunerable.Contains(attacksPlayer[i])) //Invuneravel
             {
-                //invuneravel
-                stamina += attacksPlayer[i].costStm;
-                if (attacksPlayer[i].costStm > 0)
-                {
-                    //muda a cor da stamnia para vermelho
-                    HudBattleManager.Instance.textStm.color = Color.red;
-                }
-                else if (attacksPlayer[i].costStm < 0)
-                {
-                    //muda para verde
-                    HudBattleManager.Instance.textStm.color = Color.green;
-                }
+
+                HudBattleManager.Instance.textGeral.text = "O inimigo é ivuneravel a essa ação";
+            }
+            else if (enemyAtributes.actionIncorrect.Contains(attacksPlayer[i])) //Ação errada
+            {
+           
+                float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                StartCoroutine(BarValueAnimation(danoFinal));
                 StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
-                yield return new WaitForSeconds(1.5f);
-                
-                HudBattleManager.Instance.textStm.color = Color.white;
-                HudBattleManager.Instance.textGeral.text = "Esta ação não fez nada";
+                yield return new WaitForSeconds(timeForUseNameAndWeaknes);
+                HudBattleManager.Instance.textGeral.text = "Está ação deixou o inimgo com mais raiva";
             }
-            else
+            else //efetiva
             {
-                //efetiva
-                //valueBar += (attacksPlayer[i].dmg + modificadorPlayer);
-                StartCoroutine(BarValueAnimation(attacksPlayer[i].dmg + modificadorPlayer));
-                stamina += attacksPlayer[i].costStm;
-                if (attacksPlayer[i].costStm < 0)
-                {
-                    //muda a cor da stamnia para vermelho
-                    HudBattleManager.Instance.textStm.color = Color.red;
-                }
-                else if (attacksPlayer[i].costStm > 0)
-                {
-                    //muda para verde
-                    HudBattleManager.Instance.textStm.color = Color.green;
-                }
-                StartCoroutine( HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
-                yield return new WaitForSeconds(1.5f);
-              
-                HudBattleManager.Instance.textStm.color = Color.white;
+                float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                StartCoroutine(BarValueAnimation(danoFinal));
+                modificadorPlayer = modificadorNeutro;
+                HudBattleManager.Instance.BuffOrDebuffEffcts(false);
+                StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                yield return new WaitForSeconds(timeForUseNameAndWeaknes);
                 HudBattleManager.Instance.textGeral.text = "Esta ação foi efetiva";
-
             }
-            modificadorPlayer = 0; //Resetar o modifcador do dano
+            stamina += attacksPlayer[i].costStm; // Muda a estamina do player conforme custo de estamina
+            
+           
         }
         else if (attacksPlayer[i].typeAction == "BuffOrDebuffAction") //Ação que modifica o valor do proximo turno
         {
-            if (attacksPlayer[i].buffPlayer)
+            if (attacksPlayer[i].buffPlayer)//Modifica o valor da ação do jogador
             {
-                modificadorPlayer = attacksPlayer[i].modificadorBuffOrDebuff; //Modifica o valor do turno do jogador
+                modificadorPlayer = attacksPlayer[i].modificadorBuffOrDebuff; 
                 stamina += attacksPlayer[i].costStm;
+                HudBattleManager.Instance.textGeral.text = attacksPlayer[i].useCombat;
             }
-            else //Modifica o valor do turno do inimigo
+            else //Modifica o valor da ação do inimigo
             { 
                 modificadorEnemy = attacksPlayer[i].modificadorBuffOrDebuff; 
-                stamina += attacksPlayer[i].costStm; 
+                stamina += attacksPlayer[i].costStm;
+                HudBattleManager.Instance.textGeral.text = attacksPlayer[i].useCombat;
             }
-
-            if (attacksPlayer[i].costStm < 0)
-            {
-                //muda a cor da stamnia para vermelho
-                HudBattleManager.Instance.textStm.color = Color.red;
-            }
-            else if (attacksPlayer[i].costStm > 0)
-            {
-                //muda para verde
-                HudBattleManager.Instance.textStm.color = Color.green;
-            }
-
             StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+    
 
-            yield return new WaitForSeconds(1.5f);
-            HudBattleManager.Instance.textStm.color = Color.white;
-            HudBattleManager.Instance.textGeral.text = "Esta ação acontecera no proximo turno";
         }
         else if (attacksPlayer[i].typeAction == "WaintingTurns")
         {
             
-            if (turnsForTimingAction == maxTurnsForAction && startTimingAction)
+            if (turnsForTimingAction == maxTurnsForAction && startTimingAction) // Momento que o timing cehga no maximo e a ação acontece
             {
-              
-               
-                if (enemyAtributes.superEffective.Contains(attacksPlayer[i]))
+                if (enemyAtributes.superEffective.Contains(attacksPlayer[i]))// super efetiva
                 {
-                    // super efetiva
-                    //valueBar += (attacksPlayer[i].dmg + modificadorPlayer) * 100;
-                    StartCoroutine(BarValueAnimation(attacksPlayer[i].dmg + modificadorPlayer * 100));
-                    HudBattleManager.Instance.textGeral.text = "Voce " + attacksPlayer[i].fraseAction[Random.Range(0, attacksPlayer[i].fraseAction.Count)];
-                    yield return new WaitForSeconds(1.5f);
-                    HudBattleManager.Instance.textStm.color = Color.white;
-                    HudBattleManager.Instance.textGeral.text = "Esta ação foi muito efetiva";
-
+                    float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                    StartCoroutine(BarValueAnimation(danoFinal * 2));
+                    modificadorPlayer = modificadorNeutro; //Resetar o modifcador do dano
+                    HudBattleManager.Instance.BuffOrDebuffEffcts(false); //Disabilita o efeito visual do buff 
+                    StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                    yield return new WaitForSeconds(timeForUseNameAndWeaknes);
+                    HudBattleManager.Instance.textGeral.text = "Esta ação foi super efetiva";
                 }
-                else if (enemyAtributes.noEffective.Contains(attacksPlayer[i]))
+                else if (enemyAtributes.noEffective.Contains(attacksPlayer[i]))  // não efetiva
                 {
-                    // não efetiva
-                    //valueBar += (attacksPlayer[i].dmg + modificadorPlayer) / 2;
-                    StartCoroutine(BarValueAnimation(attacksPlayer[i].dmg + modificadorPlayer / 2));
-
-                    HudBattleManager.Instance.textGeral.text = "Voce " + attacksPlayer[i].fraseAction[Random.Range(0, attacksPlayer[i].fraseAction.Count)];
-                    yield return new WaitForSeconds(1.5f);
-                    HudBattleManager.Instance.textStm.color = Color.white;
-                    HudBattleManager.Instance.textGeral.text = "Esta ação não foi efetiva";
-
+                    float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                    StartCoroutine(BarValueAnimation(danoFinal / 2));
+                    modificadorPlayer = modificadorNeutro;
+                    HudBattleManager.Instance.BuffOrDebuffEffcts(false);
+                    StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                    yield return new WaitForSeconds(timeForUseNameAndWeaknes);
+                    HudBattleManager.Instance.textGeral.text = "Esta ação foi não foi efetiva";
                 }
-                else if (enemyAtributes.invunerable.Contains(attacksPlayer[i]))
+                else if (enemyAtributes.invunerable.Contains(attacksPlayer[i])) //Invuneravel
                 {
-                    //invuneravel
-                                  
-                    HudBattleManager.Instance.textGeral.text = "Voce " + attacksPlayer[i].fraseAction[Random.Range(0, attacksPlayer[i].fraseAction.Count)];
-                    yield return new WaitForSeconds(1.5f);
-                    HudBattleManager.Instance.textStm.color = Color.white;
-                    HudBattleManager.Instance.textGeral.text = "Esta ação não fez nada";
+
+                    HudBattleManager.Instance.textGeral.text = "O inimigo é ivuneravel a essa ação";
                 }
-                else
+                else if (enemyAtributes.actionIncorrect.Contains(attacksPlayer[i])) //Ação errada
                 {
-                    //efetiva
-                    //valueBar += (attacksPlayer[i].dmg + modificadorPlayer);
-                    StartCoroutine(BarValueAnimation(attacksPlayer[i].dmg + modificadorPlayer));
-                    HudBattleManager.Instance.textGeral.text = "Voce " + attacksPlayer[i].fraseAction[Random.Range(0, attacksPlayer[i].fraseAction.Count)];
-                    yield return new WaitForSeconds(1.5f);
-                    HudBattleManager.Instance.textStm.color = Color.white;
+
+                    float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                    StartCoroutine(BarValueAnimation(danoFinal));
+                    StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                    yield return new WaitForSeconds(timeForUseNameAndWeaknes);
+                    HudBattleManager.Instance.textGeral.text = "Está ação deixou o inimgo com mais raiva";
+                }
+                else //efetiva
+                {
+                    float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                    StartCoroutine(BarValueAnimation(danoFinal));
+                    modificadorPlayer = modificadorNeutro;
+                    HudBattleManager.Instance.BuffOrDebuffEffcts(false);
+                    StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                    yield return new WaitForSeconds(timeForUseNameAndWeaknes);
                     HudBattleManager.Instance.textGeral.text = "Esta ação foi efetiva";
-
                 }
-                modificadorPlayer = 0; //Resetar o modifcador do dano
+
+                state = BattleState.PLAYERTURN;
+                canAttack = true;
                 startTimingAction = false;
-
-
+                yield break ;
             }
-            else {
+            else // É o começo da ação, começando com a contagem 
+            {
+                StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                HudBattleManager.Instance.textGeral.text =attacksPlayer[i].useCombat;
                 stamina += attacksPlayer[i].costStm;
                 turnsForTimingAction = 0;
                 startTimingAction = true;
                 maxTurnsForAction = attacksPlayer[i].turnsForTimingAction;
                 TimingActionObject = i;
+  
             }
         }
         else if (attacksPlayer[i].typeAction == "RestoreEnergia")
         {
             stamina += attacksPlayer[i].costStm;
-            if (attacksPlayer[i].costStm < 0)
-            {
-                //muda a cor da stamnia para vermelho
-                HudBattleManager.Instance.textStm.color = Color.red;
-            }
-            else if (attacksPlayer[i].costStm > 0)
-            {
-                //muda para verde
-                HudBattleManager.Instance.textStm.color = Color.green;
-            }
-
             StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
-            yield return new WaitForSeconds(1.5f);
-
-            HudBattleManager.Instance.textStm.color = Color.white;
-            HudBattleManager.Instance.textGeral.text = "Esta ação foi muito efetiva";
+            HudBattleManager.Instance.textGeral.text = attacksPlayer[i].useCombat;
+            
         }
        
         yield return new WaitForSeconds(2f);
-
 
         if (valueBar <= valueWinPlayer)
         {
@@ -392,17 +338,13 @@ public class BattleManager : MonoBehaviour
                 PassInfos.Instance.actionToLearning = enemyAtributes.actionToLearn;
             }
             TransitionSceneManager.Instance.Transition(enemyAtributes.nextScene);
-
         }
         else
         {
+            HudBattleManager.Instance.NameForButtons();
             state = BattleState.ENEMYTURN;
             StartCoroutine(EnemyAttack(Random.Range(0, enemyAction.Count)));
         }
-
-        
-
-
     }
 
    
@@ -413,96 +355,95 @@ public class BattleManager : MonoBehaviour
        
      
         if (enemyAction[i].typeAction == "Normal" )
-        { 
+        {
             //valueBar -= enemyAction[i].dmg + modificadorEnemy;
 
-            StartCoroutine(BarValueAnimation(enemyAction[i].dmg + modificadorEnemy));
-            StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false));
-            audioSource.clip = enemyAction[i].audioClip;
-            audioSource.Play();
+            float danoFinal = AplicarModificador(enemyAction[i].dmg, modificadorEnemy);
+            StartCoroutine(BarValueAnimation(danoFinal));//Puxa a coroutine quue faz o dano a barra
+            StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false)); //Puxa a animação do ataque do inimigo
+            modificadorEnemy = modificadorNeutro;
         }
-        else if (enemyAction[i].typeAction == "Agrupamento")
+        else if (enemyAction[i].typeAction == "Agrupamento") // Ataque que vai juntar inimigos para a batalha, demora x turnos pra funcionar
         {
-            if (turnsForTimingActionEnemy == maxTurnsForActionEnemy && startTimingActionEnemy)
+            if (turnsForTimingActionEnemy == maxTurnsForActionEnemy && startTimingActionEnemy)//aviso que o roximo turno é o ataque
             {
-                Debug.Log("Deu certo");
+                StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false)); //Puxa a animação do ataque do inimigo
+                //Debug.Log("Deu certo");
                 enemyAction.Clear();
                 enemyAction.Add(enemyAtributes.actionBlockEnemy);
                 startTimingActionEnemy = false;
-                
+             
+
             }
-            else if (!startTimingActionEnemy)
+            else if (!startTimingActionEnemy) //É o começo do ataque, assim que o inimigo usa faz isso:
             {
-                Debug.Log("Começou");
+                StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false)); 
+                //Debug.Log("Começou");
                 turnsForTimingActionEnemy = 0;
                 startTimingActionEnemy = true;
                 maxTurnsForActionEnemy = enemyAction[i].turnsForTimingActionEnemy;
                 TimingActionObjectEnemy = i;
             }
-            else
+            else //O inimigo finalmente ataca
             {
-                //valueBar -= enemyAction[i].dmg + modificadorEnemy;
-                StartCoroutine(BarValueAnimation(enemyAction[i].dmg + modificadorEnemy));
+                StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false));
+                float danoFinal = AplicarModificador(enemyAction[i].dmg, modificadorEnemy);
+                StartCoroutine(BarValueAnimation(danoFinal));
+                modificadorEnemy = modificadorNeutro;
                 HudBattleManager.Instance.textGeral.text = enemyAction[1].fraseAction[Random.Range(0, enemyAction[i].fraseAction.Count)];
-                audioSource.clip = enemyAction[i].audioClip;
-                audioSource.Play();
+           
             }
         }
-        else if (enemyAction[i].typeAction == "Roubo")
+        else if (enemyAction[i].typeAction == "Roubo") //Ação de roubar estamina do jogador
         {
-
-
             stamina -= 5 ;
             HudBattleManager.Instance.textStm.color = Color.red;
-            StartCoroutine(BarValueAnimation(enemyAction[i].dmg + modificadorEnemy));
+            float danoFinal = AplicarModificador(enemyAction[i].dmg, modificadorEnemy);
+            StartCoroutine(BarValueAnimation(danoFinal)); 
+            modificadorEnemy = modificadorNeutro;
             StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false));
-            audioSource.clip = enemyAction[i].audioClip;
-            audioSource.Play();
         }
-        else if (enemyAction[i].typeAction == "BuffOrDebuffAction")
+        else if (enemyAction[i].typeAction == "BuffOrDebuffAction") //Ação de bufar a proxima ação do inimigo ou debuff na ação do player
         {
             if (enemyAction[i].buffPlayer)
             {
-                modificadorPlayer = -enemyAction[i].modificadorBuffOrDebuff;             
+                modificadorPlayer = enemyAction[i].modificadorBuffOrDebuff;// Modifica a ação do player         
             }
             else 
             {
-                modificadorEnemy = enemyAction[i].modificadorBuffOrDebuff;
+                modificadorEnemy = enemyAction[i].modificadorBuffOrDebuff;//Modifica a ação do inimigo
             }
-            //valueBar -= enemyAction[i].dmg + modificadorEnemy;
+            
             StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false));
-            audioSource.clip = enemyAction[i].audioClip;
-            audioSource.Play();
+            
         }
         
-
         yield return new WaitForSeconds(2f);
         HudBattleManager.Instance.textStm.color = Color.white;
-        modificadorEnemy = 0;
-        if (valueBar >= valueWinEnemy)
+        
+        if (valueBar >= valueWinEnemy) //Condição de perda
         {
             HudBattleManager.Instance.loseScreen.SetActive(true);
             yield return new WaitForSeconds(1f);
             PassInfos.Instance.DialogueScriptable = enemyAtributes.dialogueDerrota;
-            TransitionSceneManager.Instance.Transition(enemyAtributes.sceneDerrota);
+            TransitionSceneManager.Instance.Transition(enemyAtributes.sceneDerrota); // muda pra cena de derrota
         }
         else
         {
             state = BattleState.PLAYERTURN;
+            HudBattleManager.Instance.NameForButtons();
             StartCoroutine(SetupBattle());
         }
     }
 
     public void OnAttackPlayer(int i)
     {
-        if (state == BattleState.PLAYERTURN)
+        if (state == BattleState.PLAYERTURN && canAttack)
         {
             if (stamina >= -(attacksPlayer[i].costStm))
-            {
-                audioSource.clip = attacksPlayer[i].audioClip;
-                audioSource.Play();
-                HudBattleManager.Instance.startTextStep();
+            { 
                 StartCoroutine(PlayerAttack(i));
+                canAttack = false;
             }
         }
 
@@ -523,12 +464,11 @@ public class BattleManager : MonoBehaviour
         while (cout < damage)
         {
             yield return new WaitForSeconds(0.1f);
-            valueBar += 0.5f;
+            valueBar += 1;
             cout++;
         }
             if (cout >= damage)
             {
-                valueBar++;
                 yield break;
             }
         }
@@ -537,12 +477,11 @@ public class BattleManager : MonoBehaviour
             while (cout > damage)
             {
                 yield return new WaitForSeconds(0.1f);
-                valueBar -= 0.5f;
+                valueBar -= 1;
                 cout--;
             }
             if (cout <= damage)
             {
-                valueBar--;
                 yield break;
             }
         }
@@ -550,4 +489,27 @@ public class BattleManager : MonoBehaviour
         
     }
 
+    private float AplicarModificador(float danoOriginal, ModificadorBuffDebuff modificador)
+    {
+        switch (modificador.operacao)
+        {
+            case OperacaoMatematica.Soma:
+                return danoOriginal + modificador.valor;
+
+            case OperacaoMatematica.Subtracao:
+                return danoOriginal - modificador.valor;
+
+            case OperacaoMatematica.Multiplicacao:
+                return danoOriginal * modificador.valor;
+
+            case OperacaoMatematica.Divisao:
+                if (modificador.valor != 0)
+                    return danoOriginal / modificador.valor;
+                else
+                    return danoOriginal; // Proteção contra divisão por zero
+
+            default:
+                return danoOriginal;
+        }
+    }
 }

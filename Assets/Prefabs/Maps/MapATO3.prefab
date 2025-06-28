@@ -5555,11 +5555,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5199047046369017626, guid: 1323167311f9fdd4586f04fe2e8121d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0683594
+      value: -0.57683754
       objectReference: {fileID: 0}
     - target: {fileID: 5199047046369017626, guid: 1323167311f9fdd4586f04fe2e8121d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.5190716
+      value: 6.081867
       objectReference: {fileID: 0}
     - target: {fileID: 5199047046369017626, guid: 1323167311f9fdd4586f04fe2e8121d7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5597,6 +5597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torre
       objectReference: {fileID: 0}
+    - target: {fileID: 7863728635807671159, guid: 1323167311f9fdd4586f04fe2e8121d7, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d2ee551bec924394497b0f67d25b45eb, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5617,11 +5621,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3223518130582001650, guid: e932d73d43aa4ca458b030cb037d2a8d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.6384773
+      value: 1.13
       objectReference: {fileID: 0}
     - target: {fileID: 3223518130582001650, guid: e932d73d43aa4ca458b030cb037d2a8d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.4472046
+      value: 6.01
       objectReference: {fileID: 0}
     - target: {fileID: 3223518130582001650, guid: e932d73d43aa4ca458b030cb037d2a8d, type: 3}
       propertyPath: m_LocalPosition.z

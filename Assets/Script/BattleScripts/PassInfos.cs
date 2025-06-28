@@ -16,6 +16,7 @@ public class PassInfos : MonoBehaviour
     public bool learningAction;
     public AttackScriptable actionToLearning;
 
+    public List<string> blockDialogues;
     public List<bool> puzzlesComplets;
 
     public List<AttackScriptable> actionPlayer;

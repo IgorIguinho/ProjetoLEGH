@@ -1,23 +1,23 @@
-Player,"Ó céus, tudo isso é sua culpa Lelê. Agora estou na bosta e ninguém vai me ajudar",D9BEFF,LeonaNoites_Frente_mov3ato_0,,Leona
-Player,"Sinto muito. Mesmo sabendo que é consequência das suas mentiras, não é justo eles te exporem assim…",#69525C ,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
-NPC,Expor? Como assim expor?,D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
-Player,Você não viu? Eles estão vazando uma foto comprometedora sua,#69525C ,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
-NPC,"De novo não… Eles estão trazendo à tona meu passado, de novo",D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
-Player,"O que eles estão fazendo é crime, temos que chamar as autoridades",#69525C ,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
-NPC,"Mas são muitas pessoas, até eu terminar de denunciar uma, vão ter outras milhares… ",D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
-NPC,Já sei!!!,D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
-Player,Lá vem…,69525C,Mia_Frente_Mov_lele_0,LeonaNoites_Frente_mov3ato_0,Mia
-NPC,"Você deveria me ajudar Lelê, você é boa combatendo esses imbecis",D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
-Player,Não sei não... eu já to com problema suficiente para lidar,#69525C ,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
-NPC,Qual o problema? Talvez eu possa te ajudar em troca,D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
-Player,"Precisamos sair de Turiter e ir para (cidade), mas aqueles caras lá não deixam a gente passar",#69525C ,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
-NPC,"Desde a atualização de Turiter, isso virou uma loucura…",D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
-NPC,"Mas não se preocupe, eu sei como te ajudar nisso.",D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
-NPC,Você só precisa me ajudar a denunciar 10 haters que estão me xingando e vazando minhas fotos.,D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
-Player,"Ok, mas você precisa prometer que vai me ajudar a sair daqui",#69525C ,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
-NPC,"Não se preocupe, trato é trato",D9BEFF,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
-Player,"Lelê, vai ser uma tarefa dificil denunciar todos eles, é melhor a gente usar um sistema que veio com a atualização: a máquina de publicações",69525C,Mia_Frente_Mov_lele_0,Lele_mov_frente,Mia
-Player,Máquina de publicações? Como isso funciona?,#69525C ,Lele_mov_frente,Mia_Frente_Mov_lele_0,Lele
-NPC,"Bom é simples, tem cerca de 5 delas espalhadas pelo mapa, quando interagimos, podemos ver turits lançados recentemente, ai podemos denunciar ou curtir os posts",69525C,Lele_mov_frente,Mia_Frente_Mov_lele_0,Mia
-NPC,Essas máquinas nos permitirão  ver quem está falando mal da Leona ou até mesmo ver quem está comentendo crimes.,69525C,Lele_mov_frente,Mia_Frente_Mov_lele_0,Mia
-Player,Que massa! Vamos atrás disso então,#69525C ,Lele_mov_frente,Mia_Frente_Mov_lele_0,Lele
+Player,"Ó céus, tudo isso é sua culpa Lelê. Agora estou na bosta e ninguém vai me ajudar",Leona,LeonaNoites_Frente_mov3ato_0,,Leona
+Player,"Sinto muito. Mesmo sabendo que é consequência das suas mentiras, não é justo eles te exporem assim…",Lelê,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
+NPC,Expor? Como assim expor?,Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+Player,Você não viu? Eles estão vazando uma foto comprometedora sua,Lelê,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
+NPC,"De novo não… Eles estão trazendo à tona meu passado, de novo",Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+Player,"O que eles estão fazendo é crime, temos que chamar as autoridades",Lelê,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
+NPC,"Mas são muitas pessoas, até eu terminar de denunciar uma, vão ter outras milhares… ",Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+NPC,Já sei!!!,Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+Player,Lá vem…,Mia,Mia_Frente_Mov_lele_0,LeonaNoites_Frente_mov3ato_0,Mia
+NPC,"Você deveria me ajudar Lelê, você é boa combatendo esses imbecis",Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+Player,Não sei não... eu já to com problema suficiente para lidar,Lelê,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
+NPC,Qual o problema? Talvez eu possa te ajudar em troca,Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+Player,"Precisamos sair de Turiter e ir para (cidade), mas aqueles caras lá não deixam a gente passar",Lelê,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
+NPC,"Desde a atualização de Turiter, isso virou uma loucura…",Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+NPC,"Mas não se preocupe, eu sei como te ajudar nisso.",Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+NPC,Você só precisa me ajudar a denunciar 10 haters que estão me xingando e vazando minhas fotos.,Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+Player,"Ok, mas você precisa prometer que vai me ajudar a sair daqui",Lelê,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Lele
+NPC,"Não se preocupe, trato é trato",Leona,Lele_mov_frente,LeonaNoites_Frente_mov3ato_0,Leona
+Player,"Lelê, vai ser uma tarefa dificil denunciar todos eles, é melhor a gente usar um sistema que veio com a atualização: a máquina de publicações",Mia,Mia_Frente_Mov_lele_0,Lele_mov_frente,Mia
+Player,Máquina de publicações? Como isso funciona?,Lelê,Lele_mov_frente,Mia_Frente_Mov_lele_0,Lele
+NPC,"Bom é simples, tem cerca de 5 delas espalhadas pelo mapa, quando interagimos, podemos ver turits lançados recentemente, ai podemos denunciar ou curtir os posts",Mia,Lele_mov_frente,Mia_Frente_Mov_lele_0,Mia
+NPC,Essas máquinas nos permitirão  ver quem está falando mal da Leona ou até mesmo ver quem está comentendo crimes.,Mia,Lele_mov_frente,Mia_Frente_Mov_lele_0,Mia
+Player,Que massa! Vamos atrás disso então,Lelê,Lele_mov_frente,Mia_Frente_Mov_lele_0,Lele
