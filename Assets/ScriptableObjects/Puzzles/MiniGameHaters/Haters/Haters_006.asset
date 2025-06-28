@@ -16,5 +16,5 @@ MonoBehaviour:
   nickName: '@valterdobemm'
   textComents: "as crian\xE7as precisam de limites, n\xE3o de desfile de orgulho
     gay na escola \U0001F922"
-  imageAccount: {fileID: 0}
+  imageAccount: {fileID: 21300000, guid: 59503109795da6b42a34a38fe041454c, type: 3}
   isHater: 1

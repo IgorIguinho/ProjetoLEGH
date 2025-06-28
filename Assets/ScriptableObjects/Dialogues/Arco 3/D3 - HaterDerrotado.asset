@@ -59,8 +59,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   isNextScene: 0
   nextScene: 
-  learnAction: 0
-  attackScriptable: {fileID: 0}
+  learnAction: 1
+  attackScriptable: {fileID: 11400000, guid: b6d37a9a0a871f64db570383613e7a12, type: 2}
   havePuzzle: 0
   puzzleDialogueScriptable: {fileID: 0}
   numberActivePuzzle: 0

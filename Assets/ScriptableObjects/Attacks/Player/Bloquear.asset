@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bloquear
   m_EditorClassIdentifier: 
   nameTitle: Bloquear
-  useCombat: 
+  useCombat: Voce bloqueou ele
   combatDescr: "Voc\xEA bloquea o comentario do openente, podendo acabar com uma
     discuss\xE3o simples"
   fraseAction:
@@ -21,10 +21,13 @@ MonoBehaviour:
   - bloqueou
   dmg: -4
   costStm: -4
-  learned: 0
+  learned: 1
   audioClip: {fileID: 8300000, guid: 757f8a449bf107a4b9efa35625c5ebc0, type: 3}
   typeAction: Normal
+  useCombatForWaitingAction: 
   buffPlayer: 0
-  modificadorBuffOrDebuff: 0
+  modificadorBuffOrDebuff:
+    operacao: 0
+    valor: 0
   turnsForTimingAction: 0
   turnsForTimingActionEnemy: 0

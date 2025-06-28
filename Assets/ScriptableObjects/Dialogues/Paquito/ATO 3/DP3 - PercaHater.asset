@@ -38,7 +38,7 @@ MonoBehaviour:
   - Paquito
   - Paquito
   - "Lel\xEA"
-  canSkip: 0
+  canSkip: 1
   haveCutscene: 0
   cutScene: []
   numberCutScene: 
@@ -46,7 +46,7 @@ MonoBehaviour:
   isBattle: 0
   enemy: {fileID: 0}
   isNextScene: 1
-  nextScene: WorldATO3 4
+  nextScene: WorldATO3 3.3
   learnAction: 0
   attackScriptable: {fileID: 0}
   havePuzzle: 0

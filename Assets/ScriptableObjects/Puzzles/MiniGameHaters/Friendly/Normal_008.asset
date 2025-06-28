@@ -17,5 +17,5 @@ MonoBehaviour:
   textComents: "Hoje fui na casa dos meus pais e fiz um almo\xE7o pra eles, por causa
     da correria fazia um tempo que eu n\xE3o visitava eles. Foi muito bom, preciso
     fazer isso mais vezes \U0001F604"
-  imageAccount: {fileID: 0}
+  imageAccount: {fileID: -1876272514, guid: e58ad03bec6379643a5d49a292bcb3a4, type: 3}
   isHater: 0

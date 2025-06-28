@@ -17,13 +17,17 @@ MonoBehaviour:
   combatDescr: "Voc\xEA denuncia o oponente, demora 2 turnos para a denunciar se
     completar pois a modera\xE7\xE3o ira olhar o perfil do oponente"
   fraseAction:
-  - denunciou
+  - Vou te denunciar
+  - Denunciado!!
   dmg: -6
   costStm: -4
-  learned: 0
+  learned: 1
   audioClip: {fileID: 0}
   typeAction: WaintingTurns
+  useCombatForWaitingAction: A denuncia foi completa
   buffPlayer: 0
-  modificadorBuffOrDebuff: 0
+  modificadorBuffOrDebuff:
+    operacao: 0
+    valor: 0
   turnsForTimingAction: 2
   turnsForTimingActionEnemy: 0

@@ -68,7 +68,7 @@ MonoBehaviour:
   isBattle: 0
   enemy: {fileID: 0}
   isNextScene: 1
-  nextScene: WorldATO2 1
+  nextScene: WorldATO2 1.1
   learnAction: 0
   attackScriptable: {fileID: 0}
   havePuzzle: 0

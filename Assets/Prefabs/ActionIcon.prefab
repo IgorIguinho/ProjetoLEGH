@@ -568,7 +568,8 @@ MonoBehaviour:
   actionNameHolder: {fileID: 7088480802061592376}
   descriptionHolder: {fileID: 609437975901498906}
   imageSelect: {fileID: 1434045716, guid: 8879693da46962e47911b717937a8e87, type: 3}
-  noSelectImage: {fileID: -769649380, guid: 8879693da46962e47911b717937a8e87, type: 3}
+  noSelectImage: {fileID: 175819268, guid: 0be0df7e08a78b544be51c58eb9aa2b5, type: 3}
+  undescoredImage: {fileID: -769649380, guid: 8879693da46962e47911b717937a8e87, type: 3}
   buttonSelect: {fileID: 1402656085814607734}
   isActive: 0
 --- !u!114 &7539318978578294241
@@ -591,7 +592,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -769649380, guid: 8879693da46962e47911b717937a8e87, type: 3}
+  m_Sprite: {fileID: 175819268, guid: 0be0df7e08a78b544be51c58eb9aa2b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

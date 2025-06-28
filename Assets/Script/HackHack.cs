@@ -7,7 +7,8 @@ public class HackHack : MonoBehaviour
 {
     public DialogueScriptable dialogue;
     public EnemysScriptable enemys;
-    public GameObject inputFlied;
+    public GameObject hackScreen;
+  
     public AttackScriptable attack;
     public string scene;
     bool eita;
@@ -26,7 +27,11 @@ public class HackHack : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightShift) )
         {
-            nextScene(scene);
+            hackScreen.SetActive(true);
+        }
+        if (Input.GetKey(KeyCode.Home))
+        {
+          nextScene(scene);
         }
         // Pressione F12 para tirar screenshot
         if (Input.GetKeyDown(screenshotKey))
@@ -40,8 +45,10 @@ public class HackHack : MonoBehaviour
             SceneManager.LoadScene(scene);
         }
 
-
-
+    public void LearnActionHack(AttackScriptable action)
+    {
+        LearningActionWarning.Instance.LearnAction(action);
+    }
 
 
     public void TakeScreenshot()

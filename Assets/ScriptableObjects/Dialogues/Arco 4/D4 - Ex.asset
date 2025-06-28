@@ -101,10 +101,10 @@ MonoBehaviour:
   haveCutscene: 0
   cutScene: []
   numberCutScene: 
-  battleScene: 
-  isBattle: 0
-  enemy: {fileID: 0}
-  isNextScene: 1
+  battleScene: Battle
+  isBattle: 1
+  enemy: {fileID: 11400000, guid: ff9c0d642d10f2e439dc3cc951c8300b, type: 2}
+  isNextScene: 0
   nextScene: WorldATO4 3
   learnAction: 0
   attackScriptable: {fileID: 0}

@@ -61,7 +61,7 @@ MonoBehaviour:
   nameDialogue:
   - Troll Je
   - Troll Je
-  - Mia
+  - ???
   - "Lel\xEA"
   - Mia
   - "Lel\xEA"
@@ -69,7 +69,7 @@ MonoBehaviour:
   - "Lel\xEA"
   - "Lel\xEA"
   - Mia
-  canSkip: 1
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

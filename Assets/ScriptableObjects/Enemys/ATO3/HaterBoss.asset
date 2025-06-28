@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: HaterBoss
   m_EditorClassIdentifier: 
   AttackScripts:
+  - {fileID: 11400000, guid: 50ed984d35fcb914d89f93b251332ba3, type: 2}
   - {fileID: 11400000, guid: 4d397cb45efff03439c76b69227ae10e, type: 2}
   - {fileID: 11400000, guid: 50ed984d35fcb914d89f93b251332ba3, type: 2}
   - {fileID: 11400000, guid: 50ed984d35fcb914d89f93b251332ba3, type: 2}
@@ -31,11 +32,11 @@ MonoBehaviour:
   musicBattle: {fileID: 8300000, guid: 1fd0ba7e71181774ca903043ac50dd54, type: 3}
   spriteBattle: {fileID: 353782142, guid: 7515c04361099944086b3a754cb032ae, type: 3}
   actionBlockEnemy: {fileID: 0}
-  animationBattle: {fileID: 7400000, guid: 4f6f8be364c300342ae5b40ebf49d3ea, type: 2}
+  animationBattle: {fileID: 7400000, guid: bf717ede4a57e544cbda5124497201b4, type: 2}
   haveDialogueNext: 0
-  nextDialogue: {fileID: 11400000, guid: 295e9a75125e88345b0ea517e4e04160, type: 2}
+  nextDialogue: {fileID: 11400000, guid: b1d2c6bdd6f0461448951b370b6a5260, type: 2}
   nextScene: WorldATO3 5
   haveLearAction: 0
   actionToLearn: {fileID: 0}
-  dialogueDerrota: {fileID: 0}
-  sceneDerrota: 
+  dialogueDerrota: {fileID: 11400000, guid: 295e9a75125e88345b0ea517e4e04160, type: 2}
+  sceneDerrota: ComunidadePAQ

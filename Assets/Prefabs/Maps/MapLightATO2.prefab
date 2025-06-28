@@ -108,6 +108,7 @@ MonoBehaviour:
   bispoDialogue: 0
   oneDialogue: 0
   numberDialogue: 0
+  block: 0
 --- !u!1 &145162999093208858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,6 +2877,7 @@ MonoBehaviour:
   bispoDialogue: 0
   oneDialogue: 0
   numberDialogue: 0
+  block: 0
 --- !u!1 &2668266581144141232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2983,6 +2985,7 @@ MonoBehaviour:
   bispoDialogue: 0
   oneDialogue: 0
   numberDialogue: 0
+  block: 0
 --- !u!1 &2792571723865569850
 GameObject:
   m_ObjectHideFlags: 0
@@ -6676,6 +6679,7 @@ MonoBehaviour:
   bispoDialogue: 0
   oneDialogue: 0
   numberDialogue: 0
+  block: 0
 --- !u!1 &5623508742646401833
 GameObject:
   m_ObjectHideFlags: 0
@@ -7920,7 +7924,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 1961543831, guid: e14f35691caae8343b054938c5e14ca9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9892,7 +9896,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 1807320354, guid: cd6a588e9bd9e764795a02b3132671a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

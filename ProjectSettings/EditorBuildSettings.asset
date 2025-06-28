@@ -6,44 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MenuInicial.unity
+    guid: 8ba7ab5bfecf7bf45b49ca7f867f4b8e
+  - enabled: 1
     path: Assets/Scenes/CutSceneInicial.unity
     guid: 0b23c8881b50d9144b1ac74b4ecdf3e2
   - enabled: 1
     path: Assets/Scenes/ATO1/StartWorldProto.unity
     guid: 18779f43881b8cd4ab24fce7734025b1
-  - enabled: 0
-    path: Assets/Scenes/Test/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/ATO1 - ENG/StartWorldProto ENG.unity
-    guid: 8ac5afa2d9c880343952b0edd47e6d71
-  - enabled: 0
-    path: Assets/Scenes/ATO1 - ENG/StartWorld.1 ENG.unity
-    guid: d6d127dbf3c7bd346828fb118ccd0f51
-  - enabled: 0
-    path: Assets/Scenes/ATO1 - ENG/StartWorld2.1 ENG.unity
-    guid: 7c02c42cdb4bb7147ad847fa2b1f6741
-  - enabled: 0
-    path: Assets/Scenes/ATO1 - ENG/StartWorld3.1 ENG.unity
-    guid: f25029675b4dea74cbc108c81d3a0408
-  - enabled: 0
-    path: Assets/Scenes/ATO1 - ENG/StartWorldProto2 ENG.unity
-    guid: 6935060aa916c8745b93e0068a6881ea
-  - enabled: 0
-    path: Assets/Scenes/ATO1 - ENG/StartWorldProto3 ENG.unity
-    guid: 95b2a66928808cb45b6a1723783dc11d
-  - enabled: 0
-    path: Assets/Scenes/ATO1 - ENG/StartWorldProto4 ENG.unity
-    guid: 981249aa7c8dd904697a94f32a13cc2a
   - enabled: 1
     path: "Assets/Scenes/Anima\xE7\xE3oVideo.unity"
     guid: be43dd9fe4dfcc2489bcc9b03820bf0c
   - enabled: 1
     path: Assets/Scenes/Test/WonScene.unity
     guid: 8bc272685d762344eaec62ff95708b7d
-  - enabled: 0
-    path: Assets/Scenes/Test/Test.unity
-    guid: 6c1158bc1633e1249b4df3ae2de1688b
   - enabled: 1
     path: Assets/Scenes/ATO1/StartWorldProto2.unity
     guid: cdfbdd6a735ef5c46aba3411dd403003
@@ -60,8 +36,14 @@ EditorBuildSettings:
     path: Assets/Scenes/ATO2/WorldATO2 1.unity
     guid: 7bd48b25b022287499af7cc6fc7a5731
   - enabled: 1
+    path: Assets/Scenes/ATO2/WorldATO2 1.1.unity
+    guid: 09cf0d1bfdb10374fa50696f66827fb9
+  - enabled: 1
     path: Assets/Scenes/ATO2/WorldATO2 2.unity
     guid: 793fd2e9374141543a878731d2839f5d
+  - enabled: 1
+    path: Assets/Scenes/ATO2/WorldATO2 2.1.unity
+    guid: c9f23ac31d5c74949a8587b86478f482
   - enabled: 1
     path: Assets/Scenes/ATO2/WorldATO2 3.unity
     guid: 48b7a66c504b14f48a879672d183cc82
@@ -80,6 +62,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ATO2/WorldATO2 8.unity
     guid: 7679dbd82e067584e90d3c9f7930211b
+  - enabled: 1
+    path: Assets/Scenes/ATO2/WorldATO2 8.1.unity
+    guid: d064e22a77b339a419adbe13886d06d9
   - enabled: 1
     path: Assets/Scenes/ATO2/WorldATO2 9.unity
     guid: fbf22caf447ac1144822bbd32c40c0a4
@@ -123,8 +108,8 @@ EditorBuildSettings:
     path: Assets/Scenes/ATO3/WorldATO3 3.2.unity
     guid: 1ed7b8398ffd44a44a49545d92e7b781
   - enabled: 1
-    path: Assets/Scenes/ATO3/WorldATO3 3TEST.unity
-    guid: 6f4aa8166a33a5d41a8330cc61b7e2e9
+    path: Assets/Scenes/ATO3/WorldATO3 3.3.unity
+    guid: 69270eb13a21d824aadecb206f80590c
   - enabled: 0
     path: Assets/Scenes/ATO3/WorldATO3 4.unity
     guid: 2c6420538f7685447976a5365c43ad77
@@ -149,4 +134,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ATO4/WorldATO4 4.unity
     guid: c00176127442d1a478228943a9ae7e08
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 91db1f68e71048740840efa0e707d922
   m_configObjects: {}

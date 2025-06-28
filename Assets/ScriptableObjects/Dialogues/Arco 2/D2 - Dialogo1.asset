@@ -85,7 +85,7 @@ MonoBehaviour:
   - NPC
   - NPC
   - NPC
-  - Player
+  - NPC
   - Player
   - NPC
   - Player
@@ -120,7 +120,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: 21300000, guid: b0ecae4accf200442a0a8a8c8a92b2aa, type: 3}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
@@ -155,7 +155,7 @@ MonoBehaviour:
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
   - {fileID: 21300000, guid: 15bed586b51fcea4faed1d431a162eba, type: 3}
   - {fileID: 21300000, guid: b0ecae4accf200442a0a8a8c8a92b2aa, type: 3}
-  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
+  - {fileID: 21300000, guid: b0ecae4accf200442a0a8a8c8a92b2aa, type: 3}
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
   - {fileID: 21300000, guid: 5231816a8c2c66a409a20f100a42c377, type: 3}

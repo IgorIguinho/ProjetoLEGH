@@ -25,7 +25,7 @@ MonoBehaviour:
   - NPC
   - Player
   - NPC
-  - Player
+  - NPC
   - NPC
   - Player
   imagePlayer:

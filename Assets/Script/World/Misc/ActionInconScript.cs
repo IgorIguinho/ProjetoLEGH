@@ -12,7 +12,9 @@ public class ActionInconScript : MonoBehaviour
     public TextMeshProUGUI descriptionHolder;
     public Sprite imageSelect;
     public Sprite noSelectImage;
+    public Sprite undescoredImage;
     public Button buttonSelect;
+    
     [SerializeField]private bool isActive;
     // Start is called before the first frame update
     void Start()
@@ -46,7 +48,7 @@ public class ActionInconScript : MonoBehaviour
 
         if (attack.learned == false) 
         {
-            gameObject.GetComponent<Image>().color = Color.grey;
+            gameObject.GetComponent<Image>().sprite = undescoredImage;
             descriptionHolder.text = "???????????????????????????????????????";
         }
         else { descriptionHolder.text = attack.combatDescr; }

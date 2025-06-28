@@ -23,6 +23,8 @@ MonoBehaviour:
   audioClip: {fileID: 0}
   typeAction: BuffOrDebuffAction
   buffPlayer: 1
-  modificadorBuffOrDebuff: 2.5
+  modificadorBuffOrDebuff:
+    operacao: 3
+    valor: 2
   turnsForTimingAction: 0
   turnsForTimingActionEnemy: 0

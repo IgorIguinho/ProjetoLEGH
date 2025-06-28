@@ -94,7 +94,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   imageNPC:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 1173766551, guid: 045657079de8b73419679c294c4c8ba7, type: 3}
   - {fileID: 1173766551, guid: 045657079de8b73419679c294c4c8ba7, type: 3}
   - {fileID: 1173766551, guid: 045657079de8b73419679c294c4c8ba7, type: 3}

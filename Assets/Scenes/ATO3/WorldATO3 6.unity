@@ -941,6 +941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeonaNoites
       objectReference: {fileID: 0}
+    - target: {fileID: 5979633535245605102, guid: 198c38caada9c1c45bcc05d7b1b8f416, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 514ec19c2800a5a4d9798187bb2ced0f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

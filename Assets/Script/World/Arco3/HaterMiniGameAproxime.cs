@@ -33,6 +33,7 @@ public class HaterMiniGameAproxime : MonoBehaviour
                     storeWarning.SetActive(false);
                     storeButtonWarining.SetActive(false);
                     miniGame.SetActive(true);
+                    gameObject.GetComponent<HaterMiniGameAproxime>().enabled = false;
                 HaterMiniGameManager.Instance.startMiniGame = true;
                 }
             }

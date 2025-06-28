@@ -27,13 +27,15 @@ public class BattleManager : MonoBehaviour
     public AudioSource soundTrack;
 
     //Types Attacks Player
-    float modificadorPlayer;
-    float modificadorEnemy;
-    bool startTimingAction;
+    ModificadorBuffDebuff modificadorPlayer;
+    ModificadorBuffDebuff modificadorEnemy;
+    private ModificadorBuffDebuff modificadorNeutro = new ModificadorBuffDebuff { operacao = OperacaoMatematica.Soma, valor = 0 };
+    public bool startTimingAction;
     [Header("Player type action....")]
     public int turnsForTimingAction;
     public int maxTurnsForAction;
     int TimingActionObject;
+    public float timeForUseNameAndWeaknes;
 
     [Space(4)]
     
@@ -119,6 +121,14 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    public void Desistir()
+    {
+        StartCoroutine(BarValueAnimation(20));
+
+        HudBattleManager.Instance.loseScreen.SetActive(true);
+        PassInfos.Instance.DialogueScriptable = enemyAtributes.dialogueDerrota;
+        TransitionSceneManager.Instance.Transition(enemyAtributes.sceneDerrota);
+    }
     IEnumerator SetupBattle()
     {
 
@@ -172,36 +182,50 @@ public class BattleManager : MonoBehaviour
         {
             if (enemyAtributes.superEffective.Contains(attacksPlayer[i]))// super efetiva
             {
-                StartCoroutine(BarValueAnimation((attacksPlayer[i].dmg + modificadorPlayer) * 2));
-                modificadorPlayer = 0; //Resetar o modifcador do dano
+                float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                StartCoroutine(BarValueAnimation(danoFinal *2));
+                modificadorPlayer = modificadorNeutro; //Resetar o modifcador do dano
                 HudBattleManager.Instance.BuffOrDebuffEffcts(false); //Disabilita o efeito visual do buff 
+                StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                yield return new WaitForSeconds(timeForUseNameAndWeaknes);
                 HudBattleManager.Instance.textGeral.text = "Esta ação foi super efetiva";
             }
             else if (enemyAtributes.noEffective.Contains(attacksPlayer[i]))  // não efetiva
-            {             
-                StartCoroutine(BarValueAnimation((attacksPlayer[i].dmg + modificadorPlayer)* 2));
-                modificadorPlayer = 0;
+            {
+                float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                StartCoroutine(BarValueAnimation(danoFinal/2));
+                modificadorPlayer = modificadorNeutro;
                 HudBattleManager.Instance.BuffOrDebuffEffcts(false);
+                StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                yield return new WaitForSeconds(timeForUseNameAndWeaknes);
                 HudBattleManager.Instance.textGeral.text = "Esta ação foi não foi efetiva";
             }
             else if (enemyAtributes.invunerable.Contains(attacksPlayer[i])) //Invuneravel
             {
+
                 HudBattleManager.Instance.textGeral.text = "O inimigo é ivuneravel a essa ação";
             }
             else if (enemyAtributes.actionIncorrect.Contains(attacksPlayer[i])) //Ação errada
             {
+           
+                float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                StartCoroutine(BarValueAnimation(danoFinal));
+                StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                yield return new WaitForSeconds(timeForUseNameAndWeaknes);
                 HudBattleManager.Instance.textGeral.text = "Está ação deixou o inimgo com mais raiva";
-                StartCoroutine(BarValueAnimation(attacksPlayer[i].dmg + modificadorPlayer));
             }
             else //efetiva
             {
-                StartCoroutine(BarValueAnimation(attacksPlayer[i].dmg + modificadorPlayer));
-                modificadorPlayer = 0;
+                float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                StartCoroutine(BarValueAnimation(danoFinal));
+                modificadorPlayer = modificadorNeutro;
                 HudBattleManager.Instance.BuffOrDebuffEffcts(false);
+                StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                yield return new WaitForSeconds(timeForUseNameAndWeaknes);
                 HudBattleManager.Instance.textGeral.text = "Esta ação foi efetiva";
             }
             stamina += attacksPlayer[i].costStm; // Muda a estamina do player conforme custo de estamina
-            StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true)); 
+            
            
         }
         else if (attacksPlayer[i].typeAction == "BuffOrDebuffAction") //Ação que modifica o valor do proximo turno
@@ -229,38 +253,53 @@ public class BattleManager : MonoBehaviour
             {
                 if (enemyAtributes.superEffective.Contains(attacksPlayer[i]))// super efetiva
                 {
-                    StartCoroutine(BarValueAnimation(attacksPlayer[i].dmg + modificadorPlayer * 2));
-                    modificadorPlayer = 0; //Resetar o modifcador do dano
+                    float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                    StartCoroutine(BarValueAnimation(danoFinal * 2));
+                    modificadorPlayer = modificadorNeutro; //Resetar o modifcador do dano
                     HudBattleManager.Instance.BuffOrDebuffEffcts(false); //Disabilita o efeito visual do buff 
+                    StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                    yield return new WaitForSeconds(timeForUseNameAndWeaknes);
                     HudBattleManager.Instance.textGeral.text = "Esta ação foi super efetiva";
                 }
                 else if (enemyAtributes.noEffective.Contains(attacksPlayer[i]))  // não efetiva
                 {
-                    StartCoroutine(BarValueAnimation(attacksPlayer[i].dmg + modificadorPlayer / 2));
-                    modificadorPlayer = 0;
+                    float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                    StartCoroutine(BarValueAnimation(danoFinal / 2));
+                    modificadorPlayer = modificadorNeutro;
                     HudBattleManager.Instance.BuffOrDebuffEffcts(false);
+                    StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                    yield return new WaitForSeconds(timeForUseNameAndWeaknes);
                     HudBattleManager.Instance.textGeral.text = "Esta ação foi não foi efetiva";
                 }
                 else if (enemyAtributes.invunerable.Contains(attacksPlayer[i])) //Invuneravel
                 {
+
                     HudBattleManager.Instance.textGeral.text = "O inimigo é ivuneravel a essa ação";
                 }
                 else if (enemyAtributes.actionIncorrect.Contains(attacksPlayer[i])) //Ação errada
                 {
+
+                    float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                    StartCoroutine(BarValueAnimation(danoFinal));
+                    StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                    yield return new WaitForSeconds(timeForUseNameAndWeaknes);
                     HudBattleManager.Instance.textGeral.text = "Está ação deixou o inimgo com mais raiva";
-                StartCoroutine(BarValueAnimation(attacksPlayer[i].dmg + modificadorPlayer));
                 }
                 else //efetiva
                 {
-                    StartCoroutine(BarValueAnimation(attacksPlayer[i].dmg + modificadorPlayer));
-                    modificadorPlayer = 0;
+                    float danoFinal = AplicarModificador(attacksPlayer[i].dmg, modificadorPlayer);
+                    StartCoroutine(BarValueAnimation(danoFinal));
+                    modificadorPlayer = modificadorNeutro;
                     HudBattleManager.Instance.BuffOrDebuffEffcts(false);
+                    StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+                    yield return new WaitForSeconds(timeForUseNameAndWeaknes);
                     HudBattleManager.Instance.textGeral.text = "Esta ação foi efetiva";
                 }
-                stamina += attacksPlayer[i].costStm; // Muda a estamina do player conforme custo de estamina
-                StartCoroutine(HudBattleManager.Instance.animationAttack(attacksPlayer[i], true));
+
+                state = BattleState.PLAYERTURN;
+                canAttack = true;
                 startTimingAction = false;
-                yield return new WaitForSeconds(1.5f);
+                yield break ;
             }
             else // É o começo da ação, começando com a contagem 
             {
@@ -316,12 +355,13 @@ public class BattleManager : MonoBehaviour
        
      
         if (enemyAction[i].typeAction == "Normal" )
-        { 
+        {
             //valueBar -= enemyAction[i].dmg + modificadorEnemy;
 
-            StartCoroutine(BarValueAnimation(enemyAction[i].dmg + modificadorEnemy)); //Puxa a coroutine quue faz o dano a barra
+            float danoFinal = AplicarModificador(enemyAction[i].dmg, modificadorEnemy);
+            StartCoroutine(BarValueAnimation(danoFinal));//Puxa a coroutine quue faz o dano a barra
             StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false)); //Puxa a animação do ataque do inimigo
-            modificadorEnemy = 0;
+            modificadorEnemy = modificadorNeutro;
         }
         else if (enemyAction[i].typeAction == "Agrupamento") // Ataque que vai juntar inimigos para a batalha, demora x turnos pra funcionar
         {
@@ -347,7 +387,9 @@ public class BattleManager : MonoBehaviour
             else //O inimigo finalmente ataca
             {
                 StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false));
-                StartCoroutine(BarValueAnimation(enemyAction[i].dmg + modificadorEnemy)); modificadorEnemy = 0;
+                float danoFinal = AplicarModificador(enemyAction[i].dmg, modificadorEnemy);
+                StartCoroutine(BarValueAnimation(danoFinal));
+                modificadorEnemy = modificadorNeutro;
                 HudBattleManager.Instance.textGeral.text = enemyAction[1].fraseAction[Random.Range(0, enemyAction[i].fraseAction.Count)];
            
             }
@@ -356,14 +398,16 @@ public class BattleManager : MonoBehaviour
         {
             stamina -= 5 ;
             HudBattleManager.Instance.textStm.color = Color.red;
-            StartCoroutine(BarValueAnimation(enemyAction[i].dmg + modificadorEnemy)); modificadorEnemy = 0;
+            float danoFinal = AplicarModificador(enemyAction[i].dmg, modificadorEnemy);
+            StartCoroutine(BarValueAnimation(danoFinal)); 
+            modificadorEnemy = modificadorNeutro;
             StartCoroutine(HudBattleManager.Instance.animationAttack(enemyAction[i], false));
         }
         else if (enemyAction[i].typeAction == "BuffOrDebuffAction") //Ação de bufar a proxima ação do inimigo ou debuff na ação do player
         {
             if (enemyAction[i].buffPlayer)
             {
-                modificadorPlayer = -enemyAction[i].modificadorBuffOrDebuff;// Modifica a ação do player         
+                modificadorPlayer = enemyAction[i].modificadorBuffOrDebuff;// Modifica a ação do player         
             }
             else 
             {
@@ -445,4 +489,27 @@ public class BattleManager : MonoBehaviour
         
     }
 
+    private float AplicarModificador(float danoOriginal, ModificadorBuffDebuff modificador)
+    {
+        switch (modificador.operacao)
+        {
+            case OperacaoMatematica.Soma:
+                return danoOriginal + modificador.valor;
+
+            case OperacaoMatematica.Subtracao:
+                return danoOriginal - modificador.valor;
+
+            case OperacaoMatematica.Multiplicacao:
+                return danoOriginal * modificador.valor;
+
+            case OperacaoMatematica.Divisao:
+                if (modificador.valor != 0)
+                    return danoOriginal / modificador.valor;
+                else
+                    return danoOriginal; // Proteção contra divisão por zero
+
+            default:
+                return danoOriginal;
+        }
+    }
 }

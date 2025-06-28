@@ -22,7 +22,9 @@ MonoBehaviour:
   learned: 0
   audioClip: {fileID: 0}
   typeAction: BuffOrDebuffAction
-  buffPlayer: 0
-  modificadorBuffOrDebuff: 2
+  buffPlayer: 1
+  modificadorBuffOrDebuff:
+    operacao: 3
+    valor: 2
   turnsForTimingAction: 0
   turnsForTimingActionEnemy: 0

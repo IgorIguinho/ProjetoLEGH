@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Elaborar Argumento
   m_EditorClassIdentifier: 
   nameTitle: Elaborar Argumento
-  useCombat: "Sua proxima a\xE7\xE3o tera um bon\xFBs"
+  useCombat: "Sua proxima a\xE7\xE3o tera um b\xF4nus"
   combatDescr: "Voc\xEA se prepara e procurana sua mente argumentos que possa usar,
     a proxima a\xE7\xE3o sera mais efetiva"
   fraseAction:
@@ -24,6 +24,8 @@ MonoBehaviour:
   audioClip: {fileID: 0}
   typeAction: BuffOrDebuffAction
   buffPlayer: 1
-  modificadorBuffOrDebuff: -4
+  modificadorBuffOrDebuff:
+    operacao: 2
+    valor: 2
   turnsForTimingAction: 0
   turnsForTimingActionEnemy: 0

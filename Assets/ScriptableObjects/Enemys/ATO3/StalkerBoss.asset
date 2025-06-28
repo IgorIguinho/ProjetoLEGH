@@ -33,9 +33,9 @@ MonoBehaviour:
   actionBlockEnemy: {fileID: 0}
   animationBattle: {fileID: 7400000, guid: 822bdbec633dc264b9fa3f6de5f68129, type: 2}
   haveDialogueNext: 0
-  nextDialogue: {fileID: 11400000, guid: b5e3e8f51a6d4bc46b3e79ddd4676e7f, type: 2}
+  nextDialogue: {fileID: 11400000, guid: 91a61b23b7a95b8448938ebe1a20d793, type: 2}
   nextScene: WorldATO3 6
   haveLearAction: 0
   actionToLearn: {fileID: 0}
-  dialogueDerrota: {fileID: 0}
-  sceneDerrota: 
+  dialogueDerrota: {fileID: 11400000, guid: b5e3e8f51a6d4bc46b3e79ddd4676e7f, type: 2}
+  sceneDerrota: ComunidadePAQ

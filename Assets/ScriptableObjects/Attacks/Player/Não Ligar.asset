@@ -19,11 +19,14 @@ MonoBehaviour:
   fraseAction:
   - "N\xE3o ligo"
   dmg: 0
-  costStm: 4
+  costStm: -4
   learned: 1
   audioClip: {fileID: 0}
   typeAction: BuffOrDebuffAction
+  useCombatForWaitingAction: 
   buffPlayer: 0
-  modificadorBuffOrDebuff: -4
+  modificadorBuffOrDebuff:
+    operacao: 3
+    valor: 2
   turnsForTimingAction: 0
   turnsForTimingActionEnemy: 0

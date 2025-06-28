@@ -25,6 +25,7 @@ public class HudBattleManager : MonoBehaviour
     public GameObject loseScreen;
     public GameObject balonPlayer;
     public GameObject balonEnemy;
+    public GameObject buttonForDesisntencia;
 
     [Header("Lists")]
     public List<GameObject> buttons;
@@ -60,6 +61,7 @@ public class HudBattleManager : MonoBehaviour
         NameForButtons();
         balonPlayer.SetActive(false);
         balonEnemy.gameObject.SetActive(false);
+        buttonForDesisntencia.SetActive(false);
     }
 
     // Update is called once per frame
@@ -82,6 +84,10 @@ public class HudBattleManager : MonoBehaviour
             }
         }
 
+        if (BattleManager.Instance.stamina >=0)
+        {
+            buttonForDesisntencia.SetActive(true);
+        }
     }
 
     public void NameForButtons()
@@ -159,8 +165,21 @@ public class HudBattleManager : MonoBehaviour
         if (isPlayer)
         {
             balonPlayer.SetActive(true);
-            textBalonPlayer.text = attack.fraseAction[Random.Range(attack.fraseAction.Count - 1, 0)];
-            textGeral.text = attack.useCombat;
+            if (attack.typeAction == "WaintingTurns" && BattleManager.Instance.turnsForTimingAction == BattleManager.Instance.maxTurnsForAction && BattleManager.Instance.startTimingAction)
+            {
+                textBalonPlayer.text = attack.fraseAction[1];
+                textGeral.text = attack.useCombatForWaitingAction;
+            }
+            else if (attack.typeAction == "WaintingTurns")
+            {
+                textBalonPlayer.text = attack.fraseAction[0];
+                textGeral.text = attack.useCombat;
+            }
+            else
+            {
+                textBalonPlayer.text = attack.fraseAction[Random.Range(attack.fraseAction.Count - 1, 0)];
+                textGeral.text = attack.useCombat;
+            }
 
             yield return new WaitForSeconds(2);
             balonPlayer.SetActive(false);

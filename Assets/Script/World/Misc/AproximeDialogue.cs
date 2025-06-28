@@ -105,10 +105,9 @@ public class AproximeDialogue : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     storeWarning.SetActive(false);
-                    
                     storeButtonWarining.SetActive(false);
-                    if (numberDialogue == 1)
-                    { canWarning = false; }
+                    //if (numberDialogue == 1)
+                    //{ canWarning = false; }
                     DialogueManager.Instance.dialogueReloadInfos(dialogue[numberDialogue]);
                     if (bispoDialogue && DialogueManager.Instance.isRevulocaoDialogue)
                     {

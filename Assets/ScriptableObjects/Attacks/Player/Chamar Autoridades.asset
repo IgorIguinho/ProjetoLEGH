@@ -12,16 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41dd6b3c7d9a57d43a6adeb35713907f, type: 3}
   m_Name: Chamar Autoridades
   m_EditorClassIdentifier: 
-  nameTitle: 
-  useCombat: 
+  nameTitle: Chamar Autoridades
+  useCombat: Voce chamou as autoridades, vai demorar 5 turnos
   combatDescr: Voce denunciou, vai demorar 10 turnos
-  fraseAction: []
+  fraseAction:
+  - Vou chamar as autoridades
+  - As autoridades chegaram
   dmg: 18
   costStm: -8
   learned: 0
   audioClip: {fileID: 0}
   typeAction: WaintingTurns
+  useCombatForWaitingAction: As autoridades chegaram
   buffPlayer: 0
-  modificadorBuffOrDebuff: 0
+  modificadorBuffOrDebuff:
+    operacao: 0
+    valor: 0
   turnsForTimingAction: 5
   turnsForTimingActionEnemy: 0
