@@ -440,10 +440,15 @@ public class BattleManager : MonoBehaviour
     {
         if (state == BattleState.PLAYERTURN && canAttack)
         {
-            if (stamina >= -(attacksPlayer[i].costStm))
+            if (stamina >= -(attacksPlayer[i].costStm) )
             { 
+                if (attacksPlayer[i].typeAction == "WaintingTurns" && startTimingAction)
+                {
+
+                }else { 
                 StartCoroutine(PlayerAttack(i));
                 canAttack = false;
+                }
             }
         }
 

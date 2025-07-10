@@ -30,7 +30,7 @@ MonoBehaviour:
   - Player
   - NPC
   imagePlayer:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 022485ce200388549bf766014b2e2543, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
@@ -39,12 +39,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   imageNPC:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: adf5778d7c68481478f6c392929a61eb, type: 3}
+  - {fileID: 21300000, guid: adf5778d7c68481478f6c392929a61eb, type: 3}
+  - {fileID: 21300000, guid: adf5778d7c68481478f6c392929a61eb, type: 3}
+  - {fileID: 21300000, guid: adf5778d7c68481478f6c392929a61eb, type: 3}
+  - {fileID: 21300000, guid: adf5778d7c68481478f6c392929a61eb, type: 3}
+  - {fileID: 21300000, guid: adf5778d7c68481478f6c392929a61eb, type: 3}
   nameDialogue:
   - Mia
   - "Lel\xEA"
@@ -53,7 +53,7 @@ MonoBehaviour:
   - Mia
   - "Lel\xEA"
   - Mia
-  canSkip: 0
+  canSkip: 1
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

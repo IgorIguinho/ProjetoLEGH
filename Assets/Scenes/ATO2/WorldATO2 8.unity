@@ -2397,6 +2397,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1939778910846240237, guid: 636a243bac2d8094b8fa2a6ee8356a4d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7781d4a6ddc8aa7409cf3604aa3d8b25, type: 2}
     - target: {fileID: 2411541189352687520, guid: 636a243bac2d8094b8fa2a6ee8356a4d, type: 3}
       propertyPath: m_Name
       value: Rainha
@@ -10624,6 +10628,7 @@ MonoBehaviour:
   bispoDialogue: 0
   oneDialogue: 1
   numberDialogue: 0
+  block: 0
 --- !u!212 &2145320382
 SpriteRenderer:
   m_ObjectHideFlags: 0

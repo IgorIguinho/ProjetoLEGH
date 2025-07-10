@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameTitle: Chamar Autoridades
   useCombat: Voce chamou as autoridades, vai demorar 5 turnos
-  combatDescr: Voce denunciou, vai demorar 10 turnos
+  combatDescr: Voce denunciou, vai demorar 5 turnos
   fraseAction:
   - Vou chamar as autoridades
   - As autoridades chegaram
-  dmg: 18
+  dmg: -18
   costStm: -8
-  learned: 0
+  learned: 1
   audioClip: {fileID: 0}
   typeAction: WaintingTurns
   useCombatForWaitingAction: As autoridades chegaram

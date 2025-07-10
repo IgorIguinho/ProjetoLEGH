@@ -40,14 +40,30 @@ public class LearningActionWarning : MonoBehaviour
 
     public void Update()
     {
-        Color originalColorWarning = warningGroup.GetComponent<Image>().color;
-        warningGroup.GetComponent<Image>().color = new Color(originalColorWarning.r,originalColorWarning.g ,originalColorWarning.b , warningImage.a);
+   
 
-        Color ogCorlorText0 = warningListText[0].GetComponent<TextMeshProUGUI>().color;
-        warningListText[0].GetComponent<TextMeshProUGUI>().color = new Color(ogCorlorText0.r, ogCorlorText0.g, ogCorlorText0.b, warningImage.a);
+        if (warningImage.a == 2 || warningImage.a == 1)
+        {
+            Color originalColorWarning = warningGroup.GetComponent<Image>().color;
+            warningGroup.GetComponent<Image>().color = new Color(originalColorWarning.r, originalColorWarning.g, originalColorWarning.b,0);
 
-        Color ogCorlorText1 = warningListText[1].GetComponent<TextMeshProUGUI>().color;
-        warningListText[1].GetComponent<TextMeshProUGUI>().color = new Color(ogCorlorText1.r, ogCorlorText1.g, ogCorlorText1.b, warningImage.a);
+            Color ogCorlorText0 = warningListText[0].GetComponent<TextMeshProUGUI>().color;
+            warningListText[0].GetComponent<TextMeshProUGUI>().color = new Color(ogCorlorText0.r, ogCorlorText0.g, ogCorlorText0.b, 0);
+
+            Color ogCorlorText1 = warningListText[1].GetComponent<TextMeshProUGUI>().color;
+            warningListText[1].GetComponent<TextMeshProUGUI>().color = new Color(ogCorlorText1.r, ogCorlorText1.g, ogCorlorText1.b, 0);
+        }
+        else 
+        {
+            Color originalColorWarning = warningGroup.GetComponent<Image>().color;
+            warningGroup.GetComponent<Image>().color = new Color(originalColorWarning.r, originalColorWarning.g, originalColorWarning.b, warningImage.a);
+
+            Color ogCorlorText0 = warningListText[0].GetComponent<TextMeshProUGUI>().color;
+            warningListText[0].GetComponent<TextMeshProUGUI>().color = new Color(ogCorlorText0.r, ogCorlorText0.g, ogCorlorText0.b, warningImage.a);
+
+            Color ogCorlorText1 = warningListText[1].GetComponent<TextMeshProUGUI>().color;
+            warningListText[1].GetComponent<TextMeshProUGUI>().color = new Color(ogCorlorText1.r, ogCorlorText1.g, ogCorlorText1.b, warningImage.a);
+        }
     }
 
     public IEnumerator LearnAction(AttackScriptable actionScriptable)

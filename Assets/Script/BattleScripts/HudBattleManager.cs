@@ -120,10 +120,16 @@ public class HudBattleManager : MonoBehaviour
                     actionDescripiton.text = "";
             });
 
+           
+
             if (BattleManager.Instance.stamina < -(BattleManager.Instance.attacksPlayer[i].costStm))
             {
                 //mudar a aparancia do botao quando voce n tem estamina para usar a ação
                 buttons[i].GetComponent<Image>().color = Color.grey; 
+            }
+            else if (BattleManager.Instance.startTimingAction && BattleManager.Instance.attacksPlayer[i].typeAction == "WaintingTurns")
+            {
+                buttons[i].GetComponent<Image>().color = Color.grey;
             }
             else
             {

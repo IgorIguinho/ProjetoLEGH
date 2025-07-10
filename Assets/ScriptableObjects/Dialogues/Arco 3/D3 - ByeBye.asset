@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: D3 - ByeBye
   m_EditorClassIdentifier: 
   text:
-  - "Pensei muito no que voc\xEA me falou,e, agora irei focar em apenas falar a verdade.
+  - "Pensei muito no que voc\xEA me falou, e agora irei focar em apenas falar a verdade.
     Meu canal ser\xE1 de not\xEDcias."
   - Vou te acompanhar. Boa sorte!
   - Boa sorte Leona:3
@@ -26,7 +26,7 @@ MonoBehaviour:
   imagePlayer:
   - {fileID: 1173766551, guid: 045657079de8b73419679c294c4c8ba7, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 7bd5382e07e7c18478a816b7c8411ea7, type: 3}
   - {fileID: 1173766551, guid: 045657079de8b73419679c294c4c8ba7, type: 3}
   imageNPC:
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
@@ -38,7 +38,7 @@ MonoBehaviour:
   - Lele
   - Mia
   - Leona
-  canSkip: 0
+  canSkip: 1
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

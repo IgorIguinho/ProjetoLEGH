@@ -547,7 +547,8 @@ PrefabInstance:
       value: MapATO3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 10528666317486699, guid: 34147c6fc9e7d444281de4582ef56a66, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34147c6fc9e7d444281de4582ef56a66, type: 3}
