@@ -52,7 +52,7 @@ MonoBehaviour:
     Voc\xEA precisa mostrar sua verdadeira for\xE7a Lel\xEA, voc\xEA \xE9 muito forte!"
   - "Talvez eu consiga se voc\xEA for comigo\u2026"
   - 'Vou estar do seu lado sempre :) '
-  - "Ele usava bastante discord* para conversar com os amigos, talvez a consiga encontrar
+  - "Ele usava bastante Concordi para conversar com os amigos, talvez a consiga encontrar
     ele l\xE1"
   - "Ent\xE3o vamos l\xE1 agora!!!"
   thisIs:
@@ -158,23 +158,23 @@ MonoBehaviour:
   - {fileID: -1618056177, guid: 459e470383d69bc4386187b5f0487dbc, type: 3}
   - {fileID: -1618056177, guid: 459e470383d69bc4386187b5f0487dbc, type: 3}
   nameDialogue:
-  - "Pe\xE3o 1"
-  - "Pe\xE3o 2"
-  - "Pe\xE3o 3"
-  - "Pe\xE3o 2"
-  - "Pe\xE3o 3"
-  - "Pe\xE3o 4"
-  - "Pe\xE3o 5"
+  - Bruno
+  - Daniel Moto
+  - Maria
+  - Daniel Moto
+  - Maria
+  - Lune
+  - Lune
   - Glitch
-  - "Pe\xE3o 5"
+  - Pixeoto
   - Glitch
   - Glitch
   - Glitch
-  - "Pe\xE3o 5"
-  - "Pe\xE3o 4"
+  - Pixeoto
+  - Lune
   - Glitch
-  - "Pe\xE3o 4"
-  - "Pe\xE3o 2"
+  - Lune
+  - Glitch
   - Mia
   - "Lel\xEA"
   - Mia

@@ -77,15 +77,16 @@ public class BattleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        HudBattleManager.Instance.NameForButtons();
         canAttack = true;
         enemyAtributes = PassInfos.Instance.enemyToPass;    // Puxa os atributos do inimigo  
         HudBattleManager.Instance.imageEnemy.GetComponent<Animator>().Play(enemyAtributes.animationBattle.name);   
        
         enemyAction = new List<AttackScriptable>(enemyAtributes.AttackScripts);
         soundTrack.clip = enemyAtributes.musicBattle;
+        soundTrack.Play();
         stamina = staminaMax;
-        HudBattleManager.Instance.NameForButtons();
+        
         if (!isTutorial)
         {
             attacksPlayer = PassInfos.Instance.actionPlayer;

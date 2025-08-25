@@ -15,7 +15,7 @@ public class InfosPersistent : MonoBehaviour
     }
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Volume.Instance.takeSoundTrack();
+        Configs.Instance.TakeAudiosSource();
         CamShake.Instance.cameraTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
  
     }

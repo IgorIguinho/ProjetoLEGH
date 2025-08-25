@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a298d11d60b654a96819fa6ba80193, type: 3}
+  m_Name: TrollPaqCompartilha
+  m_EditorClassIdentifier: 
+  AttackScripts:
+  - {fileID: 11400000, guid: 07e283d88053d5845bc7d95a13c88135, type: 2}
+  superEffective:
+  - {fileID: 11400000, guid: 69bfc220fceb00d40990fdd2aa0451a3, type: 2}
+  - {fileID: 11400000, guid: 8b252e048c1495446b0f5084650deb18, type: 2}
+  noEffective: []
+  invunerable: []
+  actionIncorrect:
+  - {fileID: 11400000, guid: bcda3e4064821314790405de8258170b, type: 2}
+  - {fileID: 11400000, guid: 8dfa63ec5c60d2c41aa5dbc60b00df1f, type: 2}
+  musicBattle: {fileID: 8300000, guid: 6756ceaf08d0a3c4098e6f74244c9dcf, type: 3}
+  spriteBattle: {fileID: 21300000, guid: 370b73ff54c3f49448a371f955ab8703, type: 3}
+  actionBlockEnemy: {fileID: 0}
+  animationBattle: {fileID: 7400000, guid: 7303b167fa6c50d4992ea0ad9cfa80df, type: 2}
+  haveDialogueNext: 0
+  nextDialogue: {fileID: 11400000, guid: 8aae24bc910053a4cb9deb57ccb1f8e6, type: 2}
+  nextScene: NewWorld
+  haveLearAction: 0
+  actionToLearn: {fileID: 0}
+  dialogueDerrota: {fileID: 11400000, guid: cc3f791d3741bca458ce9be23fb2a8d7, type: 2}
+  sceneDerrota: ComunidadePAQ

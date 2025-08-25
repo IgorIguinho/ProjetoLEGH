@@ -43,7 +43,7 @@ MonoBehaviour:
   - Player
   - Player
   imagePlayer:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: f068064ed5fbfca4d9472773755c35da, type: 3}
   - {fileID: 21300000, guid: aaedb1da38a2e6e4ca89f88390d8d6a7, type: 3}
   - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}
   - {fileID: 21300000, guid: 568124df48e92e347bf3ec89f85b15bd, type: 3}

@@ -718,8 +718,8 @@ MonoBehaviour:
   textGeral: {fileID: 1677455271}
   textGeral2: {fileID: 590280309}
   dialogueList:
-  - "Nova atualiza\xE7\xE3o dispon\xEDvel"
-  - Atualizando...
+  - Atualizando software
+  - Loading...
   ctr: 
   loadingImage: {fileID: 1478638139}
 --- !u!4 &1717002141

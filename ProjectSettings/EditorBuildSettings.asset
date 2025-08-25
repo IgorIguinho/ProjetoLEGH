@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuInicial.unity
     guid: 8ba7ab5bfecf7bf45b49ca7f867f4b8e
+  - enabled: 0
+    path: Assets/Scenes/Test/DemoPAQCompartilha.unity
+    guid: a840255f3980ae649b25b94943bac13c
   - enabled: 1
     path: Assets/Scenes/CutSceneInicial.unity
     guid: 0b23c8881b50d9144b1ac74b4ecdf3e2
@@ -119,6 +122,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ATO3/WorldATO3 5.1.unity
     guid: a82380829b6de8a4f9774a4eb870afeb
+  - enabled: 1
+    path: Assets/Scenes/ATO3/WorldATO3 5.2.unity
+    guid: 28e3c23d341d16c4c8f0ace02f808f82
   - enabled: 1
     path: Assets/Scenes/ATO3/WorldATO3 6.unity
     guid: d70c1047f624f5b418f401fde55d2e49

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: "Quem \xE9 Tayana Medeiros"
   answers:
-  - Medalhista paralimpica de levantamento de peso
+  - Inventora da lampada
   - Primeira presidenta da Australia
   - "Influencier de nutri\xE7\xE3o"
-  - Inventora da lampada
+  - Medalhista paralimpica de levantamento de peso
   answerIncorretDialogue:
+  - {fileID: 11400000, guid: 5236a2842e3819f44a287dc321d807db, type: 2}
+  - {fileID: 11400000, guid: 5236a2842e3819f44a287dc321d807db, type: 2}
+  - {fileID: 11400000, guid: 5236a2842e3819f44a287dc321d807db, type: 2}
   - {fileID: 11400000, guid: a425e76eaaea6fb49bd598bde53c519b, type: 2}
-  - {fileID: 11400000, guid: 5236a2842e3819f44a287dc321d807db, type: 2}
-  - {fileID: 11400000, guid: 5236a2842e3819f44a287dc321d807db, type: 2}
-  - {fileID: 11400000, guid: 5236a2842e3819f44a287dc321d807db, type: 2}
-  correctAnswers: 0
+  correctAnswers: 3

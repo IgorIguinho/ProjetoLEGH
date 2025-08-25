@@ -10,47 +10,61 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c72838054fec1684a904ccabd9dae52c, type: 3}
-  m_Name: DP3 - PercaMia
+  m_Name: PercaPaqCompartilha
   m_EditorClassIdentifier: 
   text:
-  - Meu deus, nunca pensei que a Mia agiria assim
-  - Isso pode acontecer, temos que tomar cuidado com as pessoas na internet
-  - Isso me deixou com muito medo, ela veio correndo atras de mim!!!
-  - "To com medo de falar com ela agora, mas como fa\xE7o ela parar?"
-  - "Pode tentar chamar as autoridades, eles saber\xE3o o que fazer"
+  - "Lel\xEA, isso \xE9 mentira, aqueles cara s\xE3o troll de gen\xEAro"
+  - "Tudo que eles falam est\xE1 errado, eu n\xE3o tenho a resposta do por que eles
+    fazem isso"
+  - "Eles disfar\xE7am seus comentarios t\xF3xicos em piadas e acham que t\xE1 tudo
+    bem"
+  - "Mas n\xE3o t\xE1, voc\xEA quer ajudar mesmo aquela garota?"
+  - Quero, quero muito!!!
+  - "Ent\xE3o t\xE1, quando for enfretar eles novamente, lembre, xingar de volta
+    n\xE3o adianta nada"
+  - E se precisar vou estar do lado do sorveteiro, pode ir quando quiser
   thisIs:
   - Player
   - Player
-  - NPC
+  - Player
+  - Player
   - NPC
   - Player
+  - Player
   imagePlayer:
-  - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
+  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
+  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
+  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
   - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
   - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
   - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
   - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
   imageNPC:
-  - {fileID: 21300000, guid: 9a04a1af4576d934bb9641a1a01fd3d6, type: 3}
+  - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
+  - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
+  - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
   - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
   - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
   - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
   - {fileID: 21300000, guid: b7cf44744379c104d8300c0b6fa4d071, type: 3}
   nameDialogue:
-  - "Lel\xEA"
+  - Paquito
+  - Paquito
   - Paquito
   - Paquito
   - "Lel\xEA"
+  - Paquito
   - Paquito
   canSkip: 0
-  haveCutscene: 0
-  cutScene: []
-  numberCutScene: 
+  haveCutscene: 1
+  cutScene:
+  - {fileID: 11400000, guid: a13ce94c63124cb449a4c4e04656223e, type: 2}
+  numberCutScene: 06000000
   battleScene: 
   isBattle: 0
   enemy: {fileID: 0}
   isNextScene: 1
-  nextScene: WorldATO3 5.2
+  nextScene: DemoPAQCompartilha
   learnAction: 0
   attackScriptable: {fileID: 0}
   havePuzzle: 0

@@ -122,7 +122,7 @@ MonoBehaviour:
   - Leona
   - "Lel\xEA "
   - Leona
-  canSkip: 1
+  canSkip: 0
   haveCutscene: 1
   cutScene:
   - {fileID: 11400000, guid: f9505b99ee688ed4eb0f59ab92a90746, type: 2}

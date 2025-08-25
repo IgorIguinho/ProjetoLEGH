@@ -666,7 +666,7 @@ GameObject:
   - component: {fileID: 120997640}
   m_Layer: 0
   m_Name: ActionEffectsSound
-  m_TagString: Untagged
+  m_TagString: SoundEffects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4713,6 +4713,7 @@ MonoBehaviour:
   loseScreen: {fileID: 898669494}
   balonPlayer: {fileID: 51023300}
   balonEnemy: {fileID: 33962284}
+  buttonForDesisntencia: {fileID: 0}
   buttons:
   - {fileID: 723235382}
   - {fileID: 1704540536}
@@ -6409,8 +6410,10 @@ MonoBehaviour:
   stamina: 0
   staminaMax: 12
   soundTrack: {fileID: 1874691422}
+  startTimingAction: 0
   turnsForTimingAction: 0
   maxTurnsForAction: 0
+  timeForUseNameAndWeaknes: 0
   turnsForTimingActionEnemy: 0
   maxTurnsForActionEnemy: 0
   attacksPlayer:

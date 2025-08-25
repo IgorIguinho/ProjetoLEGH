@@ -31,6 +31,10 @@ public class HackHack : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Home))
         {
+            if (scene == "Battle")
+            {
+                PassInfos.Instance.enemyToPass = enemys;
+            }
           nextScene(scene);
         }
         // Pressione F12 para tirar screenshot

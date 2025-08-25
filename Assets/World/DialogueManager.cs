@@ -198,6 +198,10 @@ public class DialogueManager : MonoBehaviour
                     directorCutscene.Play();
                     dialogueGroup.SetActive(false);
                     canRunCutscene = false;
+                    if (numberCutsecne.Last() == dialogueList.Count)
+                    {
+                        dialoguePrefab.canSkip = true;
+                    }
                     if (numberListCutscene < numberCutsecne.Count - 1)
                     {
                         numberListCutscene++;
@@ -243,6 +247,7 @@ public class DialogueManager : MonoBehaviour
 
                 if (isBattle)
                 {
+                    dialoguePrefab.canSkip = true;
                     numberListCutscene = 0;
                     PassInfos.Instance.enemyToPass = enemysScriptable;
 
@@ -250,12 +255,14 @@ public class DialogueManager : MonoBehaviour
                 }
                 else if(isNextScene)
                 {
+                    dialoguePrefab.canSkip = true;
                     numberListCutscene = 0;
                     isDialogue = false;
                     TransitionSceneManager.Instance.Transition(nextScene);
                 }
                 else
                 {
+                    dialoguePrefab.canSkip = true;
                     numberListCutscene = 0;
                     isDialogue = false;
                     if (learnAction)
@@ -277,10 +284,13 @@ public class DialogueManager : MonoBehaviour
             {
                 answersButton[i].GetComponentInChildren<TextMeshProUGUI>().text = puzzleScriptables.answers[i];
                 answersButton[i].onClick.AddListener(IncorretAnswerButton);
-                
+                answersButton[i].onClick.RemoveListener(CorrectAnswerButton);
+              
+
             }
             answersButton[puzzleScriptables.correctAnswers].onClick.RemoveListener(IncorretAnswerButton);
             answersButton[puzzleScriptables.correctAnswers].onClick.AddListener(CorrectAnswerButton);
+            
 
         }
         else
@@ -320,7 +330,10 @@ public class DialogueManager : MonoBehaviour
         numberOfDialogue = 0;
         canNextDialogue = false;
         startCoroutine = true;
-        dialogueReloadInfos(puzzleScriptables.answerIncorretDialogue[0]);
+        if (puzzleScriptables.correctAnswers == 0)
+        { dialogueReloadInfos(puzzleScriptables.answerIncorretDialogue[1]); }
+        else { dialogueReloadInfos(puzzleScriptables.answerIncorretDialogue[0]); }
+       
         puzzleGroup.SetActive(false);
     }
 

@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 210971822}
   m_Layer: 0
   m_Name: SoundTrack
-  m_TagString: Untagged
+  m_TagString: SoundTrack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1375,6 +1375,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6216350662100109289, guid: 198c38caada9c1c45bcc05d7b1b8f416, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216350662100109289, guid: 198c38caada9c1c45bcc05d7b1b8f416, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2416,7 +2424,7 @@ GameObject:
   - component: {fileID: 1681995345}
   m_Layer: 0
   m_Name: FootSound
-  m_TagString: Untagged
+  m_TagString: SoundEffects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2563,6 +2571,7 @@ Transform:
   m_Children:
   - {fileID: 689666082}
   - {fileID: 1030093705}
+  - {fileID: 1994897269}
   - {fileID: 1890740368}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2875,7 +2884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1976673152982442942, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5936061417399398178, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
       propertyPath: m_Controller
@@ -2883,10 +2892,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 2c2ce548956b83f448b5c9d9c204ab93, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1861788917960104725, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1994897269}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1976673152982442942, guid: 6c48e47b361ee764d9afde69610c03e0, type: 3}
       insertIndex: -1
@@ -3037,12 +3043,12 @@ Transform:
   m_GameObject: {fileID: 1994897268}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.4790459}
+  m_LocalPosition: {x: -10.470001, y: 21.4, z: -2.4790654}
   m_LocalScale: {x: 0.92499995, y: 0.92499995, z: 0.92499995}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 541872365}
-  m_Father: {fileID: 1890740368}
+  m_Father: {fileID: 1682377054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1994897270
 MonoBehaviour:

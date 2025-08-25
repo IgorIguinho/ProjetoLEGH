@@ -29,7 +29,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 37d76eb6b9afc2640856e6e0f6cee142, type: 3}
   - {fileID: -61618077, guid: 246c068f4761cb140b18903bd4929d09, type: 3}
   - {fileID: -627594344, guid: 90f33d6151a27c8459a9ed636d4b7e98, type: 3}
-  - {fileID: 0}
+  - {fileID: -1662313547, guid: ba9bff208a9741141b63a3de78853458, type: 3}
   - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}
   imageNPC:
   - {fileID: -1573082031, guid: 58704aa615d3c1a44932259b306dff3c, type: 3}

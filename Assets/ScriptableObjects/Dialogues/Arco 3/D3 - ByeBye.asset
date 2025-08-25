@@ -38,7 +38,7 @@ MonoBehaviour:
   - Lele
   - Mia
   - Leona
-  canSkip: 1
+  canSkip: 0
   haveCutscene: 0
   cutScene: []
   numberCutScene: 

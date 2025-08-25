@@ -58,7 +58,7 @@ public class HudBattleManager : MonoBehaviour
     void Start()
     {
         textGeral.text = "Bora para a luta??";
-        NameForButtons();
+       
         balonPlayer.SetActive(false);
         balonEnemy.gameObject.SetActive(false);
         buttonForDesisntencia.SetActive(false);

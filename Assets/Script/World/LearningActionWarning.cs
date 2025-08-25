@@ -40,9 +40,10 @@ public class LearningActionWarning : MonoBehaviour
 
     public void Update()
     {
-   
+        float numberForAImage;
+        numberForAImage = warningImage.a;
 
-        if (warningImage.a == 2 || warningImage.a == 1)
+        if (numberForAImage >= 20)
         {
             Color originalColorWarning = warningGroup.GetComponent<Image>().color;
             warningGroup.GetComponent<Image>().color = new Color(originalColorWarning.r, originalColorWarning.g, originalColorWarning.b,0);
