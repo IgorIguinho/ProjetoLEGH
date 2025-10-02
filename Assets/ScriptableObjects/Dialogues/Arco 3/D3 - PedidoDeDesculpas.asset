@@ -60,7 +60,7 @@ MonoBehaviour:
   - Player
   - NPC
   imagePlayer:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: adf5778d7c68481478f6c392929a61eb, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
   - {fileID: 21300000, guid: 20ee70320fd636240a8edeb4e0eff07f, type: 3}
@@ -122,7 +122,7 @@ MonoBehaviour:
   - Leona
   - "Lel\xEA "
   - Leona
-  canSkip: 0
+  canSkip: 1
   haveCutscene: 1
   cutScene:
   - {fileID: 11400000, guid: f9505b99ee688ed4eb0f59ab92a90746, type: 2}

@@ -15,8 +15,7 @@ MonoBehaviour:
   AttackScripts:
   - {fileID: 11400000, guid: 21210ebced31d3b4594198b69267106c, type: 2}
   - {fileID: 11400000, guid: 91d644d6850221d48aaa22a64211d5d5, type: 2}
-  superEffective:
-  - {fileID: 11400000, guid: b6d37a9a0a871f64db570383613e7a12, type: 2}
+  superEffective: []
   noEffective:
   - {fileID: 11400000, guid: bcda3e4064821314790405de8258170b, type: 2}
   - {fileID: 11400000, guid: 8dfa63ec5c60d2c41aa5dbc60b00df1f, type: 2}

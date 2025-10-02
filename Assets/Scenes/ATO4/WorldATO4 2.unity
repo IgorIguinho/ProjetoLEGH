@@ -1666,7 +1666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca564f0c5f6d844dabea6939a1049f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 633fb7ea82cceb24990bbcd4d4ccf589, type: 2}
+  dialogue: {fileID: 11400000, guid: 909459c90b204ba42947f2d9a5a8e3df, type: 2}
 --- !u!4 &1091669853
 Transform:
   m_ObjectHideFlags: 0

@@ -9754,7 +9754,7 @@ GameObject:
   - component: {fileID: 1906812089}
   - component: {fileID: 1906812088}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: DialogueStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9772,7 +9772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89b49962080ce4ba8283033528d10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 174f628e538d8a447a8031d8d10f73f7, type: 2}
+  dialogue: {fileID: 11400000, guid: 435d06b5a57fc1f4c9e3affa7ff4296a, type: 2}
   gameobject: {fileID: 0}
   isPuzzle: 0
 --- !u!61 &1906812089

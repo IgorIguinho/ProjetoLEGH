@@ -21,7 +21,7 @@ MonoBehaviour:
   - Denunciado!!
   dmg: -6
   costStm: -4
-  learned: 1
+  learned: 0
   audioClip: {fileID: 0}
   typeAction: WaintingTurns
   useCombatForWaitingAction: A denuncia foi completa

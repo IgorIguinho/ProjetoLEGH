@@ -3066,7 +3066,7 @@ MonoBehaviour:
   storeWarning: {fileID: 1374822998}
   WARNINGWARNING: {fileID: 0}
   dialogue:
-  - {fileID: 11400000, guid: 26dc97569611291489332419f0ad6d09, type: 2}
+  - {fileID: 11400000, guid: f745d5f63ff505b4cb8031e9868519cb, type: 2}
   revDialogue: 0
   bispoDialogue: 0
   oneDialogue: 0

@@ -158,6 +158,7 @@ MonoBehaviour:
   - Obrigada por jogar :)
   ctr: 
   loadingImage: {fileID: 2040242936}
+  sceneName: MenuInicial
 --- !u!4 &163762314
 Transform:
   m_ObjectHideFlags: 0

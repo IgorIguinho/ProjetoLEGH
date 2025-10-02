@@ -20,6 +20,7 @@ public class Configs : MonoBehaviour
     public float volumeSoundEffcts;
     [SerializeField] private AudioSource soundTrackAudioSource;
     [SerializeField] private AudioSource soundEffctsAudioSource;
+    [SerializeField] private GameObject SoundTrackAudioControllerAct2;
 
     private void Awake()
     {
@@ -54,6 +55,11 @@ public class Configs : MonoBehaviour
         {
             soundTrackAudioSource.volume = volumeSoundTrack;
         }
+        else if (SoundTrackAudioControllerAct2 != null)
+        {
+            SoundTrackAudioControllerAct2.GetComponent<SoundTrackATO2>().maxVolume = volumeSoundTrack;
+        }
+        
     }
 
     public void OpenConfigGroup(bool open)
@@ -64,6 +70,7 @@ public class Configs : MonoBehaviour
     public void TakeAudiosSource()
     {
         soundTrackAudioSource = GameObject.FindGameObjectWithTag("SoundTrack").GetComponent<AudioSource>();
+        if (soundTrackAudioSource == null) { SoundTrackAudioControllerAct2 = GameObject.FindGameObjectWithTag("SoundTrack"); }
         soundEffctsAudioSource = GameObject.FindGameObjectWithTag("SoundEffects").GetComponent<AudioSource>();
     }
 }

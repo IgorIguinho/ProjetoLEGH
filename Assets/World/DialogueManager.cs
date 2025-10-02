@@ -273,6 +273,7 @@ public class DialogueManager : MonoBehaviour
                 
             }
             
+            
 
         }
         else if (isPuzzle)

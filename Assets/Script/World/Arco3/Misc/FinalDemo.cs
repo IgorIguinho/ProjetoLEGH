@@ -16,6 +16,8 @@ public class FinalDemo : MonoBehaviour
     public char[] ctr;
     public Image loadingImage;
 
+    public string sceneName;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,7 +69,7 @@ public class FinalDemo : MonoBehaviour
             loadingImage.gameObject.SetActive(true);
             yield return new WaitForSeconds(5f);
 
-            SceneManager.LoadScene("WorldATO3 1");
+            SceneManager.LoadScene(sceneName);
         }
     }
 }

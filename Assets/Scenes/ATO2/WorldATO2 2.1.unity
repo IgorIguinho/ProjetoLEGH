@@ -712,7 +712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89b49962080ce4ba8283033528d10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: e0b736d4d39b09a4cb09a0c853a35a7d, type: 2}
+  dialogue: {fileID: 11400000, guid: c18b5c7e1a3c8eb4698cfd56e9f536e7, type: 2}
   gameobject: {fileID: 0}
   isPuzzle: 0
 --- !u!61 &424572739

@@ -178,6 +178,32 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!1102 &1716354853726118612
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IdleFrenteEx
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: dc4962a3c4c0f924c9043c925f539211, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &3333070981401657136
 AnimatorState:
   serializedVersion: 6
@@ -256,32 +282,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &5846077337863206347
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: IdleFrenteEx
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 283ae1371b06bb0418987f82cf794ac2, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1102 &5847329692488287052
 AnimatorState:
   serializedVersion: 6
@@ -348,8 +348,8 @@ AnimatorStateMachine:
     m_State: {fileID: 3333070981401657136}
     m_Position: {x: 147.17972, y: 281.5631, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 5846077337863206347}
-    m_Position: {x: 942.7821, y: 437.7773, z: 0}
+    m_State: {fileID: 1716354853726118612}
+    m_Position: {x: 182.17972, y: 346.5631, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
