@@ -1,0 +1,53 @@
+name: Deploy to Itch.io
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual triggering
+
+env:
+  ITCH_USERNAME: ${{ vars.ITCH_USERNAME }}
+  ITCH_GAME_ID: ${{ vars.ITCH_GAME_ID }}
+
+jobs:
+  build-and-deploy:
+    name: Build Unity and Deploy to Itch.io
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Activate Unity License
+        uses: game-ci/unity-activate@v1
+        env:
+          # Option 1: Use license file (NO PASSWORD NEEDED) - Recommended
+          # Get the license file from your local machine after activating Unity:
+          # Windows: C:\ProgramData\Unity\Unity_lic.ulf
+          # macOS: /Library/Application Support/Unity/Unity_lic.ulf
+          # Linux: ~/.local/share/unity3d/Unity/Unity_lic.ulf
+          # Copy the entire file content and add it as UNITY_LICENSE secret
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          unityVersion: 2022.3.46f1
+          # Option 2: Use Unity account credentials (requires password)
+          # unityEmail: ${{ secrets.UNITY_EMAIL }}
+          # unityPassword: ${{ secrets.UNITY_PASSWORD }}
+
+      - name: Build Unity WebGL
+        uses: game-ci/unity-builder@v4
+        with:
+          targetPlatform: WebGL
+          projectPath: .
+          buildName: WebGL
+          buildsPath: build/webgl
+          unityVersion: 2022.3.46f1
+
+      - name: Deploy to Itch.io
+        uses: KikimoraGames/itch-publish@v0.0.3
+        with:
+          butlerApiKey: ${{ secrets.BUTLER_API_KEY }}
+          gameData: ./build/webgl/WebGL
+          itchUsername: ${{ env.ITCH_USERNAME }}
+          itchGameId: ${{ env.ITCH_GAME_ID }}
+          buildChannel: webgl
