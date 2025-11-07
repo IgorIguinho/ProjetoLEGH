@@ -18,21 +18,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Activate Unity License
-        uses: game-ci/unity-activate@v1
-        env:
-          # Option 1: Use license file (NO PASSWORD NEEDED) - Recommended
-          # Get the license file from your local machine after activating Unity:
-          # Windows: C:\ProgramData\Unity\Unity_lic.ulf
-          # macOS: /Library/Application Support/Unity/Unity_lic.ulf
-          # Linux: ~/.local/share/unity3d/Unity/Unity_lic.ulf
-          # Copy the entire file content and add it as UNITY_LICENSE secret
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-        with:
-          unityVersion: 2022.3.46f1
-          # Option 2: Use Unity account credentials (requires password)
-          # unityEmail: ${{ secrets.UNITY_EMAIL }}
-          # unityPassword: ${{ secrets.UNITY_PASSWORD }}
+      - name: Setup Unity License File
+        # Use license file (NO PASSWORD NEEDED) - Recommended
+        # Get the license file from your local machine after activating Unity:
+        # Windows: C:\ProgramData\Unity\Unity_lic.ulf
+        # macOS: /Library/Application Support/Unity/Unity_lic.ulf
+        # Linux: ~/.local/share/unity3d/Unity/Unity_lic.ulf
+        # Copy the entire file content and add it as UNITY_LICENSE secret
+        run: |
+          mkdir -p ~/.local/share/unity3d/Unity/
+          echo "${{ secrets.UNITY_LICENSE }}" > ~/.local/share/unity3d/Unity/Unity_lic.ulf
 
       - name: Build Unity WebGL
         uses: game-ci/unity-builder@v4
