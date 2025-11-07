@@ -14,7 +14,6 @@ jobs:
   build-and-deploy:
     name: Build Unity and Deploy to Itch.io
     runs-on: ubuntu-latest
-    environment: production
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,9 +26,14 @@ jobs:
         # Linux: ~/.local/share/unity3d/Unity/Unity_lic.ulf
         # Copy the entire file content and add it as UNITY_LICENSE secret
         run: |
+          echo "Checking for UNITY_LICENSE secret..."
           if [ -z "${{ secrets.UNITY_LICENSE }}" ]; then
             echo "ERROR: UNITY_LICENSE secret is not set or is empty!"
-            echo "Please add your Unity license file content as UNITY_LICENSE secret in GitHub repository settings."
+            echo "Current environment: ${{ job.environment }}"
+            echo "Please verify:"
+            echo "1. The environment name in the workflow matches your GitHub environment"
+            echo "2. The UNITY_LICENSE secret exists in that environment"
+            echo "3. The secret has content (not empty)"
             exit 1
           fi
           mkdir -p ~/.local/share/unity3d/Unity/
