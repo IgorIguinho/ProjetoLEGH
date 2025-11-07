@@ -22,9 +22,6 @@ jobs:
         run: |
           mkdir -p ~/.local/share/unity3d/Unity/
           echo "${{ secrets.UNITY_LICENSE }}" > ~/.local/share/unity3d/Unity/Unity_lic.ulf
-          # Also create in workspace for Docker container access
-          mkdir -p .github/unity-license
-          echo "${{ secrets.UNITY_LICENSE }}" > .github/unity-license/Unity_lic.ulf
 
       - name: Build Unity WebGL
         uses: game-ci/unity-builder@v4

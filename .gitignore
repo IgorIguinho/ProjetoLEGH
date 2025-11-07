@@ -122,3 +122,6 @@ print.png
 .env
 .env.local
 .env.*.local
+
+# Unity license files (generated during CI)
+.github/unity-license/
