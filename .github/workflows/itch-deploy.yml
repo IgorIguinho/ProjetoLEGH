@@ -26,11 +26,26 @@ jobs:
         # Linux: ~/.local/share/unity3d/Unity/Unity_lic.ulf
         # Copy the entire file content and add it as UNITY_LICENSE secret
         run: |
+          if [ -z "${{ secrets.UNITY_LICENSE }}" ]; then
+            echo "ERROR: UNITY_LICENSE secret is not set or is empty!"
+            echo "Please add your Unity license file content as UNITY_LICENSE secret in GitHub repository settings."
+            exit 1
+          fi
           mkdir -p ~/.local/share/unity3d/Unity/
           echo "${{ secrets.UNITY_LICENSE }}" > ~/.local/share/unity3d/Unity/Unity_lic.ulf
+          # Verify the file was created
+          if [ -f ~/.local/share/unity3d/Unity/Unity_lic.ulf ]; then
+            echo "License file created successfully"
+            ls -lh ~/.local/share/unity3d/Unity/Unity_lic.ulf
+          else
+            echo "ERROR: Failed to create license file"
+            exit 1
+          fi
 
       - name: Build Unity WebGL
         uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: WebGL
           projectPath: .
