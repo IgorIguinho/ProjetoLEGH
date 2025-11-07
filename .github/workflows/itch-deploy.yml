@@ -14,6 +14,7 @@ jobs:
   build-and-deploy:
     name: Build Unity and Deploy to Itch.io
     runs-on: ubuntu-latest
+    environment: production
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
