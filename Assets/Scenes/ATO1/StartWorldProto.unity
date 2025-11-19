@@ -15860,7 +15860,7 @@ MonoBehaviour:
   enemys: {fileID: 11400000, guid: e5df71f8b5909f8468e47892b81fb4a9, type: 2}
   hackScreen: {fileID: 50294543}
   attack: {fileID: 11400000, guid: 69bfc220fceb00d40990fdd2aa0451a3, type: 2}
-  scene: WorldATO2 3
+  scene: WorldATO3 2
   screenshotKey: 293
   resolutionMultiplier: 3
 --- !u!114 &1224750096
@@ -15949,6 +15949,7 @@ MonoBehaviour:
   volumeSoundEffcts: 0
   soundTrackAudioSource: {fileID: 0}
   soundEffctsAudioSource: {fileID: 0}
+  SoundTrackAudioControllerAct2: {fileID: 0}
 --- !u!114 &1231699655
 MonoBehaviour:
   m_ObjectHideFlags: 0
