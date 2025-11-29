@@ -126,31 +126,36 @@ public class DialogueManager : MonoBehaviour
 
     public void dialogueReloadInfos(DialogueScriptable dialogue)
     {
-        DialogueManager.Instance.isDialogue = false;
-        DialogueManager.Instance.dialogueList = dialogue.text;
-        DialogueManager.Instance.dialogueName = dialogue.nameDialogue;
-        DialogueManager.Instance.thisIsList = dialogue.thisIs;
-        DialogueManager.Instance.imageNPCList = dialogue.imageNPC;
-        DialogueManager.Instance.imagePlayerList = dialogue.imagePlayer;
-        DialogueManager.Instance.isBattle = dialogue.isBattle;
-        DialogueManager.Instance.battleScene = dialogue.battleScene;
-        DialogueManager.Instance.enemysScriptable = dialogue.enemy;
-        DialogueManager.Instance.learnAction= dialogue.learnAction;
-        DialogueManager.Instance.attackScriptable = dialogue.attackScriptable;
-        DialogueManager.Instance.haveCutscene = dialogue.haveCutscene;
-        DialogueManager.Instance.cutScene = dialogue.cutScene;
-        DialogueManager.Instance.numberCutsecne = dialogue.numberCutScene;
-        DialogueManager.Instance.isNextScene = dialogue.isNextScene;
-        DialogueManager.Instance.nextScene = dialogue.nextScene;
-        DialogueManager.Instance.puzzleScriptables = dialogue.puzzleDialogueScriptable;
-        DialogueManager.Instance.havePuzzle = dialogue.havePuzzle;
-        DialogueManager.Instance.numberActivePuzzle = dialogue.numberActivePuzzle;
-        DialogueManager.Instance.numberOfDialogue = 0;
-        if (DialogueManager.Instance.haveCutscene == true)
-        { canRunCutscene = true; }
-        DialogueManager.Instance.isDialogue = true;
-        DialogueManager.Instance.isPuzzle = false;
+        isDialogue = false;
+        dialogueList = dialogue.text;
+        dialogueName = dialogue.nameDialogue;
+        thisIsList = dialogue.thisIs;
+        imageNPCList = dialogue.imageNPC;
+        imagePlayerList = dialogue.imagePlayer;
+        isBattle = dialogue.isBattle;
+        battleScene = dialogue.battleScene;
+        enemysScriptable = dialogue.enemy;
+        learnAction = dialogue.learnAction;
+        attackScriptable = dialogue.attackScriptable;
+        haveCutscene = dialogue.haveCutscene;
+        cutScene = dialogue.cutScene;
+        numberCutsecne = dialogue.numberCutScene;
+        isNextScene = dialogue.isNextScene;
+        nextScene = dialogue.nextScene;
+        puzzleScriptables = dialogue.puzzleDialogueScriptable;
+        havePuzzle = dialogue.havePuzzle;
+        numberActivePuzzle = dialogue.numberActivePuzzle;
+        numberOfDialogue = 0;
+
+        if (haveCutscene == true)
+        {
+            canRunCutscene = true;
+        }
+
+        isDialogue = true;
+        isPuzzle = false;
         dialoguePrefab = dialogue;
+
     }
 
     void dialogueSistem()

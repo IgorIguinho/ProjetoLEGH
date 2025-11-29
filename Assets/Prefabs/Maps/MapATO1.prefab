@@ -2734,8 +2734,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d60bdf402968b1c43aa29d98d493529d, type: 2}
   revDialogue: 0
   bispoDialogue: 0
-  oneDialogue: 1
+  oneDialogue: 0
   numberDialogue: 0
+  block: 0
 --- !u!1 &2243381938221952176
 GameObject:
   m_ObjectHideFlags: 0
@@ -3308,6 +3309,7 @@ MonoBehaviour:
   bispoDialogue: 0
   oneDialogue: 0
   numberDialogue: 0
+  block: 0
 --- !u!1 &2882784060488861569
 GameObject:
   m_ObjectHideFlags: 0
@@ -5377,9 +5379,9 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741827
@@ -5387,9 +5389,9 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741827
@@ -5398,9 +5400,9 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 2
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 2
@@ -5422,10 +5424,10 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2
-    m_Data: {r: 0.7311046, g: 0.35087532, b: 0.40584576, a: 1}
   - m_RefCount: 0
-    m_Data: {r: 8.63166e-40, g: 8.63166e-40, b: 8.63166e-40, a: 8.63166e-40}
+    m_Data: {r: 8.5845e-40, g: 8.5845e-40, b: 8.5845e-40, a: 8.5845e-40}
+  - m_RefCount: 2
+    m_Data: {r: 0.91897565, g: 0.3932476, b: 0.44496226, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6151,6 +6153,7 @@ MonoBehaviour:
   bispoDialogue: 0
   oneDialogue: 1
   numberDialogue: 0
+  block: 0
 --- !u!1 &5575636702326762980
 GameObject:
   m_ObjectHideFlags: 0
@@ -10564,6 +10567,7 @@ MonoBehaviour:
   bispoDialogue: 0
   oneDialogue: 0
   numberDialogue: 0
+  block: 0
 --- !u!1 &7555774658814864347
 GameObject:
   m_ObjectHideFlags: 0

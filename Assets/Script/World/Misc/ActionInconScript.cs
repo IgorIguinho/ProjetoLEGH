@@ -20,8 +20,9 @@ public class ActionInconScript : MonoBehaviour
     void Start()
     {
       
-        StartCoroutine(checkHaveAction());
+       
         TraderAction.Instance.gameObjectsList.Add(this.gameObject);
+        StartCoroutine(checkHaveAction());
     }
 
     // Update is called once per frame
