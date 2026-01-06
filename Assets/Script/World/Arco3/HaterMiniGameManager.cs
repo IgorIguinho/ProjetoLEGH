@@ -16,7 +16,7 @@ public class HaterMiniGameManager : MonoBehaviour
     public bool startMiniGame;
     public AttackScriptable actionToLearn;
     GameObject player;
-    bool canLearning ;
+    bool canLearning = true;
     public float rotationSpeed;
 
     private void Awake()
@@ -50,7 +50,7 @@ public class HaterMiniGameManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (PassInfos.Instance.numberMachineOpen == 5 && canLearning)
+        if (PassInfos.Instance.numberMachineOpen >= 5 && canLearning)
         {
             StartCoroutine(LearningActionWarning.Instance.LearnAction(actionToLearn));
             canLearning = false;

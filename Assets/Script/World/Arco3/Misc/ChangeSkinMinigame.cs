@@ -11,6 +11,7 @@ public class ChangeSkinMinigame : MonoBehaviour
     public void CompleteVsiual()
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = completeSprite;
+        gameObject.GetComponent<HaterMiniGameAproxime>().DisableInterativeButton();
         normalLight.SetActive(false);
         winLight.SetActive(true);
     }

@@ -34,7 +34,8 @@ public class HaterMiniGameAproxime : MonoBehaviour
                     storeButtonWarining.SetActive(false);
                     miniGame.SetActive(true);
                     gameObject.GetComponent<HaterMiniGameAproxime>().enabled = false;
-                HaterMiniGameManager.Instance.startMiniGame = true;
+                    HaterMiniGameManager.Instance.startMiniGame = true;
+                playerObject.GetComponent<PlayerMov>().BlockMov(true);
                 }
             }
             else
@@ -42,4 +43,11 @@ public class HaterMiniGameAproxime : MonoBehaviour
              storeButtonWarining.SetActive(false);
             }
         }
+
+    public void DisableInterativeButton()
+    {
+        storeWarning.SetActive(false);
+        storeButtonWarining.SetActive(false);
+        gameObject.GetComponent<HaterMiniGameAproxime>().enabled = false;
+    }
 }

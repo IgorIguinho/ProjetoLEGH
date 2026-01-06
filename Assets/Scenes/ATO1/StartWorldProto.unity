@@ -8861,6 +8861,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1224750098}
+        m_TargetAssemblyTypeName: Configs, Assembly-CSharp
+        m_MethodName: BlockMovementPlayer
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &674167824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9440,6 +9452,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1224750098}
+        m_TargetAssemblyTypeName: Configs, Assembly-CSharp
+        m_MethodName: BlockMovementPlayer
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &762799901
 MonoBehaviour:
@@ -13200,6 +13224,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1224750098}
+        m_TargetAssemblyTypeName: Configs, Assembly-CSharp
+        m_MethodName: BlockMovementPlayer
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1098557999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15714,6 +15750,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1224750098}
+        m_TargetAssemblyTypeName: Configs, Assembly-CSharp
+        m_MethodName: BlockMovementPlayer
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1222286131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15868,7 +15916,7 @@ MonoBehaviour:
   enemys: {fileID: 11400000, guid: e5df71f8b5909f8468e47892b81fb4a9, type: 2}
   hackScreen: {fileID: 50294543}
   attack: {fileID: 11400000, guid: 69bfc220fceb00d40990fdd2aa0451a3, type: 2}
-  scene: WorldATO3 2
+  scene: WorldATO3 3
   screenshotKey: 293
   resolutionMultiplier: 3
 --- !u!114 &1224750096

@@ -15,7 +15,7 @@ public class PlayerMov : MonoBehaviour
     Animator animatior;
     public GameObject soundWalk;
     private PlayableDirector directorCutscene;
-    public bool canMove = false;
+    public bool blockMove = false;
 
     Rigidbody2D rb;
     // Start is called before the first frame update
@@ -32,7 +32,7 @@ public class PlayerMov : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (DialogueManager.Instance.isDialogue || DialogueManager.Instance.isPuzzle || directorCutscene.state == PlayState.Playing) 
+        if (DialogueManager.Instance.isDialogue || DialogueManager.Instance.isPuzzle || directorCutscene.state == PlayState.Playing || blockMove) 
         { 
             animatior.Play("IdleBaixo");
             soundWalk.GetComponent<AudioSource>().Stop();
@@ -143,6 +143,6 @@ public class PlayerMov : MonoBehaviour
 
     public void BlockMov(bool can)
     {
-        canMove = can;
+        blockMove = can;
     }
 }

@@ -42,6 +42,8 @@ public class HaterMiniGame : MonoBehaviour
     public AutoMouseController autoCursor;
 
 
+    private GameObject playerObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,7 +63,8 @@ public class HaterMiniGame : MonoBehaviour
         passButton.onClick.AddListener(LikeButtonFunction);
         reloadUI(numberOfCommentsShow);
         PassInfos.Instance.playerRespawn = respawnPlayer.position;
-       
+
+        playerObject = GameObject.FindGameObjectWithTag("Player");
     }
   
     // Update is called once per frame
@@ -132,8 +135,9 @@ public class HaterMiniGame : MonoBehaviour
             HaterMiniGameManager.Instance.startMiniGame = false;
             parentGameObject.GetComponentInChildren<HaterMiniGameAproxime>().enabled = false;
             parentGameObject.GetComponentInChildren<HaterMiniGameAproxime>().canvaObject.SetActive(false);
+            
             parentGameObject.GetComponent<ChangeSkinMinigame>().CompleteVsiual();
-           
+            playerObject.GetComponent<PlayerMov>().BlockMov(false);
 
             this.gameObject.SetActive(false);
         }

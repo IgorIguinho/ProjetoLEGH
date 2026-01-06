@@ -22,6 +22,10 @@ public class Configs : MonoBehaviour
     [SerializeField] private AudioSource soundEffctsAudioSource;
     [SerializeField] private GameObject SoundTrackAudioControllerAct2;
 
+    [Header("Player Stop Walnking")]
+    
+    GameObject playerObject;
+
     private void Awake()
     {
         // If there is an instance, and it's not me, delete myself.
@@ -72,5 +76,13 @@ public class Configs : MonoBehaviour
         soundTrackAudioSource = GameObject.FindGameObjectWithTag("SoundTrack").GetComponent<AudioSource>();
         if (soundTrackAudioSource == null) { SoundTrackAudioControllerAct2 = GameObject.FindGameObjectWithTag("SoundTrack"); }
         soundEffctsAudioSource = GameObject.FindGameObjectWithTag("SoundEffects").GetComponent<AudioSource>();
+        playerObject = GameObject.FindGameObjectWithTag("Player");
     }
+
+    public void BlockMovementPlayer(bool block)
+    {
+      
+        playerObject.GetComponent<PlayerMov>().BlockMov(block);
+    }    
+    
 }
