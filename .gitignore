@@ -118,6 +118,17 @@ desktop.ini
 # Project-specific temporary files
 print.png
 
+# Archive files (source files, shouldn't be in repo)
+*.rar
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# Auto-generated Figma output
+FigmaOutput.json
+FigmaOutput.json.meta
+
 # Environment variables and sensitive data
 .env
 .env.local
