@@ -72,10 +72,13 @@ public class LearningActionWarning : MonoBehaviour
         actionScriptable.learned = true;
         warningPaquitoButton.SetActive(true);
         textAction.text = actionScriptable.nameTitle;
+        warningGroup.SetActive(true);
         StartCoroutine(fade(false));
         yield return new WaitForSeconds(3);
+       
         StartCoroutine(fade(true));
-
+        yield return new WaitForSeconds(3);
+        warningGroup.SetActive(false);
 
 
     }
