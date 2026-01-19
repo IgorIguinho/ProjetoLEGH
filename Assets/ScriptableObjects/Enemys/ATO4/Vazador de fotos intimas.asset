@@ -36,4 +36,4 @@ MonoBehaviour:
   haveLearAction: 0
   actionToLearn: {fileID: 0}
   dialogueDerrota: {fileID: 0}
-  sceneDerrota: WorldATO4 2
+  sceneDerrota: WorldATO4 1
