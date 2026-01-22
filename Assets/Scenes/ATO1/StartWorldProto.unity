@@ -15916,7 +15916,7 @@ MonoBehaviour:
   enemys: {fileID: 11400000, guid: e5df71f8b5909f8468e47892b81fb4a9, type: 2}
   hackScreen: {fileID: 50294543}
   attack: {fileID: 11400000, guid: 69bfc220fceb00d40990fdd2aa0451a3, type: 2}
-  scene: WorldATO3 3
+  scene: WorldATO3 5
   screenshotKey: 293
   resolutionMultiplier: 3
 --- !u!114 &1224750096
@@ -15999,10 +15999,10 @@ MonoBehaviour:
   configGroup: {fileID: 1545601951}
   sliderVolumeGeral: {fileID: 508333494}
   sliderVolumeSoundTrack: {fileID: 377879366}
-  sliderVolumeSoundEffcts: {fileID: 2014134608}
+  sliderVolumeSoundEffects: {fileID: 2014134608}
   volumeGeral: 0
   volumeSoundTrack: 0
-  volumeSoundEffcts: 0
+  volumeSoundEffects: 0
   soundTrackAudioSource: {fileID: 0}
   soundEffctsAudioSource: {fileID: 0}
   SoundTrackAudioControllerAct2: {fileID: 0}
@@ -23230,7 +23230,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0
   m_Pitch: 1.47
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

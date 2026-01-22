@@ -12,12 +12,12 @@ public class Configs : MonoBehaviour
     [Header("VolumeUI Varible")]
     public Slider sliderVolumeGeral;
     public Slider sliderVolumeSoundTrack;
-    public Slider sliderVolumeSoundEffcts;
+    public Slider sliderVolumeSoundEffects;
 
     [Header("Sounds Variable")]
     public float volumeGeral;
     public float volumeSoundTrack;
-    public float volumeSoundEffcts;
+    public float volumeSoundEffects;
     [SerializeField] private AudioSource soundTrackAudioSource;
     [SerializeField] private AudioSource soundEffctsAudioSource;
     [SerializeField] private GameObject SoundTrackAudioControllerAct2;
@@ -50,10 +50,10 @@ public class Configs : MonoBehaviour
     {
         volumeGeral = sliderVolumeGeral.value;
         volumeSoundTrack = sliderVolumeSoundTrack.value * volumeGeral;
-        volumeSoundEffcts = sliderVolumeSoundEffcts.value * volumeGeral;
+        volumeSoundEffects = sliderVolumeSoundEffects.value * volumeGeral;
         if (soundEffctsAudioSource != null )
         { 
-            soundEffctsAudioSource.volume = volumeSoundEffcts; 
+            soundEffctsAudioSource.volume = volumeSoundEffects; 
         }
         if (soundTrackAudioSource != null)
         {

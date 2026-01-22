@@ -171,11 +171,16 @@ public class HaterMiniGame : MonoBehaviour
         {
             if (i < nCommentsHater)
             {
-                listComments.Add(listCommentsHaters[Random.Range(0, listCommentsHaters.Count)]);
+                HaterMiniGameScriptable haterCommments = listCommentsHaters[Random.Range(0, listCommentsHaters.Count)];
+                listComments.Add(haterCommments);
+                listCommentsHaters.Remove(haterCommments);
+
             }
             else 
             {
-                listComments.Add(listCommentsFriendly[Random.Range(0, listCommentsFriendly.Count)]);
+                HaterMiniGameScriptable friendlyComments = listCommentsFriendly[Random.Range(0, listCommentsFriendly.Count)];
+                listComments.Add(friendlyComments);
+                listCommentsFriendly.Remove(friendlyComments);
             }
         }
 

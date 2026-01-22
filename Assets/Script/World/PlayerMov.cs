@@ -35,11 +35,11 @@ public class PlayerMov : MonoBehaviour
         if (DialogueManager.Instance.isDialogue || DialogueManager.Instance.isPuzzle || directorCutscene.state == PlayState.Playing || blockMove) 
         { 
             animatior.Play("IdleBaixo");
-            soundWalk.GetComponent<AudioSource>().Stop();
+            soundWalk.GetComponent<AudioSource>().volume = 0;
         }
         else { 
-        Mov(); 
-
+        Mov();
+            
         }
     }
 
@@ -68,7 +68,7 @@ public class PlayerMov : MonoBehaviour
 
         if (horizontal > 0 || horizontal < 0 || vertical > 0 || vertical < 0)
         {
-          soundWalk.GetComponent<AudioSource>().volume = Configs.Instance.volumeSoundEffcts;
+          soundWalk.GetComponent<AudioSource>().volume = Configs.Instance.volumeSoundEffects;
 
             if (vertical != 0)
             {
