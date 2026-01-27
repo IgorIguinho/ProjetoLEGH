@@ -16,9 +16,6 @@ public class Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (attackScriptable.learned)
-        {
-            colliderStartLearningDialogue.SetActive(false);
-        }
+        
     }
 }
